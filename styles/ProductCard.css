@@ -1,0 +1,256 @@
+.cardView {
+    background: #ffffff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0 !important;
+    padding: 1em;
+  }
+
+.cardHeader{
+    width:60%;
+    /* margin:auto; */
+}
+.mobileCardHeader {
+    display: none;
+}
+.cardFlex{
+    display:flex;
+    flex-direction: column;
+  }
+
+.cardInfoFlex{
+    display: flex;
+}
+
+.cardInfoContainer{
+    display:flex;
+}
+.superiorityContainer{
+    width:50%;
+}
+
+.desktopSds{
+    display: flex;
+    width: 50%;
+}
+
+.mobileSds{
+    display: none;
+}
+
+.chips{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.productTitle {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+  }
+.productSubInfo{
+    display: flex;
+    align-items: center;
+    width:60%;
+}
+.sdsText {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 14px;
+    color: #333333;
+  }
+ 
+.sizeData{ 
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 14px;
+    color: #333333;
+  }
+.imgContainer{
+    margin-top:-15px;
+    margin-left:1.5em;
+    vertical-align: middle;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.infoContLeft{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.infoContRight{
+    /* width:80%; */
+}
+
+.superioritySpan {
+    line-height: 1.5;
+}
+
+.superscript {
+    position: relative;
+    bottom: 0.5em;
+    font-size: 0.8em;
+}
+
+.recommendContainer {
+    width: 50%;
+}
+
+li {
+    padding-right: 20px;
+}
+.ps-widget {
+    border: none!important;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 17px;
+    outline: 0px !important;
+  }
+
+.buyNowButton{
+    max-width: 150px;
+}
+
+  @media screen and (max-width: 600px) {
+    .cardFlex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    .cardHeader{
+        width:100%;
+        margin:auto;
+        display: none;
+    }
+    .mobileCardHeader {
+        width:100%;
+        margin:auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .mobileProductTitle {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+      }
+    .mobileProductSubInfo {
+        display: flex;
+        align-items: center;
+        /* width:60%; */
+        justify-content: flex-end;
+    }
+    .mobileProductSubTitle {
+        color: #003E7D;
+        font-weight: 600;
+    }
+     
+    .mobileSizeData{ 
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 14px;
+        color: #333333;
+        text-align: right;
+      }
+    
+    .cardInfoFlex{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .cardInfoContainer{
+        display:flex;
+        flex-direction: column;
+    }
+    .superiorityContainer{
+        width:100%;
+    }
+    
+    .desktopSds{
+        display: none;
+    }
+    .mobileSds{
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .chips{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .productTitle, .sdsText{
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: left;
+        color: #333333;
+      }
+      
+    .productSubInfo{
+        display: flex;
+        justify-content: flex-end;
+        width:100%;
+    }
+     
+    .sizeData{ 
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 14px;
+        color: #333333;
+        text-align: right;
+      }
+
+    .imgContainer{
+        display: flex;
+        flex-direction: column;
+        margin-top:1em;
+    }
+    
+    .infoContLeft{
+        margin:auto;
+        width:auto;
+    }
+    
+    .infoContRight{
+        width:100%;
+    }
+
+    .prod-recomm-area{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 17px;
+        /* identical to box height */
+        text-align: center;
+        color: #333333;
+      }
+
+      .ps-widget {
+        border: none!important;
+        font-style: normal;
+        font-size: 12px;
+        line-height: 17px;
+        outline: 0px !important;
+      }
+
+      .productRecommImage{
+        display: block;
+        max-width:150px;
+        
+        width: auto;
+        height: auto;
+      }
+
+      .recommendContainer {
+        width: 100%;
+    }
+  }

@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+
+.question {
+    font-weight: bold;
+    font-size: 22px;
+    color: #003e7d;
+    margin: 2% auto;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .question {
+        font-size: 18px;
+    }
+}
