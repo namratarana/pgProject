@@ -1,4 +1,4 @@
-import { combineReducers } from "Redux";
+import { combineReducers } from "redux";
 import { nextPageReducer } from "./nextPageReducer";
 import { RecommendationReducer } from "./RecommendationReducer";
 
