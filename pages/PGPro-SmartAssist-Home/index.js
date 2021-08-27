@@ -1,10 +1,15 @@
 import React from "react"
 import Link from "next/link"
 import Footer from "../../components/Footer"
+import {useEffect} from 'react';
 
-export default class LandingPage extends React.PureComponent {
-
-    render() {
+function LandingPage()
+{
+        useEffect(() => 
+        {
+            localStorage.removeItem('recommendedResults') 
+            localStorage.removeItem('answerChosen');   
+        }, [])
         return (
             <div className="main">
 
@@ -59,4 +64,5 @@ export default class LandingPage extends React.PureComponent {
             </div>
         )
     }
-}
+
+export default LandingPage;

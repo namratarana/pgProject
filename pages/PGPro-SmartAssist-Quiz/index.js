@@ -337,8 +337,11 @@ export class Questions extends React.PureComponent {
       this.setState({ buttonIndex: buttonIndex + 1, currentQuestionIndex: currentQuestionIndex + 1 })
     } else {
 
+      console.log("^^^^", data);
+      localStorage.setItem('recommendedResults', JSON.stringify(data));
       this.props.setProductResult(data)
-      this.props.setAnswersChosen(answersChosen)
+      this.props.setAnswersChosen(answersChosen);
+      localStorage.setItem('answerChosen',JSON.stringify(answersChosen));
       this.props.setSubAnswerChosen(subAnswerChosen)
       this.setState({
         // productResult: data,
