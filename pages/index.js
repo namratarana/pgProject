@@ -142,6 +142,17 @@ class App extends React.Component {
                 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> */}
                 {/* <!-- End Google Tag Manager (noscript) --> */}
                 
+                {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
+                <script async src="https://www.googletagmanager.com/gtag/js?id=UA-206088285-1"></script>
+                <script
+                    dangerouslySetInnerHTML={{
+                                    __html: `window.dataLayer = window.dataLayer || [];
+                                    function gtag(){dataLayer.push(arguments);}
+                                    gtag('js', new Date());
+
+                                    gtag('config', 'UA-206088285-1');`}}
+                />
+
             </div>
         )
     }
