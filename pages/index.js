@@ -10,28 +10,37 @@ class App extends React.Component {
         return (
             <div>
                 <Head>
-                   
-                    <script src="https://www.googleoptimize.com/optimize.js?id=OPT-5TW5QNS"></script> {/* CODE SNIPPET FROM GOOGLE OPTIMIZE */}
-                    
                     <script dangerouslySetInnerHTML={{
-                            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-                            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-                            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-                            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-                            })(window,document,'script','dataLayer','GTM-PKPC4QQ');`}}
+                            __html: `var PGdataLayer = {
+                            'GTM': {
+                            'SiteCountry': 'US',
+                            'SiteBrand': 'PG Professional',
+                            'SiteLanguage': 'en',
+                            'SitePlatform': 'Modern Web',
+                            'SiteEnvironment': 'prod-EN-US',
+                            'SiteHost': 'Azure',
+                            'SiteTechnicalAgency': 'Capgemini',
+                            'SiteStatus': 'Live',
+                            'SiteLocalContainer': '',
+                            'GoogleAnalyticsLocal': 'UA-40283704-12',
+                            'GoogleAnalyticsSiteSpeedSampleRate': 'high',
+                            'GoogleAnalyticsReportingView': '237254869',
+                            'ConsentOverlay':'OneTrust',
+                            'SitePrivacyProtection':'CCPA',
+                            'ConsentOverlayID':'a7ef1dc1-71f6-4852-b52c-340565acbda4'
+                            },
+                            'user': {
+                            'id': '',
+                            'type': 'unknown',
+                            },
+                            'session': {},
+                            'content': {
+                            'type': 'page',
+                            'category': '',
+                            'sub_category': ''
+                            }}
+                            `}}
                         />
-
-                    <script dangerouslySetInnerHTML={{
-                            __html: `<script>
-                            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-                            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-                            ga('create', 'UA-206088285-1', 'auto');
-                            ga('send', 'pageview');
-                            </script>`}}
-                        />  
-                    
                     {/* <script dangerouslySetInnerHTML={{
                         __html: `var PGdataLayer = {
                         'GTM': {
@@ -66,19 +75,19 @@ class App extends React.Component {
 
                     {/*Google Tag Manager*/}
                     {/* Global */}
-                    {/* <script dangerouslySetInnerHTML={{
+                    <script dangerouslySetInnerHTML={{
                         __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
                     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
                     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-                    })(window,document,'script','dataLayer','GTM-N94XXFB');`}} /> */}
+                    })(window,document,'script','dataLayer','GTM-N94XXFB');`}} />
                     {/* Local */}
-                    {/* <script dangerouslySetInnerHTML={{
+                    <script dangerouslySetInnerHTML={{
                         __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
                     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
                     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-                    })(window,document,'script','dataLayer','GTM-N9RX7G5');`}} /> */}
+                    })(window,document,'script','dataLayer','GTM-N9RX7G5');`}} />
                     {/*End Google Tag Manager*/}
                     <link rel="preload" href={"https://res.cloudinary.com/mtree/w_750,q_auto:eco,f_auto,dpr_auto/PGPro_US/7rfzki8kfaDaIoak8V6w5M/3cf235d0b6538a0404fb2265a16eeaa7/Home-Banner_2x.jpg"} as="image" />
                     <link rel="preload" href={"https://res.cloudinary.com/mtree/w_1200,q_auto:eco,f_auto,dpr_auto/PGPro_US/3ByInDeaGfdemUNc0GewSN/9e0b1918a1196a6b2a2e03f02149e2e2/Home-Banner_2x__1_.jpg"} as="image" />
@@ -133,26 +142,9 @@ class App extends React.Component {
                 }} />
 
                 {/*Google Tag Manager(No Script)*/}
-                <noscript dangerouslySetInnerHTML={{ __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PKPC4QQ"
-                height="0" width="0" style="display:none;visibility:hidden"></iframe>` }} />
+                <noscript dangerouslySetInnerHTML={{ __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N94XXFB" height="0" width="0" style="display:none;visibility:hidden"></iframe>` }} />
                 {/*End Google Tag Manager(No Script)*/}
-
-                {/* <!-- Google Tag Manager (noscript) --> */}
-                {/* <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PKPC4QQ"
-                height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> */}
-                {/* <!-- End Google Tag Manager (noscript) --> */}
                 
-                {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
-                <script async src="https://www.googletagmanager.com/gtag/js?id=UA-206088285-1"></script>
-                <script
-                    dangerouslySetInnerHTML={{
-                                    __html: `window.dataLayer = window.dataLayer || [];
-                                    function gtag(){dataLayer.push(arguments);}
-                                    gtag('js', new Date());
-
-                                    gtag('config', 'UA-206088285-1');`}}
-                />
-
             </div>
         )
     }
