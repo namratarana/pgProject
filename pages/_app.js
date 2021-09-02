@@ -1,4 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css"
+
 import "../styles/globals.css" // After bootstrap
 // import './App.scss';
 
@@ -18,6 +19,7 @@ import "../styles/ErrorPage.css"
 import "../styles/ProductCard.css"
 import "../styles/Claims.css"
 import "../styles/SDSModal.css"
+import "../styles/header1.css"
 
 
 function MyApp({ Component, pageProps }) {

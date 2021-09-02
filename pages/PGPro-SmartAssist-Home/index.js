@@ -1,7 +1,11 @@
 import React from "react"
 import Link from "next/link"
+
 import Footer from "../../components/Footer"
 import {useEffect} from 'react';
+import Header1 from "../../components/header1";
+import Body from "../../components/body";
+
 
 function LandingPage()
 {
@@ -14,7 +18,7 @@ function LandingPage()
             <div className="main">
 
            
-                <div className="banner mx-auto">
+                {/* <div className="banner mx-auto">
                     <picture className="banner-picture">
                         <source
                             srcSet="https://res.cloudinary.com/mtree/w_1200,q_auto:eco,f_auto,dpr_auto/PGPro_US/3ByInDeaGfdemUNc0GewSN/9e0b1918a1196a6b2a2e03f02149e2e2/Home-Banner_2x__1_.jpg 1200w,
@@ -58,9 +62,10 @@ function LandingPage()
                             By answering this questionnaire, I confirm that I am at least 18 years of age and that I have read and agree to the <a href={process.env.TERMS_AND_CONDITIONS} target="_blank" className="landingPrivacyLinks event_outbound_link" rel="noopener" data-action-detail={process.env.TERMS_AND_CONDITIONS}>P&amp;G Terms and Conditions</a> and <a href={process.env.PRIVACY_POLICY} className="landingPrivacyLinks event_outbound_link" target="_blank" rel="noopener" data-action-detail={process.env.PRIVACY_POLICY}>P&amp;G Privacy</a>.
                         </div>
                     </div>
-                </div>
-
-                <Footer />
+                </div> */}
+                <Header1/>
+                <Body/>
+                {/* <Footer /> */}
             </div>
         )
     }

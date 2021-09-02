@@ -1,5 +1,6 @@
 import React from "react"
 import Head from "next/head"
+
 import { createMemoryHistory } from "history"
 import LandingPage from "./PGPro-SmartAssist-Home/index"
 
