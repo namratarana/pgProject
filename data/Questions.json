@@ -158,30 +158,9 @@
                     }
                 ]
             },
+            
             {
                 "index": 2,
-                "id": "qFamiliarity",
-                "Type": "singleSelect",
-                "Icon":"../icons/WashHands.svg",
-                "Question": "How familiar are you with cleaning products and procedures?",
-                "Note": "We ask because we want to know if we should provide additional cleaning procedures and ready to use items in your selection.",
-                "Answers": [
-                    {
-                        "Answer": "Not that familiar",
-                        "FriendlyMessage": "Not that familiar? No worries! We can help with that."
-                    },
-                    {
-                        "Answer": "Somewhat familiar",
-                        "FriendlyMessage": "Somewhat familiar. You know a little, but we can help with the rest."
-                    },
-                    {
-                        "Answer": "Very familiar",
-                        "FriendlyMessage": "Very familiar. You are a cleaning pro!"
-                    }
-                ]
-            },
-            {
-                "index": 3,
                 "id": "qImportant",
                 "Type": "multiSelect",
                 "Icon":"../icons/CleaningBucket.svg",
@@ -210,7 +189,7 @@
                 ]
             },
             {
-                "index": 4,
+                "index": 3,
                 "id": "qTypeCleaner",
                 "Type": "singleSelect",
                 "Icon":"../icons/Clipboard.svg",
@@ -235,7 +214,7 @@
                 ]
             },
             {
-                "index": 5,
+                "index": 4,
                 "id": "qPrimaryAreas",
                 "Type": "multiSelect",
                 "Icon":"../icons/Checks.svg",
@@ -273,7 +252,7 @@
                 ]
             },
             {
-                "index": 6,
+                "index": 5,
                 "id": "qTensions",
                 "Type": "multiSelect",
                 "Icon":"../icons/QuestionMark.svg",

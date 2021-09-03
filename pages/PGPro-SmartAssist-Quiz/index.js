@@ -266,7 +266,8 @@ export class Questions extends React.PureComponent {
     let BT = answersChosen[0];
     let SBT = subAnswerChosen;
     let BS = answersChosen[1];
-    let PA = answersChosen[5];
+    let PA = answersChosen[4];
+    console.log("***PA****",PA);
     var data = [];
 
     const result1 = ProductRecommendationData.filter((x) =>
