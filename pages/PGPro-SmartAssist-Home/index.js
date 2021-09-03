@@ -5,6 +5,7 @@ import Footer from "../../components/Footer"
 import {useEffect} from 'react';
 import Header1 from "../../components/header1";
 import Body from "../../components/body";
+import Footer1 from "../../components/footer1";
 
 
 function LandingPage()
@@ -65,7 +66,7 @@ function LandingPage()
                 </div> */}
                 <Header1/>
                 <Body/>
-                {/* <Footer /> */}
+                <Footer1/>
             </div>
         )
     }

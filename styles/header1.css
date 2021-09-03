@@ -2,6 +2,7 @@
 {
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 10vh !important;
 }
 .nav-content
 {
@@ -21,6 +22,7 @@
     background: rgba(250, 59, 30, 0.9);
     font-size: 0.9rem;
     text-align: justify;
+    font-weight: 400;
 }
 .card-col2
 {
@@ -41,4 +43,68 @@
 {
     margin-bottom: 10px;
     margin-left: 20px;
+}
+.lower-body-title
+{
+    text-align: center;
+    font-family: Arial MT;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 4rem;
+    color: black;
+}
+.back-img1
+{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/Rectangle1.png');
+    background-size: cover;
+    height: 45vh;
+}
+.back-img2
+{
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/image 23.png');
+    background-size: cover;
+    height: 45vh;
+}
+.back-img3
+{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/Rectangle 6.png');
+    background-size: cover;
+    height: 45vh;
+}
+.back-img4
+{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/image 38.png');
+    background-size: cover;
+    height: 45vh;
+    
+}
+.upper-body
+{
+    height: 90vh !important;
+}
+
+.headerLogo{
+    width:6rem;
+    height:6rem;
+    cursor: pointer;    
+    margin-top:12vh;
+    
+    /* margin-bottom:5vh; */
+    /* justify-content: center; */
+  }
+
+.pg-logo
+{
+    position: absolute;
+    width: 100vw;
+    z-index: 1000;
+
+}
+.image-text
+{
+    top: 0px;
+    color: white ;
+    text-align: center;
+    width: 100vw;
+    height: 90vh;
 }

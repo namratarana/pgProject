@@ -12,7 +12,7 @@ import "../styles/LandingPage.css"
 import "../styles/Question.css"
 import "../styles/Button.css"
 import "../styles/EmailResults.css"
-import "../styles/Header.css"
+// import "../styles/Header.css"
 import "../styles/AnswerSelection.css"
 import "../styles/Recommendations.css"
 import "../styles/ErrorPage.css"
@@ -20,6 +20,8 @@ import "../styles/ProductCard.css"
 import "../styles/Claims.css"
 import "../styles/SDSModal.css"
 import "../styles/header1.css"
+import "../styles/footer1.css"
+
 
 
 function MyApp({ Component, pageProps }) {
