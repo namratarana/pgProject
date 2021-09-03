@@ -86,7 +86,7 @@ const Recommendations = (props) => {
         let answerChosen = localStorage.getItem('answerChosen');
         if(!RecommendedProducts)
         {
-            Router.push('/PGPro-SmartAssist-Quiz')
+            Router.push('/')
         }
         else
         {
