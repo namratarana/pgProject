@@ -15,18 +15,33 @@ function Error({ statusCode, pathname }) {
 // ]console.log('locationPath:', location.pathname);
     if(Router.asPath === '/PGPro-SmartAssist-Quiz')
     {
-      return(<Quiz/>)
+      Router.push('/PGPro-SmartAssist-Quiz')
+      return true;
     }
     else if(Router.asPath === '/PGPro-SmartAssist-Recommendations')
     {
-      return(<Recommendations/>)
+      Router.push('/PGPro-SmartAssist-Recommendations')
+      return true;
+    }
+    else if(Router.asPath === '/')
+    {
+      Router.push('/')
+      return true;
     }
     else
     {
-      return (
-
-      <ErrorPage/>
-    )
+      console.log("asPath:", Router.asPath);
+      if(Router.asPath !="/" && Router.asPath !="PGPro-SmartAssist-Quiz" && Router.asPath !="/PGPro-SmartAssist-Recommendations")
+      {
+        return(
+          <ErrorPage/>
+        )
+      }
+      else
+      {
+        return true;
+      }
+      
     }
 }
 
