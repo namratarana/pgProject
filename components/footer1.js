@@ -6,11 +6,11 @@ function Footer1() {
     <div className="container mb-5">
       <div className="d-none d-sm-block">
         {/* 3 circles */}
-        <div className="mt-5 d-flex justify-content-center">
+        <div className="mt-4 d-flex justify-content-center">
             <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="32"
-            height="32"
+            width="25"
+            height="25"
             fill="currentColor"
             class="bi bi-circle me-3"
             viewBox="0 0 16 16"
@@ -20,8 +20,8 @@ function Footer1() {
             </svg>
             <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="32"
-            height="32"
+            width="25"
+            height="25"
             fill="currentColor"
             class="bi bi-circle me-3"
             viewBox="0 0 16 16"
@@ -31,8 +31,8 @@ function Footer1() {
             </svg>
             <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="32"
-            height="32"
+            width="25"
+            height="25"
             fill="currentColor"
             class="bi bi-circle"
             viewBox="0 0 16 16"
@@ -42,7 +42,7 @@ function Footer1() {
             </svg>
         </div>
         {/* 2 logos */}
-        <div className="mt-4">
+        <div className="mt-3">
             <img
             src="https://res.cloudinary.com/mtree/q_auto:eco,f_auto,dpr_auto/PGPro_US/5lghEdWm63oI9O5oFSX88E/81f00aaa973994c1230734017fd999e2/bbb.png"
             alt="BBB Accredited Business"
@@ -84,7 +84,7 @@ function Footer1() {
         <p>Your digital warehouse for images, documents, videos, training and other
             PGPro resources.
         <Link href="/PGPro-SmartAssist-Quiz" >
-            <a className="start-link"><span className="d-block d-sm-none"><br/></span><b>Get Started</b></a>
+            <a className="start-link"><span className="d-block d-sm-none" style={{marginTop:"1%"}}><br/></span><b>Get Started</b></a>
         </Link> 
         </p>
       </div>
@@ -102,8 +102,8 @@ function Footer1() {
         <div className="mt-5 d-flex align-content-center justify-content-center">
             <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="32"
-            height="32"
+            width="25"
+            height="25"
             fill="currentColor"
             class="bi bi-circle me-3"
             viewBox="0 0 16 16"
@@ -113,8 +113,8 @@ function Footer1() {
             </svg>
             <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="32"
-            height="32"
+            width="25"
+            height="25"
             fill="currentColor"
             class="bi bi-circle me-3"
             viewBox="0 0 16 16"
@@ -124,8 +124,8 @@ function Footer1() {
             </svg>
             <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="32"
-            height="32"
+            width="25"
+            height="25"
             fill="currentColor"
             class="bi bi-circle"
             viewBox="0 0 16 16"
@@ -134,11 +134,11 @@ function Footer1() {
             <circle cx="8" cy="8" r="8" />
             </svg>
         </div>
-        <div  style={{backgroundColor:"black", fontWeight:500}}>
+        <div  style={{backgroundColor:"#231F20", fontWeight:500}}>
             <hr/>
         </div>
         {/* 2 logos */}
-        <div className="mt-4">
+        <div className="mt-3">
             <img
             src="https://res.cloudinary.com/mtree/q_auto:eco,f_auto,dpr_auto/PGPro_US/5lghEdWm63oI9O5oFSX88E/81f00aaa973994c1230734017fd999e2/bbb.png"
             alt="BBB Accredited Business"
