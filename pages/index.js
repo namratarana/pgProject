@@ -28,7 +28,8 @@ class App extends React.Component {
                             'GoogleAnalyticsReportingView': '237254869',
                             'ConsentOverlay':'OneTrust',
                             'SitePrivacyProtection':'CCPA',
-                            'ConsentOverlayID':'a7ef1dc1-71f6-4852-b52c-340565acbda4'
+                            'ConsentOverlayID':'a7ef1dc1-71f6-4852-b52c-340565acbda4',
+                            'BINPlatform':'PriceSpider'
                             },
                             'user': {
                             'id': '',

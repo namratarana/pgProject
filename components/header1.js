@@ -25,7 +25,7 @@ function Header1() {
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="d-flex justify-content-end nav-content align-items-center" style={{marginRight:'7%'}}>
                 <ul class="navbar-nav">
-                  <li class="nav-item">
+                  <li class="nav-item text-dark">
                     <a class="nav-link active nav-text-style" aria-current="page" href="#">Home</a>
                   </li>
                   <li class="nav-item">

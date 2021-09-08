@@ -57,25 +57,25 @@ function Footer1() {
       </div>
 
       <div class="row my-4">
-        <div className="col-md-auto col-12 d-flex justify-content-evenly fw-bold">
+        <div className="col-md-auto col-12 d-flex justify-content-evenly fw-bold sm-items">
           About Us
         </div>
-        <div className="col-md-auto col-12 d-flex justify-content-evenly fw-bold">
+        <div className="col-md-auto col-12 d-flex justify-content-evenly fw-bold sm-items">
           Contact Us
         </div>
-        <div className="col-md-auto col-12 d-flex justify-content-evenly fw-bold">
+        <div className="col-md-auto col-12 d-flex justify-content-evenly fw-bold sm-items">
           Privacy
         </div>
-        <div className="col-md-auto col-12 d-flex justify-content-evenly fw-bold">
+        <div className="col-md-auto col-12 d-flex justify-content-evenly fw-bold sm-items">
           CA Privacy
         </div>
-        <div className="col-md-auto col-12 d-flex justify-content-evenly fw-bold">
+        <div className="col-md-auto col-12 d-flex justify-content-evenly fw-bold sm-items">
           Terms & Conditions
         </div>
-        <div className="col-md-auto col-12 d-flex justify-content-evenly fw-bold">
+        <div className="col-md-auto col-12 d-flex justify-content-evenly fw-bold sm-items">
           Do Not Sell My Personal Information
         </div>
-        <div className="col-md-auto col-12 d-flex justify-content-evenly fw-bold">
+        <div className="col-md-auto col-12 d-flex justify-content-evenly fw-bold sm-items">
           Sitemap
         </div>
       </div>
