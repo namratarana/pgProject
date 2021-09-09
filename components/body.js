@@ -1,6 +1,5 @@
 import React from 'react'
-// import Rec1 from '/static/Rectangle1.png'
-import Image from 'next/image';
+import Link from 'next/link'
 
 function Body() {
     return (
@@ -19,23 +18,25 @@ function Body() {
 
                 
                 <div className="position-absolute image-text d-flex  align-items-center justify-content-center">
-                    <div class="card main-card" style={{width: "30rem" ,height:"25rem"}}>
+                    <div class="card main-card " style={{width: "45rem" ,height:"34rem"}}>
                         <div class="card-body">
-                            <p className="body-card-title text-whites">
+                            <p className="body-card-title text-whites mt-2 fs-2">
                                 Personalized Cleaning 
                                 <br/>
-                                Recommendations for your Business
+                                Recommendations for Your Business
                             </p>
-                            <div className="justify-content-center d-none d-sm-block" style={{width:'35 vw',height:'2px',backgroundColor:'#FED103'}}>
-                                <hr/>
-                            </div>      
+                            <div className="d-flex justify-content-center">
+                                <div className="d-none d-sm-block" style={{width:'45vw',height:'3px',backgroundColor:'#FED103'}}>
+                                    
+                                </div> 
+                            </div>     
 
-                            <p className="body-card-text d-flex justify-content-center text-whites pt-4">
+                            <p className="body-card-text bullets d-flex justify-content-center pe-4 text-whites fs-4 pt-4">
                                 Answer a few questions to receive:
                             </p>
 
-                           <div className="d-flex justify-content-center">
-                            <ul className="body-card-text text-whites ">
+                           <div className="d-flex justify-content-center ">
+                            <ul className="body-card-text text-whites fs-4 list-points">
                                     <li className="text-start fw-bold">
                                         personalized product recommendations                                     
                                     </li>
@@ -48,10 +49,9 @@ function Body() {
                                 </ul>
                             </div>
                     
-                            
-                            
-                            <button type="button" class="btn btn-outline-dark btn-sm rounded-pill w-60 start-button">Get Started</button>
-                        
+                            <Link href="/PGPro-SmartAssist-Quiz" >
+                                <button type="button" class="btn btn-outline-dark btn-sm rounded-pill fw-bold w-50 start-button">Get Started</button>
+                            </Link>
                             <div className="body-card-text2 d-flex justify-content-center ">
                                 <div className="w-60">
                                     <p className="text-whites d-none d-sm-block">
@@ -59,9 +59,11 @@ function Body() {
                                     </p>
                                 </div>
                             </div>
-                            <h5 className="body-card-footer text-whites">
-                                Join <i className="fw-bold fst-italic ">2000+ Business Owners </i> who benefitted from SmartAssist!
-                            </h5>
+                            <div className="d-flex justify-content-center">
+                                <p className="body-card-footer text-whites ">
+                                    Join <i className="fw-bold fst-italic ">2000+ Business Owners </i> who benefitted from SmartAssist!
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -71,12 +73,12 @@ function Body() {
             
 
             <section className="lower-body">
-                <h3 className="lower-body-title">
+                <p className="lower-body-title fw-bold">
                     Inside the SmartAssist
-                </h3>
+                </p>
                 <div className="d-flex justify-content-center d-block d-sm-none">
-                    <div className=" w-60 " style={{height:'2px',backgroundColor:'#FED103'}}>
-                            <hr/>
+                    <div className=" w-75 " style={{marginTop:'-10px', height:'2px',backgroundColor:'#FED103'}}>
+                        
                     </div>
                 </div>
                 <div className="container ">
@@ -186,7 +188,6 @@ function Body() {
                                     </div>
                                 </div>
                                 <div className="text-center d-block d-sm-none " style={{width:'100%',height:'2px',backgroundColor:'#003E7E'}}>
-                                    <hr/>
                                 </div>
                                 <div class="accordion-item  vw-100">
                                     <h2 class="accordion-header" id="headingTwo">
@@ -201,7 +202,6 @@ function Body() {
                                     </div>
                                 </div>
                                 <div className="text-center d-block d-sm-none " style={{width:'100%',height:'2px',backgroundColor:'#003E7E'}}>
-                                    <hr/>
                                 </div>
                                 <div class="accordion-item  vw-100">
                                     <h2 class="accordion-header" id="headingThree">
@@ -216,17 +216,19 @@ function Body() {
                                         </div>
                                     </div>
                                 </div>
+                                <div className="text-center d-block d-sm-none " style={{width:'100%',height:'2px',backgroundColor:'#003E7E'}}></div>
                             </div>
                         </div>
                     </div>
 
                 <div className="container">
-                    <p className="fw-bold mt-3">
+                    <h4 className="fw-bold text-center recommedation-text mt-3">
                         Receive Your Product Recommendations Now 
-                    </p>
-                    <div className="d-flex justify-content-center mt-3  w-60">
-                    
-                        <button type="button" class="btn rounded-pill start-button ">Get Started</button>
+                    </h4>
+                    <div className="d-flex justify-content-center mt-3 w-100">
+                        <Link href="/PGPro-SmartAssist-Quiz" >
+                            <button type="button" class="btn btn-outline-dark btn-sm rounded-pill fw-bold w-30 footer-start-buttton start-button">Get Started</button>
+                        </Link>
                     </div>
                     
                 </div>

@@ -23,7 +23,7 @@ class App extends React.Component {
                             'SiteTechnicalAgency': 'Capgemini',
                             'SiteStatus': 'Live',
                             'SiteLocalContainer': '',
-                            'GoogleAnalyticsLocal': 'UA-40283704-12',
+                            'GoogleAnalyticsLocal': 'UA-40283704-12', 
                             'GoogleAnalyticsSiteSpeedSampleRate': 'high',
                             'GoogleAnalyticsReportingView': '237254869',
                             'ConsentOverlay':'OneTrust',
