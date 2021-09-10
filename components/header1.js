@@ -23,7 +23,7 @@ function Header1() {
               </button>
 
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="d-flex justify-content-md-end justify-content-start">
+                <div class="d-flex justify-content-md-end justify-content-start w-100">
                   <ul class="navbar-nav ">
                       <li class="nav-item" >
                           <a class="nav-link active header-lists " aria-current="page" href="#">Home</a>
