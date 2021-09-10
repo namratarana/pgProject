@@ -6,7 +6,7 @@
 }
 .nav-content
 {
-    width: 95vw;
+    width: 88vw;
     color: #3767BA;
 
 
@@ -19,10 +19,14 @@
 }
 .card-col1
 {
-    background: rgba(250, 59, 30, 0.9);
+    background: #003E7E;
     font-size: 0.9rem;
     text-align: justify;
     font-weight: 400;
+    font-family: Arial MT;
+    padding-left: 3%;
+    padding-right: 3%;
+    
 }
 .card-col2
 {
@@ -32,24 +36,45 @@
     font-family: Arial MT;
     font-weight: 400;
     font-style: normal;
+    color: black;
+    padding-left: 3%;
+    padding-right: 3%;  
+    ;
 }
 .card-col3
 {
-    background: rgba(0, 170, 231, 0.9);
+    background: #003E7E;
     font-size: 0.9rem;
     text-align: justify;
+    font-family: Arial MT;
+    font-weight: 400;
+    padding-left: 3%;
+    padding-right: 3%; 
 }
 .card-button
 {
     margin-bottom: 10px;
-    margin-left: 20px;
+    margin-left: 20px;   
 }
+.start-button
+{
+    color: #FFFFFF;
+    background-color:  #006FBA;
+    border-color:  #006FBA;
+    font-size: 1rem;
+    height: 2.5rem;
+    width: 60% !important;
+    
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
 .lower-body-title
 {
     text-align: center;
-    font-family: Arial MT;
+    /* font-family: Arial MT; */
     font-weight: 700;
     font-style: normal;
+    padding-top: 3%;
     line-height: 4rem;
     color: black;
 }
@@ -67,13 +92,13 @@
 }
 .back-img3
 {
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/Rectangle 6.png');
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/bending by window.png');
     background-size: cover;
     height: 45vh;
 }
 .back-img4
 {
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/image 38.png');
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/vague woman.png');
     background-size: cover;
     height: 45vh;
     
@@ -84,10 +109,10 @@
 }
 
 .headerLogo{
-    width:6rem;
-    height:6rem;
+    width:3rem;
+    height:3.5rem;
     cursor: pointer;    
-    margin-top:12vh;
+    
     
     /* margin-bottom:5vh; */
     /* justify-content: center; */
@@ -97,7 +122,7 @@
 {
     position: absolute;
     width: 100vw;
-    z-index: 1000;
+    z-index: 100;
 
 }
 .image-text
@@ -107,4 +132,103 @@
     text-align: center;
     width: 100vw;
     height: 90vh;
+}
+.body-card-title
+{
+    color:#003E7E;
+    padding-top: 10% ;
+    padding-left: 16%;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.body-card-text
+{
+    color: black;
+    padding-left: 7%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-style: normal;
+}
+.body-card-text2
+{
+    color: black;
+    font-size: 0.6rem;
+    padding-top: 4%;
+    font-weight: bold;
+    font-style: normal;
+  
+  
+}
+.body-card-footer
+{
+    color: black;
+     padding-top: 37%; 
+    text-align: center;
+    font-style: italic;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    
+}
+
+.w-60
+{
+    width: 60% !important;
+}
+.w-40
+{
+    width: 40% !important;
+}
+.nav-text-style
+{
+    color : #003E7E !important;
+    font-family: Arial Rounded MT;
+    font-style: normal;
+    font-weight: 800;
+}
+
+.micro{
+    width: 105rem;
+}
+
+.macro{
+    width: 114rem;
+}
+
+.img{
+    padding-top: 27%;
+}
+
+.span{
+    width: 118rem;
+}
+
+.card-body{
+    
+}
+
+.smart{
+    margin-right: 20%;
+    font-size: 1.5rem;
+}
+/* ******************************************** */
+
+.nav-shadow
+{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.header-title
+{
+    color:#003E7E;
+    font-family: Arial Rounded MT;
+    font-weight: 1000;
+}
+.header-lists
+{
+    color: #003E7E !important;
+    font-family: Arial !important;
+    font-weight: 700;
 }

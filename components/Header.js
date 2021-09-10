@@ -13,7 +13,7 @@ export default function Header() {
                         alt="PG Professional logo"
                     />
                 </Link>
-                <span className="headerText pl-2">PGP SmartAssist</span>
+                <span className="headerText pl-5">PGP SmartAssist</span>
             </div>
             <div className="col-md-6"></div>
         </div>
