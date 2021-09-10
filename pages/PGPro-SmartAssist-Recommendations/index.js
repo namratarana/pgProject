@@ -132,7 +132,7 @@ const Recommendations = (props) => {
                     {answersChosen?<Result
                         BT={answersChosen[0]}
                         BS={businessSizeMapping(answersChosen[1])}
-                        Tens={answersChosen[6]}
+                        Tens={answersChosen[5]}
                         productResult={props.productResult}
                         
                     //   sizeDataResult={this.state.sizeDataResult}

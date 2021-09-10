@@ -47,7 +47,8 @@
 .checkBox {
   width: 18px;
   height: 18px;
-  background: #9a9a9a;
+  background:white;
+  border-color: black;
 }
 .checkBoxLabel {
   font-style: normal;
