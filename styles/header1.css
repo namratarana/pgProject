@@ -116,25 +116,36 @@
 .back-img1
 {
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/Rectangle1.png');
-    background-size: cover;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
     height: 60vh;
 }
 .back-img2
 {
     background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/image 23.png');
-    background-size: cover;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
     height: 60vh;
 }
 .back-img3
 {
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/bending by window.png');
-    background-size: cover;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
     height: 60vh;
 }
 .back-img4
 {
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/vague woman.png');
-    background-size: cover;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
     height: 60vh;
     
 }
@@ -333,4 +344,23 @@
 {
     padding:0.8rem 1.25rem !important;
     align-items: center;
+}
+
+/* ******************************************** */
+
+.nav-shadow
+{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important; 
+}
+.header-title
+{
+    color:#003E7E;
+    font-family: Arial Rounded MT;
+    font-weight: 1000;
+}
+.header-lists
+{
+    color: #003E7E !important;
+    font-family: Arial !important;
+    font-weight: 700;
 }
