@@ -1,0 +1,224 @@
+.home-image-text
+{
+    position: absolute;
+    top: 0px;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+    width: 100vw;
+    height: 100%;
+}
+.card
+{
+    border: 0px !important;
+}
+.custom-card-title
+{
+    font-size: 2.3rem;
+    color:#003E7E;
+    font-weight: 600;
+    margin-bottom: -1px;
+}
+.custom-card
+{
+    background-color: rgba(255, 255, 255, 0.897);
+}
+.custom-card-head
+{
+    font-size: 1.3rem;
+    padding-left: 2rem;
+}
+.custom-card-lists
+{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.custom-bullets
+{
+    padding-left: 2rem;   
+}
+.start-button
+{
+    width: 20rem;
+    height: 3.5rem;
+    background: #006FBA;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.3rem;  
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);  
+}
+.custom-card-footer
+{
+    font-size: 1.3rem;
+}
+
+.disclaimer
+{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+@media only screen and (max-width : 426px)
+{
+    .custom-card
+    {
+        background-color: transparent;
+    }
+    .custom-card-title
+    {
+        font-size: 1.6rem;
+        color: white;
+        line-height: 2rem;
+        font-weight: 300;
+        margin-top: 2rem;
+    }
+    .custom-card-lists
+    {
+        font-size: 0.85rem;
+        color: white;
+    }
+    .custom-card-head
+    {
+        margin-top: 1rem;
+        font-size: 1rem;
+        color: white;
+        padding-left: 10px;
+    }
+    .custom-bullets
+    {
+        padding-left: 0rem;
+    }
+    .start-button
+    {
+        width:12rem;
+        height: 2.3rem;
+        font-size: 1rem;
+        margin-bottom: 0.7rem;
+    }
+    .custom-card-footer
+    {
+        width: 14rem;
+        font-size: 0.7rem;
+        color: white;       
+    }
+}
+@media only screen and (max-width:1024px) and (min-width:768px)
+{
+    
+    .custom-card-title
+    {
+        font-size: 1.8rem;
+        /* color: white; */
+        line-height: 2.8rem;
+        font-weight: 300;
+    }
+    .custom-card-lists
+    {
+        font-size: 0.85rem;
+        /* color: white; */
+    }
+    .custom-card-head
+    {
+        margin-top: 1rem;
+        font-size: 1rem;
+        /* color: white; */
+        padding-left: 10px;
+    }
+    .custom-bullets
+    {
+        padding-left: 0rem;
+    }
+    .start-button
+    {
+        width:12rem;
+        height: 2.3rem;
+        font-size: 1rem;
+        /* margin-bottom: 0.7rem; */
+    }
+    .custom-card-footer
+    {
+        font-size: 1rem;
+        /* color: white;        */
+    }
+    .disclaimer
+    {
+        width: 16rem !important;
+        font-size: 0.5rem !important;
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media only screen and (max-width : 768px ) and (min-width : 426px)
+{
+    .custom-card
+    {
+        background-color: transparent;
+    }
+    .custom-card-title
+    {
+        font-size: 3rem;
+        color: white;
+        line-height: 3.5rem;
+        font-weight: 500;
+    }
+    .custom-card-lists
+    {
+        font-size: 1.4rem;
+        color: white;
+    }
+    .custom-card-head
+    {
+        margin-top: 3rem;
+        font-size: 1.9rem;
+        color: white;
+        padding-left: 18px;
+    }
+    .custom-bullets
+    {
+        padding-left: 3rem;
+    }
+    .start-button
+    {
+        width:20rem;
+        height: 4rem;
+        font-size: 1.4rem;
+        margin-top: 1.5rem ;
+    }
+    .custom-card-footer
+    {
+        width: 22rem;
+        font-size: large;
+        color: white;       
+    }
+}
+@media only screen and (max-width:320px)
+{
+    .custom-card-title
+    {
+        font-size: 1rem;
+        line-height: 6mm;
+    }
+    .custom-card-lists
+    {
+        font-size: 0.6rem;
+        color: white;
+    }
+    .custom-card-head
+    {
+        margin-top: 1rem;
+        font-size: 0.8rem;
+        color: white;
+        padding-left: 10px;
+    }
+    .start-button
+    {
+        width:8rem;
+        height: 1.8rem;
+        font-size: 0.7rem;
+        margin-bottom: 0.5rem;
+    }
+    .custom-card-footer
+    {
+        width: 10rem;
+        font-size: xx-small;
+        color: white;       
+    }
+}

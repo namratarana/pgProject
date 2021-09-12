@@ -1,74 +1,90 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
-function Body() {
+function Body2() {
     return (
         <div>
-            <section className="upper-body position-relative"> 
+           
+          
+           <section className="position-relative">
+        <div className="row g-0 row-cols-lg-2 row-cols-1" style={{}}>
+            <div className="col" style={{marginBottom:"-10px"}}>
+                <Image src="/Images/image1.png" width='1280px' height='720px'/>
+            </div>
+            <div className="col d-lg-block d-none" style={{marginBottom:"-10px"}}>
+                <Image src="/Images/image2.png" width='1280x' height='720px'/>
+            </div>
+        
+            <div className="col  d-lg-block d-none" style={{marginBottom:"-10px"}}>
+                <Image src="/Images/image3.png" width='1280x' height='720px'/>   
+            </div>
+            <div className="col" style={{marginBottom:"-10px"}}>
+                <Image src="/Images/image4.png" width='1280x' height='720px'/>
+            </div>
+        </div>
 
-                <div className="row">
-                    <div className="col-md-6 back-img1 "/>
-                    <div className="col-md-6 back-img2 d-none d-sm-block "/>
-                </div>
 
-                <div className="row ">
-                    <div className="col-md-6 back-img3 d-none d-sm-block "/>
-                    <div className="col-md-6 back-img4 "/>
-                </div>
-
-                
-                <div className="position-absolute image-text d-flex  align-items-center justify-content-center">
-                    <div class="card main-card " style={{width: "45rem" ,height:"34rem"}}>
+        <div className="home-image-text">
+            <div className="d-flex justify-content-center h-100 align-items-center ">
+                <div class="card custom-card px-4 py-3" >
                         <div class="card-body">
-                            <p className="body-card-title text-whites mt-2 fs-2">
+                            <p className="custom-card-title text-center">
                                 Personalized Cleaning 
                                 <br/>
                                 Recommendations for Your Business
                             </p>
-                            <div className="d-flex justify-content-center">
-                                <div className="d-none d-sm-block" style={{width:'45vw',height:'3px',backgroundColor:'#FED103'}}>
-                                    
-                                </div> 
-                            </div>     
+                          
+                            <div className="d-lg-block d-none">
+                                <p style={{backgroundColor:"#FED103", height:"3.5px"}}/>
+                            </div>
+                            
+                            <div className="custom-bullets">
+                                <p className="fw-bold custom-card-head">
+                                    Answer a few questions to receive:
+                                </p>
 
-                            <p className="body-card-text bullets d-flex justify-content-center pe-4 text-whites fs-4 pt-4">
-                                Answer a few questions to receive:
-                            </p>
-
-                           <div className="d-flex justify-content-center ">
-                            <ul className="body-card-text text-whites fs-4 list-points">
-                                    <li className="text-start fw-bold">
+                           
+                                <ul>
+                                    <li className="custom-card-lists text-start">
                                         personalized product recommendations                                     
                                     </li>
-                                    <li className="text-start fw-bold">
+                                    <li className=" custom-card-lists text-start">
                                         exclusive discounts
                                     </li>
-                                    <li className="text-start fw-bold">
+                                    <li className=" custom-card-lists text-start">
                                         cleaning resources
                                     </li>
                                 </ul>
                             </div>
                     
-                            <Link href="/PGPro-SmartAssist-Quiz" >
-                                <button type="button" class="btn btn-outline-dark btn-sm rounded-pill fw-bold w-50 start-button">Get Started</button>
-                            </Link>
-                            <div className="body-card-text2 d-flex justify-content-center ">
-                                <div className="w-60">
-                                    <p className="text-whites d-none d-sm-block">
-                                        By answering this questionnaire, I confirm that I have read and agree to the P&G Terms and Conditions and P&G Privacy.
-                                    </p>
+                            <div className="text-center">
+                                <Link href="/PGPro-SmartAssist-Quiz" >
+                                    <button type="button" class="btn rounded-pill start-button">Get Started</button>
+                                </Link>  
+                            </div>
+
+                            <div className="d-none d-lg-block">
+                                <div className="row justify-content-center">
+                                    <div className="text-center disclaimer" style={{fontSize:'x-small', width:'20rem'}}>
+                                        <b>
+                                            By answering this questionnaire, I confirm that I have read and agree to the P&G Terms and Conditions and P&G Privacy.
+                                        </b>
+                                    </div>  
                                 </div>
                             </div>
-                            <div className="d-flex justify-content-center">
-                                <p className="body-card-footer text-whites ">
+
+                            <div className="row justify-content-center">
+                                <p className="fst-italic text-center custom-card-footer">
                                     Join <i className="fw-bold fst-italic ">2000+ Business Owners </i> who benefitted from SmartAssist!
                                 </p>
                             </div>
                         </div>
-                    </div>
                 </div>
-                
-            </section>
+            </div>
+        </div>
+        
+      </section>
 
             
 
@@ -82,7 +98,7 @@ function Body() {
                     </div>
                 </div>
                 <div className="container ">
-                    <div className="d-none d-sm-block">
+                    <div className="d-none d-lg-block">
                         <div className="row justify-content-center ">
 
     {/* card1 */}
@@ -170,7 +186,7 @@ function Body() {
                 </div>
                     {/* mobile devices */}
                     
-                <div className="d-block d-sm-none">
+                <div className="d-block d-lg-none">
                         <div className=" row justify-content-center">
                             <div class="accordion accordion-text" id="accordionExample">
                                 <div class="accordion-item vw-100">
@@ -238,4 +254,4 @@ function Body() {
     )
 }
 
-export default Body
+export default Body2
