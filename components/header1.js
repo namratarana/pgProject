@@ -4,7 +4,7 @@ import React from 'react'
 function Header1() {
     return (
       <div>
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light nav-shadow">
           <div class="container-fluid">
             <a class="navbar-brand">
                     <img
