@@ -2,7 +2,7 @@ import React from "react"
 import Head from "next/head"
 
 import { createMemoryHistory } from "history"
-import LandingPage from "./PGPro-SmartAssist-Home/index"
+import LandingPage from "./PGPro-SmartAssist-Home2/index"
 
 class App extends React.Component {
     render() {

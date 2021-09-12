@@ -3,7 +3,7 @@ import Link from "next/link"
 
 import Footer from "../../components/Footer"
 import {useEffect} from 'react';
-import Header1 from "../../components/header1";
+import Header2 from "../../components/header2";
 import Body2 from "../../components/body2";
 import Footer1 from "../../components/footer1";
 
@@ -64,7 +64,7 @@ function LandingPage()
                         </div>
                     </div>
                 </div> */}
-                <Header1/>
+                <Header2/>
                 <Body2/>
                 <Footer1/>
             </div>
