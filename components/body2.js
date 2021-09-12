@@ -8,26 +8,26 @@ function Body2() {
            
           
            <section className="position-relative">
-        <div className="row g-0 row-cols-lg-2 row-cols-1" style={{}}>
-            <div className="col" style={{marginBottom:"-10px"}}>
-                <Image src="/Images/image1.png" width='1280px' height='720px'/>
-            </div>
-            <div className="col d-lg-block d-none" style={{marginBottom:"-10px"}}>
-                <Image src="/Images/image2.png" width='1280x' height='720px'/>
-            </div>
-        
-            <div className="col  d-lg-block d-none" style={{marginBottom:"-10px"}}>
-                <Image src="/Images/image3.png" width='1280x' height='720px'/>   
-            </div>
-            <div className="col" style={{marginBottom:"-10px"}}>
-                <Image src="/Images/image4.png" width='1280x' height='720px'/>
-            </div>
-        </div>
+                <div className="row g-0 row-cols-lg-2 row-cols-1" style={{}}>
+                    <div className="col" style={{marginBottom:"-10px"}}>
+                        <Image src="/Images/image1.png" width='1280px' height='720px'/>
+                    </div>
+                    <div className="col d-lg-block d-none" style={{marginBottom:"-10px"}}>
+                        <Image src="/Images/image2.png" width='1280x' height='720px'/>
+                    </div>
+                
+                    <div className="col  d-lg-block d-none" style={{marginBottom:"-10px"}}>
+                        <Image src="/Images/image3.png" width='1280x' height='720px'/>   
+                    </div>
+                    <div className="col" style={{marginBottom:"-10px"}}>
+                        <Image src="/Images/image4.png" width='1280x' height='720px'/>
+                    </div>
+                </div>
 
 
-        <div className="home-image-text">
-            <div className="d-flex justify-content-center h-100 align-items-center ">
-                <div class="card custom-card px-4 py-3" >
+                <div className="home-image-text">
+                <div className="d-flex justify-content-center h-100 align-items-center ">
+                    <div class="card custom-card px-4 py-3" >
                         <div class="card-body">
                             <p className="custom-card-title text-center">
                                 Personalized Cleaning 
@@ -80,20 +80,20 @@ function Body2() {
                                 </p>
                             </div>
                         </div>
+                    </div>
                 </div>
-            </div>
-        </div>
+             </div>
         
-      </section>
+            </section>
 
             
 
-            <section className="lower-body">
+            <section>
                 <p className="lower-body-title fw-bold">
                     Inside the SmartAssist
                 </p>
-                <div className="d-flex justify-content-center d-block d-sm-none">
-                    <div className=" w-75 " style={{marginTop:'-10px', height:'2px',backgroundColor:'#FED103'}}>
+                <div className="d-flex justify-content-center  d-block d-lg-none">
+                    <div className="w-75 lower-body-ruler" style={{marginTop:'-10px', height:'2px',backgroundColor:'#FED103'}}>
                         
                     </div>
                 </div>
@@ -191,7 +191,7 @@ function Body2() {
                             <div class="accordion accordion-text" id="accordionExample">
                                 <div class="accordion-item vw-100">
                                     <h2 class="accordion-header" id="headingOne">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                                             <b>What is it?</b>
                                         </button>
                                     </h2>
@@ -203,7 +203,7 @@ function Body2() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="text-center d-block d-sm-none " style={{width:'100%',height:'2px',backgroundColor:'#003E7E'}}>
+                                <div className="text-center d-block d-lg-none " style={{width:'100%',height:'2px',backgroundColor:'#003E7E'}}>
                                 </div>
                                 <div class="accordion-item  vw-100">
                                     <h2 class="accordion-header" id="headingTwo">
@@ -217,7 +217,7 @@ function Body2() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="text-center d-block d-sm-none " style={{width:'100%',height:'2px',backgroundColor:'#003E7E'}}>
+                                <div className="text-center d-block d-lg-none " style={{width:'100%',height:'2px',backgroundColor:'#003E7E'}}>
                                 </div>
                                 <div class="accordion-item  vw-100">
                                     <h2 class="accordion-header" id="headingThree">
@@ -232,18 +232,18 @@ function Body2() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="text-center d-block d-sm-none " style={{width:'100%',height:'2px',backgroundColor:'#003E7E'}}></div>
+                                <div className="text-center d-block d-lg-none " style={{width:'100%',height:'2px',backgroundColor:'#003E7E'}}></div>
                             </div>
                         </div>
                     </div>
 
                 <div className="container">
-                    <h4 className="fw-bold text-center recommedation-text mt-3">
+                    <h4 className="fw-bold text-center recommedation-text mt-5">
                         Receive Your Product Recommendations Now 
                     </h4>
-                    <div className="d-flex justify-content-center mt-3 w-100">
+                    <div className="d-flex justify-content-center mt-3 mb-3 w-100">
                         <Link href="/PGPro-SmartAssist-Quiz" >
-                            <button type="button" class="btn btn-outline-dark btn-sm rounded-pill fw-bold w-30 footer-start-buttton start-button">Get Started</button>
+                            <button type="button" class="btn rounded-pill fw-bold w-30 footer-start-buttton start-button">Get Started</button>
                         </Link>
                     </div>
                     

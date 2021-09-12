@@ -99,6 +99,11 @@
         font-size: 0.7rem;
         color: white;       
     }
+    .recommedation-text
+    {
+        font-size: 1.2rem !important;
+        margin-top: 1.8rem !important;
+    }
 }
 @media only screen and (max-width:1024px) and (min-width:768px)
 {
@@ -188,6 +193,23 @@
         font-size: large;
         color: white;       
     }
+    .accordion-button
+    {
+        font-size: x-large ;
+    }
+    .lower-body-title
+    {
+        font-size: xx-large;
+    }
+    .lower-body-ruler
+    {
+        width: 50% !important;
+    }
+    .recommedation-text
+    {
+
+        font-size: 1.8rem !important;
+    }
 }
 @media only screen and (max-width:320px)
 {
@@ -220,5 +242,14 @@
         width: 10rem;
         font-size: xx-small;
         color: white;       
+    }
+    .lower-body-ruler
+    {
+        width: 90% !important;
+    }
+    .recommedation-text
+    {
+        font-size: 0.9rem !important;
+        margin-top: 2rem !important;
     }
 }
