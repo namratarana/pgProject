@@ -85,7 +85,7 @@ function Footer1() {
 
         <div className="custom-center-text" style={{marginTop:"0.5rem"}}>
             <p className="footer-text">Your digital warehouse for images, documents, videos, training and other PGPro resources. 
-            <Link href="/PGPro-lgartAssist-Quiz" >
+            <Link href="/PGPro-SmartAssist-Quiz" >
                 <a className="start-link"><span className="d-block d-lg-none start-link"><br/></span><b> Get Started</b></a>
             </Link> 
             </p>
@@ -142,7 +142,7 @@ function Footer1() {
             </svg>
         </div>
 
-        
+        {/* Horizontal Line */}
         <div className="d-block d-lg-none px-3">
           <p style={{backgroundColor:"black", height:"1px"}}/>
         </div>
