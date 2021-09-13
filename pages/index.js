@@ -1,8 +1,7 @@
 import React from "react"
 import Head from "next/head"
-
 import { createMemoryHistory } from "history"
-import LandingPage from "./PGPro-SmartAssist-Home2/index"
+import LandingPage from "./PGPro-SmartAssist-Home/index"
 
 class App extends React.Component {
     render() {
@@ -23,13 +22,12 @@ class App extends React.Component {
                             'SiteTechnicalAgency': 'Capgemini',
                             'SiteStatus': 'Live',
                             'SiteLocalContainer': '',
-                            'GoogleAnalyticsLocal': 'UA-40283704-12', 
+                            'GoogleAnalyticsLocal': 'UA-40283704-12',
                             'GoogleAnalyticsSiteSpeedSampleRate': 'high',
                             'GoogleAnalyticsReportingView': '237254869',
                             'ConsentOverlay':'OneTrust',
                             'SitePrivacyProtection':'CCPA',
-                            'ConsentOverlayID':'a7ef1dc1-71f6-4852-b52c-340565acbda4',
-                            'BINPlatform':'PriceSpider'
+                            'ConsentOverlayID':'a7ef1dc1-71f6-4852-b52c-340565acbda4'
                             },
                             'user': {
                             'id': '',
