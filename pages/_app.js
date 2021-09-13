@@ -20,8 +20,11 @@ import "../styles/ProductCard.css"
 import "../styles/Claims.css"
 import "../styles/SDSModal.css"
 import "../styles/header2.css"
+import "../styles/header1.css"
 import "../styles/footer1.css"
 import "../styles/body2.css"
+import "../styles/body1.css"
+
 
 
 

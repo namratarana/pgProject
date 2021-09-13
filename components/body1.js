@@ -9,7 +9,7 @@ function Body1() {
                 <div className="row align-items-center px-3 py-5">
                     <div className="col-lg-5 col-12 offset-lg-1 order-2 order-lg-1">
                         <div >
-                            <p className="custom-card-title d-lg-block d-none">
+                            <p className="custom-card-title1 d-lg-block d-none">
                                 Personalized Cleaning 
                                 <br/>
                                 Recommendations for Your Business
@@ -17,30 +17,30 @@ function Body1() {
                             
                           
                             <div className="d-lg-block d-none">
-                                <p className="yellow-line" style={{backgroundColor:"#FED103",width:"75%", height:"3.5px"}}/>
+                                <p className="yellow-line1" style={{backgroundColor:"#FED103",width:"75%", height:"3.5px"}}/>
                             </div>
                             
-                            <div className="custom-bullets">
-                                <p className="fw-bold custom-card-head">
+                            <div className="custom-bullets1">
+                                <p className="fw-bold custom-card-head1">
                                     Answer a few questions to receive:
                                 </p>
 
                                 <div>
                                     <ul>
-                                        <li className="custom-card-lists text-start">
+                                        <li className="custom-card-lists1 text-start">
                                             personalized product recommendations                                     
                                         </li>
-                                        <li className=" custom-card-lists text-start">
+                                        <li className=" custom-card-lists1 text-start">
                                             exclusive discounts
                                         </li>
-                                        <li className=" custom-card-lists text-start">
+                                        <li className=" custom-card-lists1 text-start">
                                             cleaning resources
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                     
-                            <div className="start-button-pos">
+                            <div className="start-button-pos1">
                                 <Link href="/PGPro-SmartAssist-Quiz" >
                                     <button type="button" class="btn rounded-pill start-button">Get Started</button>
                                 </Link>  
@@ -48,7 +48,7 @@ function Body1() {
 
                             <div className="d-none d-lg-block">
                                 <div className="">
-                                    <div className="disclaimer" style={{fontSize:'x-small', width:'20rem'}}>
+                                    <div className="disclaimer1" style={{fontSize:'x-small', width:'20rem'}}>
                                         <b>
                                             By answering this questionnaire, I confirm that I have read and agree to the P&G Terms and Conditions and P&G Privacy.
                                         </b>
@@ -63,7 +63,7 @@ function Body1() {
 
                     <div className="col-lg-6 col-12 order-1 order-lg-2">
                         <div className="text-center">
-                            <p className="custom-card-title d-lg-none d-block fw-bold">
+                            <p className="custom-card-title1 d-lg-none d-block fw-bold">
                                 Personalized Cleaning 
                                 <br/>
                                 Recommendations for Your Business
@@ -91,7 +91,7 @@ function Body1() {
                     
                 </div>
                 <div className="row justify-content-center">
-                        <p className="fst-italic text-center custom-card-footer">
+                        <p className="fst-italic text-center custom-card-footer1">
                             Join <i className="fw-bold fst-italic ">2000+ Business Owners </i> who benefitted from SmartAssist!
                         </p>
                 </div>

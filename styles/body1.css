@@ -14,7 +14,7 @@
 {
     border: 0px !important;
 }
-.custom-card-title
+.custom-card-title1
 {
     font-size: 1.6rem;
     color:#003E7E;
@@ -25,17 +25,17 @@
 {
     background-color: rgba(255, 255, 255, 0.897);
 }
-.custom-card-head
+.custom-card-head1
 {
     font-size: 1.3rem;
     /* padding-left: 2rem; */
 }
-.custom-card-lists
+.custom-card-lists1
 {
     font-size: 1.2rem;
     font-weight: bold;
 }
-.custom-bullets
+.custom-bullets1
 {
     /* padding-left: 2rem;    */
 }
@@ -50,12 +50,12 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);  
 }
 
-.custom-card-footer
+.custom-card-footer1
 {
     font-size: 1.3rem;
 }
 
-.disclaimer
+.disclaimer1
 {
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -67,7 +67,7 @@
     {
         background-color: transparent;
     }
-    .custom-card-title
+    .custom-card-title1
     {
         font-size: 1.9rem;
         /* color: white; */
@@ -75,19 +75,19 @@
         font-weight: 300;
         margin-top: 2rem;
     }
-    .custom-card-lists
+    .custom-card-lists1
     {
         font-size: 1rem;
         /* color: white; */
     }
-    .custom-card-head
+    .custom-card-head1
     {
         margin-top: 1rem;
         font-size: 1.3rem;
         /* color: white; */
         padding-left: 10px;
     }
-    .custom-bullets
+    .custom-bullets1
     {
         padding-left: 0rem;
         display: flex;
@@ -103,12 +103,12 @@
         font-size: 1rem;
         margin-bottom: 0.9rem;
     }
-    .start-button-pos
+    .start-button-pos1
     {
         text-align: center;
     }
 
-    .custom-card-footer
+    .custom-card-footer1
     {
         width: 17rem;
         font-size: 1rem;
@@ -127,30 +127,30 @@
 @media only screen and (max-width:1024px) and (min-width:768px)
 {
     
-    .custom-card-title
+    .custom-card-title1
     {
         font-size: 1.5rem;
         /* color: white; */
         line-height: 2.4rem;
         font-weight: 300;
     }
-    .yellow-line
+    .yellow-line1
     {
-        width:100% !important;
+        width:25rem !important;
     }
-    .custom-card-lists
+    .custom-card-lists1
     {
         font-size: 1rem;
         /* color: white; */
     }
-    .custom-card-head
+    .custom-card-head1
     {
         margin-top: 1rem;
         font-size: 1.2rem;
         /* color: white; */
         padding-left: 10px;
     }
-    .custom-bullets
+    .custom-bullets1
     {
         padding-left: 0rem;
         
@@ -162,12 +162,12 @@
         font-size: 1rem;
         /* margin-bottom: 0.7rem; */
     }
-    .custom-card-footer
+    .custom-card-footer1
     {
         font-size: 1rem;
         /* color: white;        */
     }
-    .disclaimer
+    .disclaimer1
     {
         width: 16rem !important;
         font-size: 0.5rem !important;
@@ -181,26 +181,26 @@
     {
         background-color: transparent;
     }
-    .custom-card-title
+    .custom-card-title1
     {
         font-size: 3.2rem;
         /* color: white; */
         line-height: 4rem;
         font-weight: 500;
     }
-    .custom-card-lists
+    .custom-card-lists1
     {
         font-size: 1.8rem;
         /* color: white; */
     }
-    .custom-card-head
+    .custom-card-head1
     {
         margin-top: 3rem;
         font-size: 2.2rem;
         /* color: white; */
         padding-left: 18px;
     }
-    .custom-bullets
+    .custom-bullets1
     {
         padding-left: 0rem;
         display: flex;
@@ -217,11 +217,11 @@
         margin-top: 1.8rem ;
         margin-bottom: 1.4rem;
     }
-    .start-button-pos
+    .start-button-pos1
     {
         text-align: center;
     }
-    .custom-card-footer
+    .custom-card-footer1
     {
         width: 27rem;
         font-size: larger;
@@ -247,17 +247,17 @@
 }
 @media only screen and (max-width:320px)
 {
-    .custom-card-title
+    .custom-card-title1
     {
         font-size: 1.5rem;
         line-height: 8mm;
     }
-    .custom-card-lists
+    .custom-card-lists1
     {
         font-size: 0.8rem;
         /* color: white; */
     }
-    .custom-card-head
+    .custom-card-head1
     {
         margin-top: 1rem;
         font-size: 1rem;
@@ -271,11 +271,11 @@
         font-size: 0.7rem;
         margin-bottom: 0.5rem;
     }
-    .start-button-pos
+    .start-button-pos1
     {
         text-align: center;
     }
-    .custom-card-footer
+    .custom-card-footer1
     {
         width: 15rem;
         font-size: small;
@@ -294,7 +294,7 @@
         font-size: 0.9rem !important;
         margin-top: 2rem !important;
     }
-    .custom-bullets
+    .custom-bullets1
     {
         display: flex;
         flex-direction: column;
@@ -302,6 +302,7 @@
         align-items: center;
 
     }
+    
 }
 .card-style
 {

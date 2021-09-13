@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-function Header2() {
+function Header1() {
     return (
       <div>
         <nav class="navbar navbar-expand-lg navbar-light nav-shadow">
@@ -23,7 +23,7 @@ function Header2() {
               </button>
 
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="d-flex justify-content-md-end justify-content-start w-100">
+                <div class="d-flex justify-content-lg-end justify-content-start w-100">
                   <ul class="navbar-nav ">
                       <li class="nav-item" >
                           <a class="nav-link active header-lists " aria-current="page" href="#">Home</a>
@@ -43,4 +43,4 @@ function Header2() {
     )
 }
 
-export default Header2
+export default Header1
