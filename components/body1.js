@@ -3,6 +3,10 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 function Body1() {
+    const myLoader = ({src})=>
+    {
+        return `/Images/${src}`;
+    }
   return (
     <div>
         <section >
@@ -75,15 +79,15 @@ function Body1() {
 
                         <div className="row py-3 px-5 ">
                             <div className="col text-center">
-                                <Image src="/Images/img1.png" height='220' width='170' alt='loading img1' className="img-fluid"/>
+                                <Image src={`img1.png`} height='220' width='170' alt='loading img1'loader={myLoader} className="img-fluid"/>
                             </div>
                             
                             <div className="col text-center">
-                                <Image src="/Images/img2.png" height='220' width='160' alt='loading img2' className="img-fluid"/>
+                                <Image src={`img2.png`} height='220' width='160' alt='loading img2' loader={myLoader}className="img-fluid"/>
                             </div>
 
                             <div className="col d-lg-block d-none">
-                                <Image src="/Images/img3.png" height='220' width='160' alt='loading img3' className="img-fluid"/>
+                                <Image src={`img3.png`} height='220' width='160' alt='loading img3' loader={myLoader} className="img-fluid"/>
                             </div>
                         </div>
                     </div>

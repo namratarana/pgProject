@@ -45,3 +45,10 @@ module.exports = {
   //     }
   //   },
   // }
+  module.exports = {
+    images: {
+      loader: 'imgix'
+    },
+  }
+  
+  

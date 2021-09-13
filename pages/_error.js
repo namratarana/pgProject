@@ -18,6 +18,16 @@ function Error({ statusCode, pathname }) {
       Router.push('/PGPro-SmartAssist-Quiz')
       return true;
     }
+    else if(Router.asPath === '/PGPro-SmartAssist-Home1')
+    {
+      Router.push('/PGPro-SmartAssist-Home1')
+      return true;
+    }
+    else if(Router.asPath === '/PGPro-SmartAssist-Home2')
+    {
+      Router.push('/PGPro-SmartAssist-Home2')
+      return true;
+    }
     else if(Router.asPath === '/PGPro-SmartAssist-Recommendations')
     {
       Router.push('/PGPro-SmartAssist-Recommendations')

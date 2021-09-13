@@ -3,6 +3,11 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 function Body2() {
+
+    const myLoader = ({src})=>
+    {
+        return `/Images/${src}`;
+    }
     return (
         <div>
            
@@ -10,17 +15,17 @@ function Body2() {
            <section className="position-relative">
                 <div className="row g-0 row-cols-lg-2 row-cols-1" style={{}}>
                     <div className="col" style={{marginBottom:"-10px"}}>
-                        <Image src="/Images/image1.png" width='1280px' height='720px'/>
+                        <Image src={`image1.png`} width='1280px' height='720px' loader={myLoader}/>
                     </div>
                     <div className="col d-lg-block d-none" style={{marginBottom:"-10px"}}>
-                        <Image src="/Images/image2.png" width='1280x' height='720px'/>
+                        <Image src={`image2.png`} width='1280x' height='720px'loader={myLoader}/>
                     </div>
                 
                     <div className="col  d-lg-block d-none" style={{marginBottom:"-10px"}}>
-                        <Image src="/Images/image3.png" width='1280x' height='720px'/>   
+                        <Image src={`image3.png`} width='1280x' height='720px'loader={myLoader}/>   
                     </div>
                     <div className="col" style={{marginBottom:"-10px"}}>
-                        <Image src="/Images/image4.png" width='1280x' height='720px'/>
+                        <Image src={`image4.png`} width='1280x' height='720px' loader={myLoader}/>
                     </div>
                 </div>
 
