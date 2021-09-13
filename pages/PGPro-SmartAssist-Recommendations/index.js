@@ -86,7 +86,7 @@ const Recommendations = (props) => {
         let answerChosen = localStorage.getItem('answerChosen');
         if(!RecommendedProducts)
         {
-            Router.push('/PGPro-SmartAssist-Quiz')
+            Router.push('/')
         }
         else
         {
@@ -115,7 +115,6 @@ const Recommendations = (props) => {
                     <div className="noResults">
                         <img src="../icons/Box.svg" alt="No Results Icon" />
                         <div className="noResultDesc">There are currently no product recommendations available. Call for a consultation or you can restart below!</div>
-
                         <div className="container mt-4">
                             <div >
                                 <a target="_blank" href="https://pgpro.com/en-us/request-consultation">
@@ -132,7 +131,7 @@ const Recommendations = (props) => {
                     {answersChosen?<Result
                         BT={answersChosen[0]}
                         BS={businessSizeMapping(answersChosen[1])}
-                        Tens={answersChosen[6]}
+                        Tens={answersChosen[5]}
                         productResult={props.productResult}
                         
                     //   sizeDataResult={this.state.sizeDataResult}
