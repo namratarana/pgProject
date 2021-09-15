@@ -44,7 +44,7 @@ function Footer1() {
         </div>
       
         {/* 2 business images */}
-        <div className="text-center mb-2 d-lg-block d-none">
+        {/* <div className="text-center mb-2 d-lg-block d-none">
           <img
             src="https://res.cloudinary.com/mtree/q_auto:eco,f_auto,dpr_auto/PGPro_US/5lghEdWm63oI9O5oFSX88E/81f00aaa973994c1230734017fd999e2/bbb.png"
             alt="BBB Accredited Business"
@@ -54,44 +54,44 @@ function Footer1() {
             src="https://res.cloudinary.com/mtree/q_auto:eco,f_auto,dpr_auto/PGPro_US/4O9ROWeYkTATgHQxtuIeUl/2fe2e6b248f776268b13b76f2f0d727a/istodio.png"
             alt="iStudio logo" height="33"
             />
-        </div>
+        </div> */}
 
         {/* 7 items*/}
         <div className="text-center">
           <div class="row text-center">
               <div className="col-lg-auto col-12 seven-items">
-                About Us
+                <a href="https://pgpro.com/en-us/about-us"> About Us </a>
               </div>
               <div className="col-lg-auto col-12 seven-items">
-                Contact Us
+              <a href="https://pgpro.com/en-us/contact-us"> Contact Us </a>
               </div>
               <div className="col-lg-auto col-12 seven-items">
-                Privacy
+              <a href="https://www.pg.com/privacy/english/privacy_statement.shtml"> Privacy </a>
               </div>
               <div className="col-lg-auto col-12 seven-items">
-                CA Privacy
+              <a href="https://www.pg.com/privacy/english/privacy_statement.shtml#CCPA"> CA Privacy </a>
               </div>
               <div className="col-lg-auto col-12 seven-items">
-                Terms & Conditions
+              <a href="http://www.pg.com/en_US/terms_conditions/index.shtml"> Terms & Conditions </a>
               </div>
               <div className="col-lg-auto col-12 seven-items">
-                Do Not Sell My Personal Information
+              <a href="https://pgpro.com/en-us/about-us"> Do Not Sell My Personal Information </a>
               </div>
-              <div className="col-lg-auto col-12 seven-items">
+              {/* <div className="col-lg-auto col-12 seven-items">
                 Sitemap
-              </div>
+              </div> */}
           </div>
         </div>
 
-        <div className="custom-center-text" style={{marginTop:"0.5rem"}}>
-            <p className="footer-text">Your digital warehouse for images, documents, videos, training and other PGPro resources. 
+        {/* <div className="custom-center-text" style={{marginTop:"0.5rem"}}>
+             <p className="footer-text">Your digital warehouse for images, documents, videos, training and other PGPro resources. 
             <Link href="/PGPro-SmartAssist-Quiz" >
                 <a className="start-link"><span className="d-block d-lg-none start-link"><br/></span><b> Get Started</b></a>
             </Link> 
-            </p>
-        </div>
+            </p> 
+        </div> */}
 
-        <div className="custom-center-text mb-4" style={{marginTop:"-0.9rem"}}>
+        <div className="custom-center-text mb-4" style={{marginTop:"0.5rem"}}>
             <div className="row justify-content-between">
                 <div className="col-lg-auto footer-text">
                   For additional information call 1-800-332-7787 Call center hours 24/7,
@@ -148,7 +148,7 @@ function Footer1() {
         </div>
        
         {/* 2 business images */}
-        <div className="text-center mb-2 d-block d-lg-none">
+        {/* <div className="text-center mb-2 d-block d-lg-none">
           <img
             src="https://res.cloudinary.com/mtree/q_auto:eco,f_auto,dpr_auto/PGPro_US/5lghEdWm63oI9O5oFSX88E/81f00aaa973994c1230734017fd999e2/bbb.png"
             alt="BBB Accredited Business"
@@ -158,7 +158,7 @@ function Footer1() {
             src="https://res.cloudinary.com/mtree/q_auto:eco,f_auto,dpr_auto/PGPro_US/4O9ROWeYkTATgHQxtuIeUl/2fe2e6b248f776268b13b76f2f0d727a/istodio.png"
             alt="iStudio logo"
             />
-        </div>
+        </div> */}
 
       
       </div>

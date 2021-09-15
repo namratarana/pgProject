@@ -28,21 +28,21 @@ function Header1() {
                 <div class="d-flex justify-content-lg-end justify-content-start w-100">
                   <ul class="navbar-nav ">
                       <li class="nav-item" >
-                          <a class="nav-link active header-lists " aria-current="page" href="#">Home</a>
+                          <a class="nav-link active header-lists " aria-current="page" href="https://smartassist.pgpro.com/">Home</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link header-lists" href="#">About</a>   
+                          <a class="nav-link header-lists" href="https://pgpro.com/en-us/about-us">About</a>   
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link header-lists" href="#" >Contact us</a>
+                          <a class="nav-link header-lists" href="https://pgpro.com/en-us/contact-us" >Contact us</a>
                       </li>
-                  </ul>
+                   </ul>
                 </div>
               </div>
 
-              <div className="d-lg-block d-none position-absolute custom-nav-height1">
-              <div className="row justify-content-center align-items-center vw-100 ">
-                <div className="text-center">
+              <div className="d-lg-block d-none position-absolute custom-center-logo custom-nav-height1">
+              {/* <div className="">
+                <div className="text-center"> */}
                   <a className="navbar-brand" >
                         <img
                           src={
@@ -54,9 +54,9 @@ function Header1() {
                         />  
                         <span className="header-title fs-3 ps-2">SmartAssist</span> 
                   </a>
-                </div>
+                {/* </div>
+          </div> */}
           </div>
-        </div>
           </div>
 
           

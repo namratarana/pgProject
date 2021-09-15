@@ -161,12 +161,7 @@ button {
         width: 80px;
         height: 80px;
     }
-    .links{
-    color:white;
-}
- .links:hover{
-        color: #01a0e0;
-}
+    
 }
 
 @media only screen and (max-width: 600px) {

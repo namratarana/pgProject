@@ -26,13 +26,13 @@ function Header2() {
                 <div class="d-flex justify-content-md-end justify-content-start w-100">
                   <ul class="navbar-nav ">
                       <li class="nav-item" >
-                          <a class="nav-link active header-lists " aria-current="page" href="#">Home</a>
+                          <a class="nav-link active header-lists " aria-current="page" href="https://smartassist.pgpro.com/">Home</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link header-lists" href="#">About</a>   
+                          <a class="nav-link header-lists" href="https://pgpro.com/en-us/about-us">About</a>   
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link header-lists" href="#" >Contact us</a>
+                          <a class="nav-link header-lists" href="https://pgpro.com/en-us/contact-us" >Contact us</a>
                       </li>
                   </ul>
                 </div>

@@ -15,17 +15,17 @@ function Body2() {
            <section className="position-relative">
                 <div className="row g-0 row-cols-lg-2 row-cols-1" style={{}}>
                     <div className="col" style={{marginBottom:"-10px"}}>
-                        <Image src={`image1.png`} width='1280px' height='720px' loader={myLoader}/>
+                        <Image src={`Image1.jpg`} width='1280px' height='720px' loader={myLoader}/>
                     </div>
                     <div className="col d-lg-block d-none" style={{marginBottom:"-10px"}}>
-                        <Image src={`image2.png`} width='1280x' height='720px'loader={myLoader}/>
+                        <Image src={`Image2.jpg`} width='1280x' height='720px'loader={myLoader}/>
                     </div>
                 
                     <div className="col  d-lg-block d-none" style={{marginBottom:"-10px"}}>
-                        <Image src={`image3.png`} width='1280x' height='720px'loader={myLoader}/>   
+                        <Image src={`Image3.jpg`} width='1280x' height='720px'loader={myLoader}/>   
                     </div>
                     <div className="col" style={{marginBottom:"-10px"}}>
-                        <Image src={`image4.png`} width='1280x' height='720px' loader={myLoader}/>
+                        <Image src={`Image4.jpg`} width='1280x' height='720px' loader={myLoader}/>
                     </div>
                 </div>
 
@@ -71,15 +71,15 @@ function Body2() {
 
                             <div className="d-none d-lg-block">
                                 <div className="row justify-content-center">
-                                    <div className="text-center disclaimer" style={{fontSize:'x-small', width:'20rem'}}>
+                                    <div className="text-center disclaimer" style={{fontSize:'xx-small', width:'30rem'}}>
                                         <b>
-                                            By answering this questionnaire, I confirm that I have read and agree to the P&G Terms and Conditions and P&G Privacy.
+                                           By answering this questionnaire, I agree that my data may be used for marketing purposes by P&G Professional and other trusted P&G brands and programs. Click to read <a href="https://termsandconditions.pg.com/en-us/"><u>P&G Terms and Conditions</u></a> and <a href="https://privacypolicy.pg.com/en/"><u>Privacy Policy</u></a>.
                                         </b>
                                     </div>  
                                 </div>
                             </div>
 
-                            <div className="row justify-content-center">
+                            <div className="row justify-content-center mt-2">
                                 <p className="fst-italic text-center custom-card-footer">
                                     Join <i className="fw-bold fst-italic ">2000+ Business Owners </i> who benefitted from SmartAssist!
                                 </p>

@@ -10,6 +10,7 @@ class App extends React.Component {
         return (
             <div>
                 <Head>
+                    <script src="https://www.googleoptimize.com/optimize.js?id=OPT-NRKTJJQ"></script>
                     <script dangerouslySetInnerHTML={{
                             __html: `var PGdataLayer = {
                             'GTM': {

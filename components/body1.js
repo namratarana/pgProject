@@ -52,9 +52,10 @@ function Body1() {
 
                             <div className="d-none d-lg-block">
                                 <div className="">
-                                    <div className="disclaimer1" style={{fontSize:'x-small', width:'20rem'}}>
+                                    <div className="disclaimer1" style={{fontSize:'xx-small', width:'30rem'}}>
                                         <b>
-                                            By answering this questionnaire, I confirm that I have read and agree to the P&G Terms and Conditions and P&G Privacy.
+                                         By answering this questionnaire, I agree that my data may be used for marketing purposes by P&G Professional and other trusted P&G brands and programs. Click to read <a href="https://termsandconditions.pg.com/en-us/"><u>P&G Terms and Conditions</u></a> and <a href="https://privacypolicy.pg.com/en/"><u>Privacy Policy</u></a>.
+
                                         </b>
                                     </div>  
                                 </div>

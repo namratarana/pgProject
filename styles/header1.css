@@ -4,7 +4,7 @@
 {
     .custom-navbar1
     {
-        height: 15vh !important;
+        height: 5.5rem !important;
     }
 
     .custom-nav-height1
@@ -27,4 +27,8 @@
     color: #003E7E !important;
     font-family: Arial !important;
     font-weight: 700;
+}
+.custom-center-logo
+{
+    left: 40% ;
 }
