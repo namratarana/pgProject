@@ -7,24 +7,24 @@ function FooterComponent() {
   const handleShow = () => setShow(true);
 
   const navlinks = [
-    { name: "About Us", href: process.env.ABOUT_US, target:"_blank", id: "#aboutUsLink"},
-    { name: "Contact Us", href: process.env.CONTACT_US, target:"_blank", id: "#contactUsLink" },
+    { name: "About Us", href: "https://pgpro.com/en-us/about-us" , target:"_blank", id: "#aboutUsLink"},
+    { name: "Contact Us", href: "https://pgpro.com/en-us/contact-us", target:"_blank", id: "#contactUsLink" },
     {
       name: "Privacy",
-      href: process.env.PRIVACY_POLICY,
+      href: "https://www.pg.com/privacy/english/privacy_statement.shtml",
       target:"_blank",
       id: "#privacyLink"
     },
     {
       name: "CA Privacy",
-      href: process.env.CA_POLICY,
+      href: "https://www.pg.com/privacy/english/privacy_statement.shtml#CCPA",
       target:"_blank",
       id: "#caPrivacyLink"
 
     },
     {
       name: "Terms & Conditions",
-      href: process.env.TERMS_AND_CONDITIONS,
+      href: "https://www.pg.com/en_US/terms_conditions/index.shtml",
       target:"_blank",
       id: "#termsLink"
     },
@@ -68,7 +68,7 @@ function FooterComponent() {
             <a
               className="socialLink w-5 h-5 p-2 mr-2 event_socialmedia_exit"
               data-action-detail="Facebook"
-              href={process.env.FACEBOOK}
+              href="https://www.facebook.com/pgprofessional/"
               target="_blank"
               rel="noopener"
               onMouseOver={(e) =>
@@ -88,7 +88,7 @@ function FooterComponent() {
             <a
               className="socialLink w-2 h-2 p-2 mr-2 event_socialmedia_exit"
               data-action-detail="LinkedIn"
-              href={process.env.LINKEDIN}
+              href="https://www.linkedin.com/company/pgprofessional/"
               target="_blank"
               rel="noopener"
               onMouseOver={(e) =>
@@ -109,7 +109,7 @@ function FooterComponent() {
               className="socialLink w-2 h-2 p-2 mr-2 lg:ml-5 event_socialmedia_exit"
               data-action-detail="Youtube"
               target="_blank"
-              href={process.env.YOUTUBE}
+              href="https://www.youtube.com/channel/UCOFej7MmdbaOyt6s1jUescA"
               rel="noopener"
               onMouseOver={(e) =>
               (e.currentTarget.querySelector("img").src =
@@ -160,7 +160,7 @@ function FooterComponent() {
             24/7, 365 days a year.
           </div>
           <div className="copyRights centerColumn text-right">
-            &copy; 2020 P&G. All Rights Reserved.
+            &copy; 2021 P&G. All Rights Reserved.
           </div>
         </div>
 

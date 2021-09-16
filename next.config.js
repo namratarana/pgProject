@@ -18,11 +18,16 @@ module.exports ={
 module.exports = {
   async redirects() {
     return [
+        // {
+        //   source: '/PGPro-SmartAssist/Quiz',
+        //   destination: '/',
+        //   permanent: true,
+        // },
         {
-          source: '/PGPro-SmartAssist/Quiz',
-          destination: '/',
+          source: '/',
+          destination: '/PGPro-SmartAssist-Home1',
           permanent: true,
-        },
+        }
       ]
     },
   }
@@ -36,8 +41,8 @@ module.exports = {
   //     { dev, dir, outDir, distDir, buildId }
   //   ) {
   //     return {
-  //       '/': { page: '/' },
-  //       '/PGPro-SmartAssist-Home': { page: '/PGPro-SmartAssist-Home' },
+  //       '/': { page: '/PGPro-SmartAssist-Home1' },
+  //       '/PGPro-SmartAssist-Home1': { page: '/PGPro-SmartAssist-Home1' },
   //       '/PGPro-SmartAssist-Quiz': { page: '/PGPro-SmartAssist-Quiz' },
   //       '/PGPro-SmartAssist-Recommendations': { page: '/PGPro-SmartAssist-Recommendations' },
 
@@ -50,5 +55,8 @@ module.exports = {
       loader: 'imgix'
     },
   }
+  // module.exports = {
+  //   basePath: '/PGPro-SmartAssist-Home1',
+  // }
   
   

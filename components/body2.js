@@ -65,7 +65,7 @@ function Body2() {
                     
                             <div className="text-center">
                                 <Link href="/PGPro-SmartAssist-Quiz" >
-                                    <button type="button" class="btn rounded-pill start-button">Get Started</button>
+                                    <button type="button" class="btn rounded-pill start-button event_button_click" data-action-detail="get-started-button">Get Started</button>
                                 </Link>  
                             </div>
 
@@ -73,7 +73,7 @@ function Body2() {
                                 <div className="row justify-content-center">
                                     <div className="text-center disclaimer" style={{fontSize:'xx-small', width:'30rem'}}>
                                         <b>
-                                           By answering this questionnaire, I agree that my data may be used for marketing purposes by P&G Professional and other trusted P&G brands and programs. Click to read <a href="https://termsandconditions.pg.com/en-us/"><u>P&G Terms and Conditions</u></a> and <a href="https://privacypolicy.pg.com/en/"><u>Privacy Policy</u></a>.
+                                         By answering this questionnaire, I agree that my data may be used for marketing purposes by P&G Professional and other trusted<a href="https://us.pg.com/brands/"><u> P&G brands and programs</u></a>. Click to read <a href="https://termsandconditions.pg.com/en-us/"><u>P&G Terms and Conditions</u></a> and <a href="https://privacypolicy.pg.com/en/"><u>Privacy Policy</u></a>.
                                         </b>
                                     </div>  
                                 </div>
@@ -152,7 +152,7 @@ function Body2() {
 
                                     </div>
                                     <div class="card-body fw-bold">
-                                        Tell the SmartAssist about you and your business. Just a couple questions to understand your cleaning jobs.
+                                        Tell us about you and your business. Get personalized products. Explore these recommendations, why they were chosen for you, & purchase products.
                                     </div>
                                     
                                 </div>
@@ -180,7 +180,9 @@ function Body2() {
 
                                     </div>
                                     <div class="card-body">
-                                        <p>The recommendations and resources in the SmartAssist have been created by the experts at P&G Professional to help support you and your business is achieving your most confident clean.</p>
+                                        {/* <p>The recommendations and resources in the SmartAssist have been created by the experts at P&G Professional to help support you and your business is achieving your most confident clean.</p> */}
+                                        Created by the experts at P&G Professional, our recommendations 
+                                        help you and your business achieve your most confident clean. 
                                     </div>
                                     
                                 </div>
@@ -218,7 +220,7 @@ function Body2() {
                                     </h2>
                                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            In a few questions, we learn about the cleaning jobs of you and your business.
+                                            Tell us about you and your business. Get personalized products. Explore these recommendations, why they were chosen for you, & purchase products.
                                         </div>
                                     </div>
                                 </div>
@@ -248,7 +250,7 @@ function Body2() {
                     </h4>
                     <div className="d-flex justify-content-center mt-3 mb-3 w-100">
                         <Link href="/PGPro-SmartAssist-Quiz" >
-                            <button type="button" class="btn rounded-pill fw-bold w-30 footer-start-buttton start-button">Get Started</button>
+                            <button type="button" class="btn rounded-pill fw-bold w-30 footer-start-buttton start-button event_button_click" data-action-detail="get-started-button">Get Started</button>
                         </Link>
                     </div>
                     
