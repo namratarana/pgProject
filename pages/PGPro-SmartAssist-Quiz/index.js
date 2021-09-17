@@ -364,6 +364,7 @@ export class Questions extends React.PureComponent {
       hasToggleQuestion,
       Background
     } = this.state;
+    
     this.setState({ hasSubQuestion: false, currentselection: "" });
     this.setState({ hasSubSubQuestion: false });
     this.setState({
@@ -483,7 +484,8 @@ export class Questions extends React.PureComponent {
         setNoProductModalFlag(true)
       } else {
 
-        if (!SubAnswers) {
+        if (!SubAnswers)
+         {
 
           if (!hasToggleQuestion) {
 
@@ -508,12 +510,25 @@ export class Questions extends React.PureComponent {
                 this.setState({ hasSubSubQuestion: true });
               }
               else {
-                if (SubAnswers && this.state.inBackTrack) { //Check if we are in BackTrack and subanswers is already selected
+                
+                if (SubAnswers && this.state.inBackTrack) 
+                { //Check if we are in BackTrack and subanswers is already selected
                   this.setState({ hasSubQuestion: true, inBackTrack: false });
                 }
-                else {
-                  this.handlingTogglingQuestion()
-                  this.setState({ currentQuestionIndex: currentQuestionIndex + 1 });
+                else 
+                {
+                  console.log("nob")
+                  console.log("subans:",SubAnswers)
+                  if(SubAnswers.SubAnswer === "Not a business")
+                  {
+                    answersChosen[1] = '1-4'
+                    this.setState({currentQuestionIndex: currentQuestionIndex+2, answersChosen: answersChosen});
+                  }
+                  else
+                  {
+                    this.handlingTogglingQuestion()
+                    this.setState({ currentQuestionIndex: currentQuestionIndex + 1 });
+                  }
                 }
               }
             }
@@ -633,7 +648,14 @@ export class Questions extends React.PureComponent {
     } 
     else if(id== "qImportant")
     {
-      this.setState({hasToggleQuestion:true, currentQuestionIndex:currentQuestionIndex-1});
+      if(SubAnswers.SubAnswer == "Not a business")
+      {
+        this.setState({currentQuestionIndex:currentQuestionIndex-2});
+      }
+      else
+      {
+        this.setState({hasToggleQuestion:true, currentQuestionIndex:currentQuestionIndex-1});
+      }
     }
     else {
 
