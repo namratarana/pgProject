@@ -1,7 +1,8 @@
 import React from "react"
 import Head from "next/head"
 import { createMemoryHistory } from "history"
-import LandingPage from "./PGPro-SmartAssist-Home2/index"
+import LandingPage2 from "./PGPro-SmartAssist-Home2/index"
+import LandingPage1 from "./PGPro-SmartAssist-Home1/index"
 
 class App extends React.Component {
     render() {
@@ -116,9 +117,9 @@ class App extends React.Component {
 
                 </Head>
 
-                <LandingPage />
+                {/* <LandingPage1 /> */}
 
-                
+                <LandingPage2/>
 
                 <script type="text/javascript" dangerouslySetInnerHTML={{
 

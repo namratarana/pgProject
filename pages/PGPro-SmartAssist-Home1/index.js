@@ -1,13 +1,10 @@
 import React from "react"
 import Link from "next/link"
-
-import Footer from "../../components/Footer"
 import {useEffect} from 'react';
 import Header1 from "../../components/header1";
 import Body1 from "../../components/body1";
-// import Footer1 from "../../components/footer1";
 import FooterComponent from "../../components/Footer";
-
+import Index from '../index'
 
 function LandingPage()
 {
@@ -17,11 +14,14 @@ function LandingPage()
             localStorage.removeItem('answerChosen');   
         }, [])
         return (
-            <div className="main">
-                <Header1/>
-                <Body1/>
-                <FooterComponent/>
-            </div>
+            
+            
+                <div className="main">
+                    <Header1/>
+                    <Body1/>
+                    <FooterComponent/>
+                </div>
+        
         )
        
     }

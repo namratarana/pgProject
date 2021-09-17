@@ -48,7 +48,12 @@ function Body1() {
                             </div>
                     
                 {/* get started button */}
-                            <div className="start-button-pos1">
+                            {/* <div className="start-button-pos1">
+                                <Link href="/PGPro-SmartAssist-Quiz" >
+                                    <button type="button" class="btn rounded-pill start-button event_button_click" data-action-detail="get-started-button">Get Started</button>
+                                </Link>  
+                            </div> */}
+                            <div className="text-center">
                                 <Link href="/PGPro-SmartAssist-Quiz" >
                                     <button type="button" class="btn rounded-pill start-button event_button_click" data-action-detail="get-started-button">Get Started</button>
                                 </Link>  

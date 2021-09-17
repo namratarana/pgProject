@@ -15,17 +15,17 @@ function Body2() {
            <section className="position-relative">
                 <div className="row g-0 row-cols-lg-2 row-cols-1" style={{}}>
                     <div className="col" style={{marginBottom:"-10px"}}>
-                        <Image src={`Image1.jpg`} width='1280px' height='720px' loader={myLoader}/>
+                        <Image src={`Image1.jpg`} priority={true} width='1280px' height='720px' loader={myLoader}/>
                     </div>
                     <div className="col d-lg-block d-none" style={{marginBottom:"-10px"}}>
-                        <Image src={`Image2.jpg`} width='1280x' height='720px'loader={myLoader}/>
+                        <Image src={`Image2.jpg`} priority={true} width='1280x' height='720px'loader={myLoader}/>
                     </div>
                 
                     <div className="col  d-lg-block d-none" style={{marginBottom:"-10px"}}>
-                        <Image src={`Image3.jpg`} width='1280x' height='720px'loader={myLoader}/>   
+                        <Image src={`Image3.jpg`} priority={true} width='1280x' height='720px'loader={myLoader}/>   
                     </div>
-                    <div className="col" style={{marginBottom:"-10px"}}>
-                        <Image src={`Image4.jpg`} width='1280x' height='720px' loader={myLoader}/>
+                    <div className="col" style={{marginBottom:"-7px"}}>
+                        <Image src={`Image4.jpg`} priority={true} width='1280x' height='720px' loader={myLoader}/>
                     </div>
                 </div>
 
