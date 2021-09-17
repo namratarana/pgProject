@@ -600,6 +600,7 @@ export class Questions extends React.PureComponent {
     } = this.state;
     this.setState({ buttonIndex: buttonIndex - 1 });
     // this.setState({inBackTrack:true})
+    console.log("id",id);
     if (id == "qBusinessType") {
       if (hasSubQuestion === false) {
         if (hasSubSubQuestion === false) {
@@ -629,7 +630,12 @@ export class Questions extends React.PureComponent {
         }
       }
       this.setState({ hasToggleQuestion: false, currentQuestionIndex: currentQuestionIndex - 1 });
-    } else {
+    } 
+    else if(id== "qImportant")
+    {
+      this.setState({hasToggleQuestion:true, currentQuestionIndex:currentQuestionIndex-1});
+    }
+    else {
 
       this.setState({
         currentQuestionIndex: currentQuestionIndex - 1,
@@ -755,6 +761,8 @@ export class Questions extends React.PureComponent {
 
             if (q.index === currentQuestionIndex)
              {
+            console.log(q)
+
             console.log("q.index--", q.index, "cureentqIndex_--",currentQuestionIndex, "qid", q.id);
             
               return (
@@ -874,6 +882,7 @@ export class Questions extends React.PureComponent {
                           );
                         })
                         :
+
                         (
                           q.Answers.map((a, i) => {
                             return (

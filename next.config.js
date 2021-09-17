@@ -23,11 +23,11 @@ module.exports = {
         //   destination: '/',
         //   permanent: true,
         // },
-        {
-          source: '/',
-          destination: '/PGPro-SmartAssist-Home1',
-          permanent: true,
-        }
+        // {
+        //   source: '/',
+        //   destination: '/PGPro-SmartAssist-Home1',
+        //   permanent: true,
+        // }
       ]
     },
   }
