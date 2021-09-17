@@ -109,6 +109,9 @@
                                 "SubAnswer": "Hair/Beauty"
                             },
                             {
+                                "SubAnswer": "Not a business"
+                            },
+                            {
                                 "SubAnswer": "Other"
                             }
                         ]

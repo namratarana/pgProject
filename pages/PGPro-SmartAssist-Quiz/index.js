@@ -654,14 +654,30 @@ export class Questions extends React.PureComponent {
   };
 
   restartQuiz = () => {
-    window.parent.location = window.parent.location.href;
+    // window.parent.location = window.parent.location.href;
+    if(this.state.answersChosen[0]== "Business Service Contractors/Contract Cleaners")
+    {
+      this.state.answersChosen[1] = '5-10';
+    }
+    else
+    {
+      this.state.answersChosen[1] = '5-9';
+    }
     this.setState({
-      currentQuestionIndex: 0,
-      SubAnswers: "",
-      SubSubAnswers: "",
-      subAnswerChosen: "",
-      answersChosen: []
+      hasToggleQuestion:false,
+      currentQuestionIndex: this.state.currentQuestionIndex+1,
+      // SubAnswers: "",
+      // SubSubAnswers: "",
+      // subAnswerChosen: "",
+      // answersChosen: [],
+      answersChosen: this.state.answersChosen 
+         
     });
+    this.nextQuestionLogic(this.currentQuestionIndex,"qLocations");
+    console.log("restartQuiz section----");
+    console.log(' mY answersChosen',this.state.answersChosen)
+    console.log("currentQuestionIndex--",this.state.currentQuestionIndex)
+    
   };
   render() {
     const {
@@ -727,7 +743,7 @@ export class Questions extends React.PureComponent {
                 <a target="_blank" href="https://pgpro.com/en-us/request-consultation"><button className="contactButton" rel="noopener">Contact Us</button></a>
               </div>
               <div className="mt-2">
-                <button className="backButton" onClick={() => this.restartQuiz()}>Restart Quiz</button>
+                <button className="backButton" onClick={() => this.restartQuiz()}>Continue SmartAssist</button>
               </div>
             </div>
           </Modal.Footer>
@@ -737,13 +753,15 @@ export class Questions extends React.PureComponent {
         <div>
           {QuestionsData.Data.Questions.map(q => {
 
-            if (q.index === currentQuestionIndex) {
-
+            if (q.index === currentQuestionIndex)
+             {
+            console.log("q.index--", q.index, "cureentqIndex_--",currentQuestionIndex, "qid", q.id);
+            
               return (
                 <div className="container" key={q.index}>
 
                   <QuestionIcon questionId={q.id} questionIcon={hasSubQuestion || hasSubSubQuestion ? (sublevel.Icon) : (q.Icon)} />
-
+  
                   <Question
                     questionText={
                       hasSubSubQuestion ? (
