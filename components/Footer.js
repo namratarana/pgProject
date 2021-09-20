@@ -1,5 +1,6 @@
 import React,{useState} from "react";
 
+
 function FooterComponent() {
   const [show, setShow] = useState(true);
 

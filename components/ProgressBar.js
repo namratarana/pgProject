@@ -26,6 +26,7 @@ const maxValue = (props, totalQuestions) => {
 const Progress = (props) => {
 
     let totalQuestions = Questions.Data.Questions.length
+    console.log("props.buttonIndex%%%%%",(props.buttonIndex/totalQuestions)*100);
     
     return(
         <div>

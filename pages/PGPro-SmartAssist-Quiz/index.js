@@ -232,6 +232,8 @@ export class Questions extends React.PureComponent {
         return "Retail";
       case "Hair/Beauty":
         return "Hair/Beauty Salon";
+      case "Not a business":
+          return "Other";
       case "Other":
         return "Other";
 
@@ -374,7 +376,8 @@ export class Questions extends React.PureComponent {
 
     //dataLayer.push({'event': answersChosen[index]})
 
-    if (id == 'qLocations') {
+    if (id == 'qLocations') 
+    {
       switch (answersChosen[0]) {
         case "Restaurants":
           if (this.state.AnswerQuesLoc > 1) {

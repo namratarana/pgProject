@@ -1,5 +1,10 @@
 
 /* ******************************************** */
+@font-face {
+    font-family: ArialRoundMT;
+    src: url('arlrdbd.ttf');
+    font-weight:bolder !important;
+}
 @media only screen and (min-width:1024px)
 {
     .custom-navbar1
@@ -17,7 +22,9 @@
 {
     .header-title
     {
-        font-family: Arial Rounded MT !important;
+        font-family: ArialRoundMT !important;
+        font-weight:bolder !important;
+
     }
 }
 .nav-shadow
@@ -27,14 +34,14 @@
 .header-title
 {
     color:#003E7E;
-    font-family: Arial Rounded MT !important;
-    font-weight: 1000;
+    font-family: ArialRoundMT !important;
+    font-weight: bolder !important;
 }
 .header-lists
 {
     color: #003E7E !important;
-    font-family: Arial !important;
-    font-weight: 700;
+    font-family: ArialRoundMT !important;
+    font-weight: bold!important;
 }
 .custom-center-logo
 {
