@@ -1,0 +1,296 @@
+{
+    "Data": {
+        "Questions": [
+            {
+                "index": 0,
+                "id": "qBusinessType",
+                "Type": "singleSelect",
+                "Icon":"../icons/Storefront.svg",
+                "Question": "What kind of business do you buy cleaning products for?",
+                "FriendlyMessage": "Great! You are shopping for ||, we've got what you need.",
+                "Answers": [
+                    {
+                        "Answer": "Restaurants",
+                        "SubQuestion": "What type of restaurant?",
+                        "Icon":"../icons/Cutlery.svg",
+                        "SubAnswers": [
+                            {
+                                "SubAnswer": "Quick Serve"
+                            },
+                            {
+                                "SubAnswer": "Fast Casual"
+                            },
+                            {
+                                "SubAnswer": "Midscale/Casual"
+                            },
+                            {
+                                "SubAnswer": "Fine Dining"
+                            }
+                        ]
+                    },
+                    {
+                        "Answer": "Coffee Shop/Cafe/Bar"
+                    },
+                    {
+                        "Answer": "Hospitality",
+                        "SubQuestion": "What type of hospitality?",
+                        "Icon":"../icons/Building.svg",
+                        "SubAnswers": [
+                            {
+                                "SubAnswer": "Hotel",
+                                "SubSubQuestion": "What type of hotel?",
+                                "Icon":"../icons/Building.svg",
+                                "SubSubAnswer": [
+                                    "Luxury",
+                                    "Upscale",
+                                    "Midscale",
+                                    "Economy"
+                                ]
+                            },
+                            {
+                                "SubAnswer": "Motel"
+                            },
+                            {
+                                "SubAnswer": "Bed & Breakfast"
+                            },
+                            {
+                                "SubAnswer": "Casino"
+                            }
+                        ]
+                    },
+                    {
+                        "Answer": "Independent Care Home",                       
+                        "SubQuestion": "What type of independent care home?",
+                        "Icon":"../icons/Hospital.svg",
+                        "SubAnswers": [
+                            {
+                            "SubAnswer": "Hospital"
+                            },
+                            {
+                            "SubAnswer": "Senior Care"
+                            },
+                            {
+                            "SubAnswer": "Doctor's Office"
+                            },
+                            {
+                            "SubAnswer": "Outpatient Facility"
+                            }
+                        ]
+                    },   
+                    {
+                        "Answer": "Business Service Contractors/Contract Cleaners"
+                    },
+                    {
+                        "Answer": "General Office Building"
+                    },
+                    {
+                        "Answer": "Other",
+                        "SubQuestion": "Does your business fall under any of these types?",
+                        "Icon":"../icons/Other.svg",
+                        "SubAnswers": [
+                            {
+                                "SubAnswer": "Dry Cleaning/Laundry"
+                            },
+                            {
+                                "SubAnswer": "Retail"
+                            },
+                            {
+                                "SubAnswer": "Education",
+                                "SubSubQuestion": "What type of Education?",
+                                "SubSubAnswer": [
+                                    "K-12",
+                                    "College & Universities"
+                                ]
+                            },
+                            {
+                                "SubAnswer": "Fitness Centers/Gyms"
+                            },
+                            {
+                                "SubAnswer": "Hair/Beauty"
+                            },
+                            {
+                                "SubAnswer": "Not a business"
+                            
+        
+                            },
+                            {
+                                "SubAnswer": "Other"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "index": 1,
+                "id": "qLocations",
+                "Type": "singleSelect",
+                "Icon":"../icons/Locations.svg",
+                "FriendlyMessage": "Looks like you are working with a ||.",
+                "ToggleQuestions": [
+                    {
+                        "Question": "How many locations do you have?",
+                        "Answers": [
+                            {
+                                "Answer": "1-4"
+                            },
+                            {
+                                "Answer": "5-9"
+                            },
+                            {
+                                "Answer": "10-14"
+                            },
+                            {
+                                "Answer": "15-19"
+                            },
+                            {
+                                "Answer": "20+"
+                            }
+                        ]
+                    },
+                    {
+                        "Question": "How many employees do you have?",
+                        "Answers": [
+                            {
+                                "Answer": "Less than 5"
+                            },
+                            {
+                                "Answer": "5-10"
+                            },
+                            {
+                                "Answer": "10+"
+                            }
+                        ]
+                    }
+                ]
+            },
+            
+            {
+                "index": 2,
+                "id": "qImportant",
+                "Type": "multiSelect",
+                "Icon":"../icons/CleaningBucket.svg",
+                "Question": "What is most important to you when buying cleaning products?",
+                "FriendlyMessage":"What's important to you, is important to us.",
+                "SubText": "Select all that apply.",
+                "Answers": [
+                    {
+                        "Answer": "Finding Bulk/Wholesale Products"
+                    },
+                    {
+                        "Answer": "Using Known and Trusted Brands"
+                    },
+                    {
+                        "Answer": "EPA Registered Products"
+                    },
+                    {
+                        "Answer": "Product Superiority and Effectiveness"
+                    },
+                    {
+                        "Answer": "Long Term Cost Savings (Reduce Water/Energy/Time)"
+                    },
+                    {
+                        "Answer": "Cleaning That Your Customers Will Notice"
+                    }
+                ]
+            },
+            {
+                "index": 3,
+                "id": "qTypeCleaner",
+                "Type": "singleSelect",
+                "Icon":"../icons/Clipboard.svg",
+                "Question": "When you are thinking about cleaning, which of the following best describes you?",
+                "Answers": [
+                    {
+                        "Answer": "You try and get cleaning done as easily as possible – as little time and as few products as possible.",
+                        "FriendlyMessage": "You are looking to make things hassle free, easy peasy!"
+                    },
+                    {
+                        "Answer": "You are a perfection seeker and cleaning is a way to demonstrate your high standards to your customers.",
+                        "FriendlyMessage": "You are a perfectionist, only the best will suffice!"
+                    },
+                    {
+                        "Answer": "Like everything else in your business, it is important for you to find products that are environmentally conscious and can get the job done.",
+                        "FriendlyMessage": "The Environmentalist, you are looking for products that are good for your business and the planet!"
+                    },
+                    {
+                        "Answer": "Cleaning is a “must do task” and something you try to do as inexpensively as possible. You want the cheapest product that will get the job done.",
+                        "FriendlyMessage": "Looking for most econmical way to reach your goals, you are a price seeker!"
+                    }
+                ]
+            },
+            {
+                "index": 4,
+                "id": "qPrimaryAreas",
+                "Type": "multiSelect",
+                "Icon":"../icons/Checks.svg",
+                "Question": "Based on what you've told us so far, we think you're probably cleaning these selected areas.",
+                "SubText": "Deselect your choices by clicking on the boxes.",
+                "FriendlyMessage": "We will take your choices and find the best products for the job.",
+                "Answers": [
+                    {
+                        "Answer": "Front of House"
+                    },
+                    {
+                        "Answer": "Guest Room Kitchenette"
+                    },
+                    {
+                        "Answer": "Guest Room"
+                    },
+                    {
+                        "Answer": "Kitchen"
+                    },
+                    {
+                        "Answer": "Restroom"
+                    },
+                    {
+                        "Answer": "Kitchenette"
+                    },
+                    {
+                        "Answer": "Public Spaces"
+                    },
+                    {
+                        "Answer": "Outdoor Area"
+                    },
+                    {
+                        "Answer": "Public Areas"
+                    }
+                ]
+            },
+            {
+                "index": 5,
+                "id": "qTensions",
+                "Type": "multiSelect",
+                "Icon":"../icons/QuestionMark.svg",
+                "Question": "Tell us about the challenges you commonly encounter.",
+                "SubText": "Select all that apply.",
+                "FriendlyMessage": "Your custom cleaning solution awaits...",
+                "Answers": [
+                    {
+                        "Answer": "Sticky surfaces"
+                    },
+                    {
+                        "Answer": "Killing the virus that causes COVID-19"
+                    },
+                    {
+                        "Answer": "Too many cleaning products"
+                    },
+                    {
+                        "Answer": "Tough burnt & baked on residue"
+                    },
+                    {
+                        "Answer": "Cleaning tough grease & soils"
+                    },
+                    {
+                        "Answer": "Disinfection of High Frequency Touchpoints"
+                    },
+                    {
+                        "Answer": "Wall scuffs & marks"
+                    },
+                    {
+                        "Answer": "Odor elimination"
+                    }
+                ]
+            }
+        ]
+    }
+}

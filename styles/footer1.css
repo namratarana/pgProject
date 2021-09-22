@@ -1,0 +1,38 @@
+.seven-items
+{
+    font-size: small;
+    font-weight: bolder;
+}
+.custom-center-text
+{
+    font-size: 0.7em;
+}
+.footer-text
+{
+    font-weight: bolder;
+}
+.start-link
+{
+    color: #006FBA;
+}
+@media only screen and (max-width:768px)
+{
+    .custom-center-text
+    {
+        text-align: center;
+        padding: 0rem 2rem;
+    }
+    .seven-items
+    {
+        font-weight: 300;
+    }
+    .footer-text
+    {
+        font-weight: 300;
+        font-size: small;
+    }
+    .start-link
+    {
+        margin-top: -10px;
+    }
+}

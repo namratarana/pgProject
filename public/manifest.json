@@ -1,0 +1,24 @@
+{
+  "short_name": "advisor",
+  "name": "PGPAdvisor",
+  "lang": "en",
+  "start_url": "/http://icqa.pg.com/pgproadvisor/",
+  "background_color": "#01a0e0",
+  "theme_color": "#01a0e0",
+  "dir": "ltr",
+  "display": "standalone",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "/favicon-32x32-dunplab-manifest-31318.jpg",
+      "type": "image/png",
+      "sizes": "32x32"
+    },
+    {
+      "src": "/favicon-16x16-dunplab-manifest-31318.jpg",
+      "type": "image/png",
+      "sizes": "16x16"
+    }
+  ],
+  "prefer_related_applications": "false"
+}

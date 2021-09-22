@@ -1,0 +1,387 @@
+
+
+/* ******************** */
+
+.home-image-text
+{
+    position: absolute;
+    top: 0px;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+    width: 100vw;
+    height: 100%;
+}
+.card
+{
+    border: 0px !important;
+}
+.custom-card-title1
+{
+    font-size: 1.6rem;
+    color:#003E7E;
+    font-weight: 600;
+    margin-bottom: -1px;
+}
+.custom-card
+{
+    background-color: rgba(255, 255, 255, 0.897);
+}
+.custom-card-head1
+{
+    font-size: 1.3rem;
+    /* padding-left: 2rem; */
+}
+.custom-card-lists1
+{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.custom-bullets1
+{
+    /* padding-left: 2rem;    */
+}
+.start-button
+{
+    width: 20rem;
+    height: 3.5rem;
+    background: #006FBA;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.3rem;  
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);  
+}
+
+.custom-card-footer1
+{
+    font-size: 1.3rem;
+}
+
+.disclaimer1
+{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+@media only screen and (max-width : 426px)
+{
+    .custom-card
+    {
+        background-color: transparent;
+    }
+    .custom-card-title1
+    {
+        font-size: 1.9rem;
+        /* color: white; */
+        line-height: 2.5rem;
+        font-weight: 300;
+        margin-top: 2rem;
+    }
+    .custom-card-lists1
+    {
+        font-size: 1rem;
+        /* color: white; */
+    }
+    .custom-card-head1
+    {
+        margin-top: 1rem;
+        font-size: 1.3rem;
+        /* color: white; */
+        padding-left: 10px;
+    }
+    .custom-bullets1
+    {
+        padding-left: 0rem;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+
+    }
+    .start-button
+    {
+        width:12rem;
+        height: 2.3rem;
+        font-size: 1rem;
+        margin-bottom: 0.9rem;
+    }
+    .start-button-pos1
+    {
+        text-align: center;
+    }
+
+    .custom-card-footer1
+    {
+        width: 17rem;
+        font-size: 1rem;
+        /* color: white;        */
+    }
+    .recommedation-text
+    {
+        font-size: 1rem !important;
+        margin-top: 1.8rem !important;
+    }
+    .lower-body-title
+    {
+        font-size: 1.8rem !important;
+    }
+}
+@media only screen and (max-width:1024px) and (min-width:768px)
+{
+    
+    .custom-card-title1
+    {
+        font-size: 1.5rem;
+        /* color: white; */
+        line-height: 2.4rem;
+        font-weight: 300;
+    }
+    .yellow-line1
+    {
+        width:25rem !important;
+    }
+    .custom-card-lists1
+    {
+        font-size: 1rem;
+        /* color: white; */
+    }
+    .custom-card-head1
+    {
+        margin-top: 1rem;
+        font-size: 1.2rem;
+        /* color: white; */
+        padding-left: 10px;
+    }
+    .custom-bullets1
+    {
+        padding-left: 0rem;
+        
+    }
+    .start-button
+    {
+        width:12rem;
+        height: 2.3rem;
+        font-size: 1rem;
+        /* margin-bottom: 0.7rem; */
+    }
+    .custom-card-footer1
+    {
+        font-size: 1rem;
+        /* color: white;        */
+    }
+    .disclaimer1
+    {
+        width: 16rem !important;
+        font-size: 0.5rem !important;
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media only screen and (max-width : 768px ) and (min-width : 426px)
+{
+    .custom-card
+    {
+        background-color: transparent;
+    }
+    .custom-card-title1
+    {
+        font-size: 3.2rem;
+        /* color: white; */
+        line-height: 4rem;
+        font-weight: 500;
+    }
+    .custom-card-lists1
+    {
+        font-size: 1.8rem;
+        /* color: white; */
+    }
+    .custom-card-head1
+    {
+        margin-top: 3rem;
+        font-size: 2.2rem;
+        /* color: white; */
+        padding-left: 18px;
+    }
+    .custom-bullets1
+    {
+        padding-left: 0rem;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+
+    }
+    .start-button
+    {
+        width:20rem;
+        height: 4rem;
+        font-size: 1.4rem;
+        margin-top: 1.8rem ;
+        margin-bottom: 1.4rem;
+    }
+    .start-button-pos1
+    {
+        text-align: center;
+    }
+    .custom-card-footer1
+    {
+        width: 27rem;
+        font-size: larger;
+        /* color: white;        */
+    }
+    .accordion-button
+    {
+        font-size: x-large ;
+    }
+    .lower-body-title
+    {
+        font-size: xx-large;
+    }
+    .lower-body-ruler
+    {
+        width: 50% !important;
+    }
+    .recommedation-text
+    {
+
+        font-size: 1.8rem !important;
+    }
+}
+@media only screen and (max-width:320px)
+{
+    .custom-card-title1
+    {
+        font-size: 1.5rem;
+        line-height: 8mm;
+    }
+    .custom-card-lists1
+    {
+        font-size: 0.8rem;
+        /* color: white; */
+    }
+    .custom-card-head1
+    {
+        margin-top: 1rem;
+        font-size: 1rem;
+        /* color: white; */
+        padding-left: 10px;
+    }
+    .start-button
+    {
+        width:8rem;
+        height: 1.8rem;
+        font-size: 0.7rem;
+        margin-bottom: 0.5rem;
+    }
+    .start-button-pos1
+    {
+        text-align: center;
+    }
+    .custom-card-footer1
+    {
+        width: 15rem;
+        font-size: small;
+        /* color: white;        */
+    }
+    .lower-body-title
+    {
+        font-size: x-large !important;
+    }
+    .lower-body-ruler
+    {
+        width: 90% !important;
+    }
+    .recommedation-text
+    {
+        font-size: 0.9rem !important;
+        margin-top: 2rem !important;
+    }
+    .custom-bullets1
+    {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+
+    }
+    
+}
+.card-style
+{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    font-size: 10px;
+}
+.card-col1
+{
+    background: #003E7E;
+    font-size: 0.9rem;
+    text-align: justify;
+    font-weight: 400;
+    font-family: Arial;
+    padding-left: 3%;
+    padding-right: 3%;
+    
+}
+.card-col2
+{
+    background: rgba(254, 209, 3, 0.9);
+    font-size: 0.9rem;
+    text-align: justify;
+    font-family: Arial;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    padding-left: 3%;
+    padding-right: 3%;  
+    ;
+}
+
+.lower-body-title
+{
+    text-align: center;
+    font-family: Arial;
+    font-weight: 700;
+    font-style: normal;
+    /* line-height: 4rem; */
+    color: black;
+    font-size: 2.1rem;
+    margin-top: 1.8rem;
+}
+
+
+.accordion-button::after
+{
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-plus' viewBox='0 0 16 16'> <path d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/> </svg>");
+}
+.accordion-button:not(.collapsed)::after
+{
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-dash' viewBox='0 0 16 16'> <path d= 'M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/> </svg>");
+
+}
+.accordion-button:not(.collapsed)
+{
+    color: black !important;
+    background-color: white !important;
+    box-shadow: none !important;
+}
+.accordion-text
+{
+    font-weight: 700;
+    font-style: normal;
+    font-family: Arial;
+    color: black;
+    font-size: large;
+}
+.accordion-button:focus
+{
+    border:0px !important;
+    box-shadow: none !important;
+}
+.accordion-item
+{
+    border:0px !important;
+}
+.accordion-button
+{
+    padding:0.8rem 1.25rem !important;
+    align-items: center;
+}
