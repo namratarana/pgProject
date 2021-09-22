@@ -87,36 +87,60 @@
   background-color: #ffffff;
   border: solid 1px #003E7D;
 }
-
+.iPopUp
+{
+  background-color: #003E7D !important;
+  color: white;
+  border: 0 !important;
+  border-radius: 10px;
+  font-size: small;
+}
+.modal-header
+{
+  border-bottom: 0 !important;
+}
 /* IE and EDGE */
-progress {
+.progress {
   /* RESETS */
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border: none;
+    /* -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none; */
 
-  width: 100%;
+  width: 50%;
   height: 10px;
-  background-color: transparent !important;
-  color: #FED103;
+  /* border: 1px solid transparent !important; */
+  border-radius: 25px !important;
+  background-color: #00AAE7 !important;
+  color: #003E7E !important;
   transition: width 0.5s;
 }
+.progress-bar
+{
+  background-color: #003E7E !important;
 
+}
+.prog1
+{
+  background-color:transparent !important;
+  /* color: transparent!important; */
+}
 /* WEBKIT BROWSERS - CHROME, OPERA AND SAFARI */
-progress::-webkit-progress-bar {
-  background-color: transparent;
+.progress::-webkit-progress-bar {
+  background-color: #00AAE7;
   transition: width 0.5s;
+  /* border-radius: 25px; */
+
 }
 
-progress::-webkit-progress-value {
-  background-color: #FED103;
+.progress::-webkit-progress-value {
+  background-color: #003E7E !important;
   transition: width 0.5s;
 }
 
 /* MOZILLA FIREFOX */
 progress::-moz-progress-bar {
-  background-color: #FED103;
+  background-color: #003E7E;
   transition: width 0.5s;
 }
 .contactButton {
@@ -179,7 +203,7 @@ progress::-moz-progress-bar {
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image:linear-gradient(to left, rgba(2255,255,255, 0), rgba(255,255,255, 1) 75%), linear-gradient(to bottom, rgba(2255,255,255, 0) 25%, rgba(255,255,255, 1)), url("https://res.cloudinary.com/mtree/w_1600,q_auto:eco,f_auto,dpr_auto/PGPro_US/6Rg3v3VnKiiUKUjzZQ25wo/84c9cc15962af30ba152bbfcf2aa63be/Spic-and-Span-banner_2x.jpg");
+    background-image:linear-gradient(to left, rgba(2255,255,255, 0), rgba(255,255,255, 1) 75%), linear-gradient(to bottom, rgba(2255,255,255, 0) 25%, rgba(255,255,255, 1)), url("");
   }
 
 @media screen and (max-width: 600px) {

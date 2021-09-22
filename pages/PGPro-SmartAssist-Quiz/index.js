@@ -8,7 +8,7 @@ import { setNoProductModalFlag } from '../../action/RecommendationAction'
 import Button from "../../components/Button"
 import Question from "../../components/Question"
 import Progress from "../../components/ProgressBar"
-import Header from "../../components/Header"
+import Header2 from "../../components/header2"
 import AnswerSelection from "../../components/AnswerSelections"
 import QuestionIcon from "../../components/QuestionIcon"
 import NoProductModal from "../../components/NoProductModal"
@@ -16,6 +16,7 @@ import NoProductModal from "../../components/NoProductModal"
 import QuestionsData from "../../data/Questions.json"
 import ProductRecommendationData from "../../data/ProductRecommendation.json"
 import ImageReferenceData from "../../data/ImageReference.json"
+import Image from 'next/image'
 
 export class Questions extends React.PureComponent {
   state = {
@@ -37,6 +38,7 @@ export class Questions extends React.PureComponent {
     primaryAreasDefaultAnswers: [],
     setImage: [],
     showModal: false,
+    showIPopup : false,
     ProDisclaimer: [],
     SuperiorityData: [],
     hasToggleQuestion: false,
@@ -64,7 +66,7 @@ export class Questions extends React.PureComponent {
         SubAnswersIndex: i,
         subAnswerChosen: SubAnswer,
         currentselection: SubAnswer,
-        buttonIndex: 2.3,
+        // buttonIndex: 1.3,
       });
     }
     else // handles the first time selection
@@ -74,7 +76,7 @@ export class Questions extends React.PureComponent {
         SubAnswersIndex: i,
         subAnswerChosen: SubAnswer,
         currentselection: SubAnswer,
-        buttonIndex: 2.3
+        // buttonIndex: 1.3
       });
     }
   }
@@ -232,7 +234,7 @@ export class Questions extends React.PureComponent {
         return "Retail";
       case "Hair/Beauty":
         return "Hair/Beauty Salon";
-      case "Not a business":
+      case "Not a Business":
           return "Other";
       case "Other":
         return "Other";
@@ -522,7 +524,7 @@ export class Questions extends React.PureComponent {
                 {
                   console.log("nob")
                   console.log("subans:",SubAnswers)
-                  if(SubAnswers.SubAnswer === "Not a business")
+                  if(SubAnswers.SubAnswer === "Not a Business")
                   {
                     answersChosen[1] = '1-4'
                     this.setState({currentQuestionIndex: currentQuestionIndex+2, answersChosen: answersChosen});
@@ -651,7 +653,7 @@ export class Questions extends React.PureComponent {
     } 
     else if(id== "qImportant")
     {
-      if(SubAnswers.SubAnswer == "Not a business")
+      if(SubAnswers.SubAnswer == "Not a Business")
       {
         this.setState({currentQuestionIndex:currentQuestionIndex-2});
       }
@@ -689,14 +691,17 @@ export class Questions extends React.PureComponent {
     if(this.state.answersChosen[0]== "Business Service Contractors/Contract Cleaners")
     {
       this.state.answersChosen[1] = '5-10';
+      this.state.buttonIndex -=1;
     }
     else
-    {
+    { 
       this.state.answersChosen[1] = '5-9';
+      this.state.buttonIndex -=1;
     }
     this.setState({
       hasToggleQuestion:false,
       currentQuestionIndex: this.state.currentQuestionIndex+1,
+      
       // SubAnswers: "",
       // SubSubAnswers: "",
       // subAnswerChosen: "",
@@ -710,6 +715,14 @@ export class Questions extends React.PureComponent {
     console.log("currentQuestionIndex--",this.state.currentQuestionIndex)
     
   };
+  
+  openIpopup = ()=>
+  {
+    console.log("I-button");
+    // this.showIPopup = true;
+    this.setState({showIPopup:true});
+    console.log(this.showIPopup);
+  }
   render() {
     const {
       currentQuestionIndex,
@@ -744,9 +757,10 @@ export class Questions extends React.PureComponent {
     this.state.answersChosen.length+1)
     console.log('working')
     
+    
     return (
       <div className={currentQuestionIndex < QuestionsData.Data.Questions.length ? "imgBackground" : ""}>
-        <Header />
+        <Header2 />
 
         <Progress data={this.state.currentQuestionIndex} SubSubAnswers={this.state.SubSubAnswers} SubAnswers={this.state.SubAnswers} buttonIndex={this.state.buttonIndex} />
 
@@ -780,7 +794,22 @@ export class Questions extends React.PureComponent {
           </Modal.Footer>
         </Modal>
 
-
+          <div className="d-flex ">
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-sm">
+            <div class="modal-content iPopUp shadow">
+              <div class="modal-header iPopUp p-3">
+                Why do we need to know your number of businesses?
+              </div>
+              <div class="modal-body p-3">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        </div>
+        
         <div>
           {QuestionsData.Data.Questions.map(q => {
 
@@ -805,12 +834,15 @@ export class Questions extends React.PureComponent {
                         q.Question
                       )
                     }
+                    index ={q.index}
+                    popUp = {this.openIpopup()}
                   />
-
+                  
+                
                   {q.hasOwnProperty("SubText") ? <div className="row">
                     <div className="col-md-12 p-3 subQuestionText">{q.SubText}</div>
                   </div> : null}
-
+                  
                   <div className={q.id === "qTypeCleaner" ? "buttonContainerTypeCleaner animated animatedFadeInUp fadeInUp" : "buttonContainer animated animatedFadeInUp fadeInUp"}>
                     {hasSubSubQuestion ? (
                       SubAnswers.SubSubAnswer.map((a, i) => {
@@ -825,7 +857,8 @@ export class Questions extends React.PureComponent {
                                   SubSubAnswers: a,
                                   currentselection: a,
                                   // buttonIndex: buttonIndex + .3
-                                  buttonIndex: 3.9
+                                  buttonIndex: buttonIndex+1
+
                                 })
                             }
                           >

@@ -38,12 +38,12 @@ function Error({ statusCode, pathname }) {
       Router.push('/PGPro-SmartAssist-Recommendations')
       return true;
     }
-    else if(Router.asPath === '/')
-    {
-      console.log(5);
-      Router.push('/PGPro-SmartAssist-Home1');
-      return true;
-    }
+    // else if(Router.asPath === '/')
+    // {
+    //   console.log(5);
+    //   Router.push('/PGPro-SmartAssist-Home1');
+    //   return true;
+    // }
     else
     {
       console.log(6);
