@@ -527,7 +527,7 @@ export class Questions extends React.PureComponent {
                   if(SubAnswers.SubAnswer === "Not a Business")
                   {
                     answersChosen[1] = '1-4'
-                    this.setState({currentQuestionIndex: currentQuestionIndex+2, answersChosen: answersChosen});
+                    this.setState({currentQuestionIndex: currentQuestionIndex+2, answersChosen: answersChosen,buttonIndex:buttonIndex+2});
                   }
                   else
                   {
@@ -798,11 +798,11 @@ export class Questions extends React.PureComponent {
           <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered modal-sm">
             <div class="modal-content iPopUp shadow">
-              <div class="modal-header iPopUp p-3">
-                Why do we need to know your number of businesses?
+              <div class="modal-header iPopUp fw-bold p-3">
+              How Many Locations Do You Have?
               </div>
               <div class="modal-body p-3">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+              Based on your number of locations we will recommend different types of products as larger businesses typically have different equipment and more staff for diluting chemicals before use. 
               </div>
               
             </div>
@@ -857,7 +857,7 @@ export class Questions extends React.PureComponent {
                                   SubSubAnswers: a,
                                   currentselection: a,
                                   // buttonIndex: buttonIndex + .3
-                                  buttonIndex: buttonIndex+1
+                                  // buttonIndex: buttonIndex+1
 
                                 })
                             }

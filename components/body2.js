@@ -15,7 +15,7 @@ function Body2() {
            <section className="position-relative">
                 <div className="row g-0 row-cols-lg-2 row-cols-1" style={{}}>
                     <div className="col" style={{marginBottom:"-10px"}}>
-                        <Image src={`Image1.jpg`} priority={true} width='1280px' height='720px' loader={myLoader}/>
+                        <img src="https://res.cloudinary.com/mtree/image/upload/v1632299307/PGPro_US/CroppedImages/image1--1---1-.jpg" width='1280px' height='720px'/>
                     </div>
                     <div className="col d-lg-block d-none" style={{marginBottom:"-10px"}}>
                         <Image src={`Image2.jpg`} priority={true} width='1280x' height='720px'loader={myLoader}/>
