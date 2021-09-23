@@ -57,10 +57,13 @@ const Progress = (props) => {
         // let percent = Math.ceil((props.buttonIndex/totalQues)*100);
         console.log("props.buttonIndex%%%%%",percent);
         // console.log("totalQ",totalQues, props.buttonIndex);
+    
+    if(props.data <=5)
+    {
 
-
-    return(
-        <div className="d-flex flex-column align-items-center justify-content-center mt-5 ">
+        return(
+    
+            <div className="d-flex flex-column align-items-center justify-content-center mt-5 ">
             <div class="progress  prog1" style={{height:"20px",marginBottom:"-7px", marginLeft:"-3.5px" }}>
                 
                 <div class="progress-bar prog1" role="progressbar" style={{width: `${percent}%`}} aria-valuenow={percent} aria-valuemin="0" aria-valuemax={"100"}></div>
@@ -78,7 +81,14 @@ const Progress = (props) => {
                 <div class="progress-bar" role="progressbar" style={{width: `${percent}%`}} aria-valuenow={percent} aria-valuemin="0" aria-valuemax={"100"}></div>
             </div>
         </div>
-    )
+        )
+    }
+    else
+    {
+        return(
+            <div></div>
+        )
+    }
 }
 
 export default Progress;

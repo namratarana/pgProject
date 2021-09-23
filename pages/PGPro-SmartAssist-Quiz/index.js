@@ -622,6 +622,7 @@ export class Questions extends React.PureComponent {
     // this.setState({inBackTrack:true})
     console.log("id",id);
     if (id == "qBusinessType") {
+       console.log("NOB back");
       // console.log("kuch bhi aaja jaldi se");
         // console.log(this.state.inBackTrack)
       if (hasSubQuestion === false) 
@@ -660,9 +661,20 @@ export class Questions extends React.PureComponent {
     } 
     else if(id== "qImportant")
     {
+      console.log("**NoB**",SubAnswers);
+      
+
       if(SubAnswers.SubAnswer == "Not a Business")
       {
-        this.setState({currentQuestionIndex:currentQuestionIndex-2});
+        if (SubAnswers) {
+        if (SubSubAnswers) {
+          this.setState({ hasSubSubQuestion: true });
+        } else {
+          this.setState({ hasSubQuestion: true });
+        }
+      }
+      this.setState({ hasToggleQuestion: false, currentQuestionIndex: currentQuestionIndex - 2 });
+        // this.setState({currentQuestionIndex:currentQuestionIndex-1,SubAnswers:""});
       }
       else
       {
