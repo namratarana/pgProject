@@ -14,23 +14,49 @@ export async function getStaticProps(context) {
 const Progress = (props) => {
 
     // const [totalQues, settotalQues] = useState(Questions.Data.Questions.length);
-        let totalQues = Questions.Data.Questions.length
-        if (props.SubSubAnswers !== "" && props.SubAnswers !== "") 
+        // let totalQues = Questions.Data.Questions.length;
+        let percent;
+        switch(props.data)
         {
-            totalQues+=2;   
-        }
-        else 
-        {
-            if (props.SubSubAnswers === "" && props.SubAnswers !== "") 
-            {   
+            case 0:
+                console.log("progress check*****:",props.data);
+
+                percent=11;
+                if (props.SubSubAnswers !== "" && props.SubAnswers !== "") 
+                {
+                    percent=33;   
+                }
+                else 
+                {
+                    if (props.SubSubAnswers === "" && props.SubAnswers !== "") 
+                    {   
+                            
+                        percent=22;
+                    }
                     
-                totalQues+=1;
-            }
-            
+                }
+                break;
+            case 1:
+                percent=44;
+                break;
+            case 2:
+                percent=56;
+                break;
+            case 3:
+                percent=67;
+                break;
+            case 4:
+                percent=78;
+                break;
+            case 5:
+                percent=89;
+                break;
+                    
         }
-        let percent = Math.ceil((props.buttonIndex/totalQues)*100);
+        
+        // let percent = Math.ceil((props.buttonIndex/totalQues)*100);
         console.log("props.buttonIndex%%%%%",percent);
-        console.log("totalQ",totalQues, props.buttonIndex);
+        // console.log("totalQ",totalQues, props.buttonIndex);
 
 
     return(

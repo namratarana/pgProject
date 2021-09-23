@@ -622,18 +622,25 @@ export class Questions extends React.PureComponent {
     // this.setState({inBackTrack:true})
     console.log("id",id);
     if (id == "qBusinessType") {
-      if (hasSubQuestion === false) {
+      // console.log("kuch bhi aaja jaldi se");
+        // console.log(this.state.inBackTrack)
+      if (hasSubQuestion === false) 
+      {
+        // console.log("kuch bhi aaja jaldi se");
+        // console.log(this.state.inBackTrack)
         if (hasSubSubQuestion === false) {
           this.setState({ currentQuestionIndex: currentQuestionIndex, inBackTrack: false });
         }
         else {
           //if (SubAnswers.hasOwnProperty("SubQuestion")) {
-          this.setState({ hasSubSubQuestion: false, hasSubQuestion: true, inBackTrack: true });
+          this.setState({ hasSubSubQuestion: false,SubSubAnswers:"", hasSubQuestion: true, inBackTrack: true });
           //}
         }
       }
       else {
-        this.setState({ hasSubQuestion: false, inBackTrack: true });
+        console.log("kuch bhi aaja jaldi se");
+        console.log(this.state.inBackTrack)
+        this.setState({ hasSubQuestion: false, SubAnswers:"", inBackTrack: true });
       }
     }
     else if (id == "qFamiliarity") {
@@ -698,6 +705,7 @@ export class Questions extends React.PureComponent {
       this.state.answersChosen[1] = '5-9';
       this.state.buttonIndex -=1;
     }
+    // this.state.currentQuestionIndex=+1;
     this.setState({
       hasToggleQuestion:false,
       currentQuestionIndex: this.state.currentQuestionIndex+1,

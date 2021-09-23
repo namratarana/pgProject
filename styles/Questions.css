@@ -95,6 +95,7 @@
   border-radius: 10px;
   font-size: 1rem;
   text-align: justify;
+  cursor:pointer
 }
 .modal-header
 {

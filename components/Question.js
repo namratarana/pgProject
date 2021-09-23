@@ -14,7 +14,7 @@ export default function Question(props) {
       {props.index==1?
                       <span className="ps-3">
                         
-                        <Image data-bs-toggle="modal" data-bs-target="#exampleModal" src={`i-icon.png`} priority={true} width='20px' height='20px' loader={myLoader} onClick={e=> props.popUp}/>
+                        <Image className="iPopUp"data-bs-toggle="modal" data-bs-target="#exampleModal" src={`i-icon.png`} priority={true} width='20px' height='20px' loader={myLoader} onClick={e=> props.popUp}/>
                         
                       </span>
                       :

@@ -14,18 +14,18 @@ function Body2() {
           
            <section className="position-relative">
                 <div className="row g-0 row-cols-lg-2 row-cols-1" style={{}}>
-                    <div className="col" style={{marginBottom:"-10px"}}>
-                        <img src="https://res.cloudinary.com/mtree/image/upload/v1632299307/PGPro_US/CroppedImages/image1--1---1-.jpg" width='1280px' height='720px'/>
+                    <div className="col" style={{marginBottom:""}}>
+                        <img src="https://res.cloudinary.com/mtree/image/upload/v1632318367/PGPro_US/CroppedImages/Image1%20%281%29%20%281%29.jpg" className="img-fluid" width='1280px' height='720px' />
                     </div>
-                    <div className="col d-lg-block d-none" style={{marginBottom:"-10px"}}>
-                        <Image src={`Image2.jpg`} priority={true} width='1280x' height='720px'loader={myLoader}/>
+                    <div className="col d-lg-block d-none" style={{marginBottom:""}}>
+                        <img src="https://res.cloudinary.com/mtree/image/upload/v1632318273/PGPro_US/CroppedImages/Image2%20%281%29.jpg" className="img-fluid" width='1280px' height='720px'/>
                     </div>
                 
-                    <div className="col  d-lg-block d-none" style={{marginBottom:"-10px"}}>
-                        <Image src={`Image3.jpg`} priority={true} width='1280x' height='720px'loader={myLoader}/>   
+                    <div className="col  d-lg-block d-none" style={{marginBottom:""}}>
+                        <img src="https://res.cloudinary.com/mtree/image/upload/v1632318574/PGPro_US/CroppedImages/Image3%20%281%29.jpg" className="img-fluid" width='1280px' height='720px'/>
                     </div>
-                    <div className="col" style={{marginBottom:"-7px"}}>
-                        <Image src={`Image4.jpg`} priority={true} width='1280x' height='720px' loader={myLoader}/>
+                    <div className="col" style={{marginBottom:""}}>
+                        <img src="https://res.cloudinary.com/mtree/image/upload/v1632318517/PGPro_US/CroppedImages/Image4%20%281%29%20%281%29%20%281%29.jpg" className="img-fluid" width='1280px' height='720px'/>
                     </div>
                 </div>
 
