@@ -33,7 +33,7 @@ export default function Result(props) {
     const [emailAddress, setEmailAddress] = useState('');
     const [validEmail, setValidEmail] = useState(false);
 
-
+   
 
     const formRef = useCallback(node => {
         // console.log({ node });
@@ -51,9 +51,11 @@ export default function Result(props) {
       <div class="card-body">
       <h3><b>Where should we send your results?</b>
                             </h3>
+                            
+
+                            <div  className='emailContent' >
                             <p> Your email address</p>
 
-                            <div className='emailContent'>
               {validEmailMessage && (
                 <div className='email-error'>{validEmailMessage}</div>
               )}
@@ -63,15 +65,19 @@ export default function Result(props) {
                 className='emailInput mb-3'
                 value={emailAddress}
                 onChange={e => setEmailAddress(e.target.value)}
-                placeholder='Email Address'
+                placeholder=''
                 aria-label='Email Address'
                 aria-describedby='basic-addon2'
                 // disabled={emailSubmitted}
               />
               
                 </div>
+                
+                <a href="#" class="btn btn-primary but">Get My Results</a>
+                <p className="justify-content-center"> By proceeding, I agree to emails from SmartAssist and other trusted P&G brands and programs. Click to read P&G Terms and Conditions and P&G Privacy Policy  
+                    </p>
 
-        <a href="#" class="btn btn-primary">Get My Results</a>
+        
         
                            <div className="col-lg-6 col-12 order-1 order-lg-2">
                         <div className="text-center">
@@ -108,7 +114,7 @@ export default function Result(props) {
                                <div>
                                    <ul>
                                    <li className="custom-card-lists1 text-start">
-                                           You are a midsized business in the Hospitality industry.  </li> </ul>
+                                           You are a {props.BS!==undefined?props.BS:''} {" "} sized business in the {props.BT!==undefined?props.BT:''} industry.  </li> </ul>
                                    
                                            <ul>  <li className="custom-card-lists1 text-start">
                                            There are several important needs when buying products.                                    
@@ -117,7 +123,10 @@ export default function Result(props) {
                                            You want cleaning to be done as easy as possible and to clean multiple areas.
                                        </li> </ul>
                                      <ul>  <li className=" custom-card-lists1 text-start">
-                                           A key challenge you encounter is disinfection of high frequency touchpoints.
+                                           A key challenge you encounter is {" "}
+                    {props.Tens === undefined
+                        ? " "
+                        : tens(props.Tens).toString().replace('and,', 'and')}.
                                        </li>
                                    </ul>
                                </div>

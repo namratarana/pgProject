@@ -130,7 +130,7 @@ const Recommendations = (props) => {
                 : */}
 
                 <div>
-                    <Card />
+                    
 
                 <div>
                     {answersChosen?<Result
@@ -161,24 +161,32 @@ const Recommendations = (props) => {
                             async
                         ></script>
                     </Head>
-                    <div className="selectProducts mx-auto">
+                    {/* <div className="selectProducts mx-auto">
                         Select a product to view more details.
-                </div>
+                </div> */}
 
-
+                <div class="d-flex justify-content-sm-start">
                     <div className="scrollContainer mt-4">
+                        
                         <button className="buttonContainerLeft" id="slideLeft">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#003E7D" className="bi bi-chevron-left" viewBox="0 0 16 16">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="black" className="bi bi-chevron-left" viewBox="0 0 16 16">
                                 <path fillRule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
                             </svg>
                         </button>
                         <div className="scrollItems" id="scrollItems">
+                           
                             {/* <div className="nonCarouselView"> */}
                             {coreData.map((s, i) => (
                                 <div key={i}>
 
                                     {/* <a className="prev" onClick={this.scroll.bind(null,-1)}>&#10094;</a> */}
                                     <div className="d-flex flex-column align-items-center image-container grow-on-hover">
+                                        < div className="card px-4 py-4 m-3">
+                                        <div className="productData">
+                                                {s.ProductName}
+                                            </div>
+
+
                                         <div >
                                             <a href={"#Product" + i} rel="noopener" data-action-detail={"#Product" + i} className="event_button_click">
                                                 <img
@@ -187,12 +195,11 @@ const Recommendations = (props) => {
                                                     alt={s.ProductBrand + " " + s.ProductName}
                                                 />
                                             </a>
+                                            
                                         </div>
-
+                                        </div>
                                         <div>
-                                            <div className="productData">
-                                                {s.ProductName}
-                                            </div>
+                                           
                                         </div>
                                         {/* <div className="middle">
                                         {s.PrimaryArea.map((y, j) => (
@@ -202,7 +209,7 @@ const Recommendations = (props) => {
                                         ))}
                                     </div> */}
                                     </div>
-
+                                        
 
                                 </div>
 
@@ -211,37 +218,23 @@ const Recommendations = (props) => {
 
                         </div>
                         <button className="buttonContainerRight" id="slideRight">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#003E7D" className="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="black" className="bi bi-chevron-right" viewBox="0 0 16 16">
                                 <path fillRule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
                             </svg>
                         </button>
-
+                                            </div>
                     </div>
-                    <div className="text-center mx-auto">
-                        <EmailResults
-                            answersChosen={props.answersChosen}
-                            uniqueProductImages={uniqueProductImages}
-                            SubAnswerChosen={props.SubAnswerChosen}
-                        />
-                    </div>
-                    {coreData.map((x, i) => (
-                        <ProductCard
-                            x={x}
-                            i={i}
-                            key={i}
-                            setModalProductData={setModalProductData}
-                        />
-                    ))}
+                    
 
                     <div>
                         {/* <div className="col-md-6 offset-2 mt-4 border-top"> */}
-                        <div className="mobileFlex">
+                        {/* <div className="mobileFlex">
                             <div className="container moreRecommText mt-5">
                                 Ancillary Products: For the Extra Tough Jobs
                         </div>
                             <div className="yellowAccent mb-5"></div>
 
-                        </div>
+                        </div> */}
                     </div>
                     {nonCoreData.map((x, i) => (
                         <ProductCard
@@ -251,6 +244,15 @@ const Recommendations = (props) => {
                             setModalProductData={setModalProductData}
                         />
                     ))}
+
+<div className="text-center mx-auto">
+                        <EmailResults
+                            answersChosen={props.answersChosen}
+                            uniqueProductImages={uniqueProductImages}
+                            SubAnswerChosen={props.SubAnswerChosen}
+                        />
+                    </div>
+                    
 
                     <div>
                         <Claims />

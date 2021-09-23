@@ -59,36 +59,51 @@ const ProductCard = (props) => {
                                 </div>
                             </div>
                         </div>
-                    <div className="cardInfoFlex">
-
-                        <div className="infoContLeft pr-4">
-                            <div className="imgContainer">
+                        
+                    <div className="cardInfoFlex ">
+                        
+                        <div className="infoContLeft pr-3">
+                            <div className="imgContainer col-sm-3">
                                 <img
                                     className="productRecommImage mb-2"
                                     src={ProductInfo.ImageUrl}
                                     alt={ProductInfo.ProductBrand + " " + ProductInfo.ProductName}
                                 />
-                                <div
-                                    className="ps-widget buyNowButton event_buy_now event_buy_now_chose_product"
-                                    ps-widget-type="lightbox"
-                                    role="button"
-                                    aria-disabled="false"
-                                    aria-label="Find where to buy this product"
-                                    data-action-detail={ProductInfo.Sku}
-                                    ps-sku={ProductInfo.Sku}
-                                />
-                            </div>
-                        </div>
-
-                        <div className="infoContRight">
-                            <div className="cardHeader mb-2">
+                                 <div className="cardHeader ">
                                 <div className="productTitle">
                                     {ProductInfo.ProductBrand}®
                                     </div>
-                                <div className="productSubTitle">
+                                    <div className="productSubTitle">
                                     {ProductInfo.ProductName}
                                 </div>
+                                 
                                 <div className="productSubInfo">
+                                    <div className="desktopSds">
+                                        <button onClick={()=>{props.setModalProductData(ProductInfo);props.setModalFlag(true)}} className=" buttonWrapper d-inline-flex align-items-center buttonView event_button_click" data-action-detail="sds_button">
+                                            <img
+                                                src={
+                                                    ImageReferenceData.SdsImage
+                                                }
+                                                alt="SDS icon"
+                                            />
+                                            <div className="sdsText">View SDS</div>
+                                        </button>
+                                    
+                                    <div className="sizeData">
+                                        {ProductInfo.SizeData}
+                                    </div>
+                                </div>
+                                </div>
+                                </div>
+                        </div>
+
+                        <div className="infoContRight">
+                            {/* <div className="cardHeader "> */}
+                                {/* <div className="productTitle">
+                                    {ProductInfo.ProductBrand}®
+                                    </div> */}
+                                
+                                {/* <div className="productSubInfo">
                                     <div className="desktopSds">
                                         <button onClick={()=>{props.setModalProductData(ProductInfo);props.setModalFlag(true)}} className=" buttonWrapper d-inline-flex align-items-center buttonView event_button_click" data-action-detail="sds_button">
                                             <img
@@ -103,18 +118,11 @@ const ProductCard = (props) => {
                                     <div className="sizeData">
                                         {ProductInfo.SizeData}
                                     </div>
-                                </div>
-                            </div>
-                            <div className="productDescription py-2">
-                            <div className="productRecommend"> Description </div>
-                                <div className="row px-2">
-                                    <div className="row">
-                                        <div dangerouslySetInnerHTML={{__html: ProductInfo.BulletProductDescriptionData }} />
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="cardInfoContainer">
-                                <div className="superiorityContainer mr-3">
+                                </div> */}
+                            {/* </div> */}
+                           
+                            <div className="cardInfoContainer ">
+                                {/* <div className="superiorityContainer mr-3">
                                     <p className="productRecommend"> Product Superiority </p>
                                     <div className="row px-2">
                                         <div className="row">
@@ -123,23 +131,27 @@ const ProductCard = (props) => {
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> */}
+                                
 
                                 <div className="recommendContainer">
-                                    <p className="productRecommend"> Why we recommend: </p>
+                                    <p className="productRecommend"> <u>Your Locations it Can Clean </u></p>
                                     <div className="chips">
-                                        {ProductInfo.PrimaryArea.map((y, j) => (
+                                    {ProductInfo.PrimaryArea.map((y, j) => (
                                             <div className="py-2 px-1" key={j}>
                                                 <span className="p-2 prod-recomm-area prod-primary-area">{y}</span>
                                             </div>
                                         ))}
                                     </div>
+                                    <div className="recommendContainer">
+                                    <p className="productRecommend"> <u>Your Problem it tackles </u></p>
                                     <div className="chips"> 
                                         {ProductInfo.Tensions.map((y, j) => (
                                             <div className="py-2 px-1" key={j}>
                                                 <span className="p-2 prod-recomm-area prod-tensions">{y}</span>
                                             </div>
                                         ))}
+                                    </div>
                                     </div>
                                     <div className="mobileSds">
                                         <button onClick={()=>{props.setModalProductData(ProductInfo);props.setModalFlag(true)}} className=" buttonWrapper d-inline-flex align-items-center buttonView event_button_click" data-action-detail="sds_button">
@@ -154,11 +166,40 @@ const ProductCard = (props) => {
                                     </div>
                                 </div>
                             </div>
+                            
+                            </div>
+                            <div className="infoContRight">
+                             <div className="productDescription py-2">
+                            <div className="productRecommend"> Description </div>
+                                <div className="row px-2">
+                                    <div className="row">
+                                        <div dangerouslySetInnerHTML={{__html: ProductInfo.BulletProductDescriptionData }} />
+                                    </div>
+                                </div>
+                            
+                            <div
+                                    className="ps-widget buyNowButton event_buy_now event_buy_now_chose_product"
+                                    ps-widget-type="lightbox"
+                                    role="button"
+                
+                                    aria-disabled="false"
+                                    aria-label="Find where to buy this product"
+                                    data-action-detail={ProductInfo.Sku}
+                                    ps-sku={ProductInfo.Sku}
+                                />
+                                
+                            </div>
+                           </div>
                         </div>
+                        
                     </div>
+                    
                 </div>
+                
             </div>
+            
         </div>
+
     )
 }
 

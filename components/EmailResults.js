@@ -139,7 +139,9 @@ const emailResults = ({
   const initialContent = _document ? parse(_document.head.innerHTML) : [];
   return (
     <div className='container mt-4'>
-      {/* <Frame
+      <h3> <b>Save Your Results</b> </h3>
+      <p> <b> Just enter your email and we'll send you a  copy of your results! </b> </p>
+       <Frame
         head={initialContent}
         className={`formIFrame ${emailSubmitted && 'd-none'}`}
       >
@@ -171,21 +173,21 @@ const emailResults = ({
                 className='emailInput mb-3'
                 value={emailAddress}
                 onChange={e => setEmailAddress(e.target.value)}
-                placeholder='Email Address'
+                placeholder='Your email address'
                 aria-label='Email Address'
                 aria-describedby='basic-addon2'
                 // disabled={emailSubmitted}
               />
-              <div className='form-check'>
-                <input
+              {/* <div className='form-check'> */}
+                {/* <input
                   className='form-check-input checkBox'
                   minchecked='1'
                   type='checkbox'
                   // disabled={emailSubmitted}
                   onChange={handleCheckBox}
-                ></input>
+                ></input> */}
 
-                <label
+                {/* <label
                   className='form-check-label checkBoxLabel ml-2 '
                   // htmlFor='flexCheckDefault'
                 >
@@ -213,8 +215,8 @@ const emailResults = ({
                     Privacy Policy
                   </a>
                   .
-                </label>
-              </div>
+                </label> */}
+              {/* </div> */}
 
               <input
                 disabled={
@@ -223,19 +225,12 @@ const emailResults = ({
                 }
                 className='emailResultsButton mt-3 event_button_click'
                 type='submit'
-                value='Email My Results'
+                value='Get My Results'
                 readOnly
                 data-action-detail="email_results-button"
               />
-            </div>
-          </form>
-        </div>
-      </Frame> */}
 
-   
-
-
-      {/* <div
+<div
         className={`submittedButtonContainer ${!emailSubmitted && 'd-none'}`}
       >
         <input
@@ -247,9 +242,16 @@ const emailResults = ({
           readOnly
         />
       </div>
-      <Link href={process.env.NEXT_PUBLIC_BASE_URL}>
-        <button onClick={handleReset} className='btnRestartQuiz pt-2 event_button_click' data-action-detail="restart-quiz-button">Restart Quiz</button>
-      </Link> */}
+            </div>
+          </form>
+        </div>
+      </Frame> 
+
+   
+
+
+     
+      
     </div>
   )
 }

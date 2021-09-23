@@ -19,7 +19,7 @@ export default function ClaimsTable(props) {
                 </div>
                 <div className="yellowAccent mb2"></div>
 
-                <div className="claimsCard container mt-2 mb-2">
+                <div className="claimsCard container mt-2 mb-3">
                     <div className="claimsContainer">
                         { Claims.ClaimsList.map((q, i) => {
                             return <div key={i} className="claimsLi">
