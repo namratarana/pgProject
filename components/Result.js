@@ -71,13 +71,13 @@ export default function Result(props) {
                 // disabled={emailSubmitted}
               />
               
-                </div>
+             
                 
                 <a href="#" class="btn btn-primary but">Get My Results</a>
-                <p className="justify-content-center"> By proceeding, I agree to emails from SmartAssist and other trusted P&G brands and programs. Click to read P&G Terms and Conditions and P&G Privacy Policy  
+                <p className="parag"> By proceeding, I agree to emails from SmartAssist and other trusted P&G brands and programs. Click to read P&G Terms and Conditions and P&G Privacy Policy  
                     </p>
 
-        
+         </div>
         
                            <div className="col-lg-6 col-12 order-1 order-lg-2">
                         <div className="text-center">
@@ -88,7 +88,7 @@ export default function Result(props) {
                                 <p style={{backgroundColor:"#FED103", height:"3.5px"}}/>
                             </div>
                         </div>
-
+                   
                        
                     </div>
 

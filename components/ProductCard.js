@@ -33,7 +33,7 @@ const ProductCard = (props) => {
 
     return (
         <div id={"Product" + ProductIndex} className="container py-3 mt-2">
-            <div className="card cardView col-md-9">
+            <div className="card cardView col-md-10">
                 <div className="cardFlex">
                         <div className="mobileCardHeader">
                             <div className="mobileProductTitle">
@@ -60,10 +60,11 @@ const ProductCard = (props) => {
                             </div>
                         </div>
                         
-                    <div className="cardInfoFlex ">
+                    <div className=" cardInfoFlex py-3 px-3">
+                        <div className="row"> 
                         
-                        <div className="infoContLeft pr-3">
-                            <div className="imgContainer col-sm-3">
+                        <div className=" infoContLeft col-sm-3">
+                            <div className="imgContainer">
                                 <img
                                     className="productRecommImage mb-2"
                                     src={ProductInfo.ImageUrl}
@@ -96,8 +97,9 @@ const ProductCard = (props) => {
                                 </div>
                                 </div>
                         </div>
+                        </div>
 
-                        <div className="infoContRight">
+                        <div className=" infoContRight col-sm-5">
                             {/* <div className="cardHeader "> */}
                                 {/* <div className="productTitle">
                                     {ProductInfo.ProductBrand}®
@@ -121,7 +123,7 @@ const ProductCard = (props) => {
                                 </div> */}
                             {/* </div> */}
                            
-                            <div className="cardInfoContainer ">
+                            <div className="cardInfoContainer">
                                 {/* <div className="superiorityContainer mr-3">
                                     <p className="productRecommend"> Product Superiority </p>
                                     <div className="row px-2">
@@ -134,7 +136,7 @@ const ProductCard = (props) => {
                                 </div> */}
                                 
 
-                                <div className="recommendContainer">
+                                <div className="recommendContainer ">
                                     <p className="productRecommend"> <u>Your Locations it Can Clean </u></p>
                                     <div className="chips">
                                     {ProductInfo.PrimaryArea.map((y, j) => (
@@ -143,7 +145,7 @@ const ProductCard = (props) => {
                                             </div>
                                         ))}
                                     </div>
-                                    <div className="recommendContainer">
+                                    <div className="recommendContainer col-sm-3">
                                     <p className="productRecommend"> <u>Your Problem it tackles </u></p>
                                     <div className="chips"> 
                                         {ProductInfo.Tensions.map((y, j) => (
@@ -168,8 +170,8 @@ const ProductCard = (props) => {
                             </div>
                             
                             </div>
-                            <div className="infoContRight">
-                             <div className="productDescription py-2">
+                            <div className="row infoContRight col-sm-4">
+                             <div className="productDescription py-3">
                             <div className="productRecommend"> Description </div>
                                 <div className="row px-2">
                                     <div className="row">
@@ -190,7 +192,7 @@ const ProductCard = (props) => {
                                 
                             </div>
                            </div>
-                        </div>
+                            </div>
                         
                     </div>
                     
