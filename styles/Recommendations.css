@@ -218,11 +218,13 @@ color: #003E7D;
 .prod-primary-area{
   background: rgba(254, 209, 3, 0.1);
   font-size: 12px;
+  width: 45%;
   }
-.prod-tensions{
+  /* .prod-tensions
+  {
     background: rgba(239, 65, 41, 0.1);
     font-size: 12px;
-}
+  } */
 .carousel-control-prev-icon, .carousel-control-next-icon {
   background-color: #262323;
 }
@@ -358,7 +360,7 @@ color: #003E7D;
 }
 
 .scrollContainer{
-  width: 65%;
+  width: 90%;
   margin:auto;
   display: flex;
   align-items: center ;

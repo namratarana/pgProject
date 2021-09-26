@@ -34,13 +34,14 @@
   border: 1px solid #003e7d;
   box-sizing: border-box;
   border-radius: 2px;
+  
 }
 .emailInput {
-  width: 389px;
-  height: 44px;
-  border: 1px solid #003e7d;
+  width: 16rem ;
+  height: 2.4rem !important;
+  border: 1.5px solid #4fa0f1;
   box-sizing: border-box;
-  border-radius: 10px;
+  border-radius: 6px;
   padding-left: 1em;
   color: #003e7d;
 }
@@ -52,10 +53,20 @@
 }
 .checkBoxLabel {
   font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
-  color: #9a9a9a;
+  font-weight: bold;
+  font-size: xx-small !important;
+  line-height: 0.7rem;
+  color: black;
+  margin-left: 0rem;
+  width: 90%;
+
+}
+
+.card2subText
+{
+    font-size: 0.8rem !important;
+    font-weight: 500;
+    text-align: left;
 }
 .emailResultsLinks {
   color: #9a9a9a;
@@ -76,6 +87,7 @@
 .emailContent {
   display: flex;
   flex-direction: column;
+  justify-content: right;
   align-items: center;
   position: relative;
 }
@@ -84,22 +96,19 @@
 }
 
 .emailResultsButton {
-  width: 175px;
-  height: 50px;
+  width: 60% !important;
+  height: 2.3rem !important;
   cursor: pointer;
   background: #003e7d;
   border-radius: 26px;
-  font-style: normal;
-  font-size: 16px;
-  line-height: 22px;
+  font-size: 0.8rem !important;
   color: white;
-  border-width: 0 !important;
-  outline: 0px !important;
+  /* margin-left: 2rem; */
 }
 
 .emailResultsButton:disabled {
-  background: #f2f2f2;
-  color: #333333;
+  background:#003e7d;
+  color:white ;
 }
 
 .formIFrame {
@@ -130,6 +139,24 @@
   font-size: 12px;
 }
 
+@media only screen and (max-width:1025px) and  (min-width:769px)
+{
+  /* .emailIcon
+  {
+    height:30px;
+    width:30px;
+  } */
+  .emailInput
+  {
+    width: 12rem;
+  }
+  
+}
+
+@media only screen and (max-width:769px)
+{
+ 
+}
 @media screen and (max-width: 600px) {
   .emailContent {
     display: flex;
@@ -137,11 +164,11 @@
     align-items: center;
   }
 
-  .emailInput {
-    width: 100%;
+  /* .emailInput {
+    width: 200px;
     margin-bottom: 0.5em;
     font-size: 12px;
-  }
+  } */
 
   .emailResultsButton {
     width: 140px;

@@ -1,9 +1,9 @@
-.cardView {
+/* .cardView {
     background: #ffffff;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
     border-radius: 0 !important;
     padding: 1em;
-  }
+  } */
 
 .cardHeader{
     width:60%;
@@ -68,14 +68,7 @@
     line-height: 14px;
     color: #333333;
   }
-.imgContainer{
-    margin-top:-15px;
-    margin-left:1.5em;
-    vertical-align: middle;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
 
 .infoContLeft{
     display: flex;
@@ -114,6 +107,8 @@ li {
 
 .buyNowButton{
     max-width: 150px;
+    color: white;
+    background-color: #003E7E  !important;
 }
 
   @media screen and (max-width: 600px) {
@@ -133,22 +128,18 @@ li {
         display: flex;
         flex-direction: column;
     }
-    .mobileProductTitle {
+    /* .mobileProductTitle {
         font-style: normal;
-        font-weight: 300;
+        font-weight: bolder !;
         font-size: 16px;
         line-height: 19px;
-      }
-    .mobileProductSubInfo {
-        display: flex;
-        align-items: center;
-        /* width:60%; */
-        justify-content: flex-end;
-    }
-    .mobileProductSubTitle {
+        
+      } */
+    
+    /* .mobileProductSubTitle {
         color: #003E7D;
         font-weight: 600;
-    }
+    } */
      
     .mobileSizeData{ 
         font-style: normal;
@@ -215,10 +206,7 @@ li {
         margin-top:1em;
     }
     
-    .infoContLeft{
-        margin:auto;
-        width:auto;
-    }
+    
     
     .infoContRight{
         width:100%;
@@ -227,7 +215,7 @@ li {
     .prod-recomm-area{
         font-style: normal;
         font-weight: 500;
-        font-size: 12px;
+        font-size: 0.4rem !important;
         line-height: 17px;
         /* identical to box height */
         text-align: center;
@@ -242,13 +230,7 @@ li {
         outline: 0px !important;
       }
 
-      .productRecommImage{
-        display: block;
-        max-width:150px;
-        
-        width: auto;
-        height: auto;
-      }
+      
 
       .recommendContainer {
         width: 100%;

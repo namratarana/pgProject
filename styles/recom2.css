@@ -1,0 +1,468 @@
+.card1
+{
+    border-radius: 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 19rem;
+}
+.cardBody1
+{
+    margin-left: 2rem;
+}
+.card-lists
+{
+    margin-top: 1rem;
+}
+.card2
+{
+    border-radius: 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 19rem;
+}
+.cardTitle1
+{
+    color: #003E7E;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.cardTitle2
+{
+    color:black;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.cardText2
+{
+    margin-top: -0.8rem;
+}
+.card1Lists
+{
+    font-size: 0.95rem;
+    font-weight: bold;
+}
+.card2subText
+{
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: -4px;
+    /* margin-left: -7rem !important; */
+}
+
+.productCards
+{
+    border: 1.1px solid rgb(212, 208, 208) !important;
+    width: 12.2rem;
+    height: 15.5rem;
+    border-radius:5px;
+}
+.prod-recomm-area
+{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.6rem !important;
+    line-height: 14px;
+    /* identical to box height */
+    text-align: center;
+    color: #333333;
+}
+.prodCardHead
+{
+    background-color: transparent;
+    border: 0;   
+}
+.productData
+{
+    color: black;
+    font-size: 0.8rem;
+    font-weight: bolder;
+    margin-top: 0.5rem;
+    text-align: center;   
+}
+.prodImage
+{
+    height: 7rem;
+    width: auto;
+    margin-top: -2.3rem;
+}
+.prod-primary-area
+{
+    background: rgba(254, 209, 3, 0.1);
+    font-size: 12px;
+    width: 45%;
+}
+  
+.lowerEmailText
+{
+    font-style: italic !important;
+}
+
+.lowerEmailBox
+{
+    border: 1px solid black !important;
+}
+.emailIcon
+{
+    width: 50px;
+    height: 50px;
+}
+
+
+@media only screen and (max-width:1024px) and (min-width:769px)
+{
+    .card1Lists
+    {
+        font-size: 0.7rem;
+        line-height: 0.5!important;
+    }
+    .cardTitle2
+    {
+        font-size: 1rem;
+    }
+    .cardText2
+    {
+        margin-top: -0.8rem ;
+    }
+    .productCards
+    {
+        width: 12.5rem;
+        height: 15.7rem;
+    }
+    .prod-recomm-area
+    {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.6rem !important;
+        line-height: 14px;
+        /* identical to box height */
+        text-align: center;
+        color: #333333;
+    }
+    .prod-primary-area
+    {
+        background: rgba(254, 209, 3, 0.1);
+        font-size: 12px;
+        width: 45%;
+    }
+      
+}
+@media only screen and (max-width:768px) and (min-width:426px)
+{
+    .card1 ,.card2{
+        border:0 !important;
+        box-shadow: none !important;
+    }
+    .cardTitle1
+    {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-top: -2rem;
+        margin-bottom: 2rem;
+    } 
+    .card1Lists
+    {
+        margin-top: -1rem;
+        font-size: 0.9rem;
+    }
+    .card1line
+    {
+        color: black !important;
+        height: 3px !important;
+    }
+
+    .cardTitle2
+    {
+        font-size: 1.3rem;
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+    .productCards
+    {
+        border: 0px solid rgb(212, 208, 208) !important;
+        width: 12.2rem;
+        height: 16rem;
+    
+    }
+    .prod-primary-area
+    {
+        background: rgba(254, 209, 3, 0.1);
+        font-size: 12px;
+        width: 45%;
+    }
+      
+    .prod-recomm-area
+    {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.6rem !important;
+        line-height: 14px;
+        /* identical to box height */
+        text-align: center;
+        color: #333333;
+    }    
+    .prodCardHead
+    {
+        background-color: transparent;
+        border: 0;   
+    }
+    .productData
+    {
+        color: black;
+        font-size: 0.8rem;
+        font-weight: bolder;
+        margin-top: 0.5rem;
+        text-align: center;   
+    }
+    .prodImage
+    {
+        height: 7rem;
+        width: auto;
+        margin-top: -2.3rem;
+    }  
+}
+
+@media only screen and (max-width:426px)
+{
+    .card1 ,.card2{
+        border:0 !important;
+        box-shadow: none !important;
+    }
+    .cardBody1
+    {
+        margin-left: 0;
+    }
+    .card-text
+    {
+        padding-left: -2rem;
+    }
+    .cardTitle1
+    {
+        font-size: 1.7rem;
+        text-align: center;
+        margin-top: -1rem;
+        margin-bottom: 1rem !important;
+    } 
+    .card1Lists
+    {
+        margin-top: -2rem;
+        font-size: 0.6rem;
+        font-weight: bold !important;
+    }
+    .card1line
+    {
+        color: black !important;
+        height: 3px !important;
+        margin-top: -1rem;
+    }
+
+    .cardTitle2
+    {
+        font-size: 1.3rem;
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+    .productCards
+    {
+        border: 0px solid rgb(212, 208, 208) !important;
+        width: 9.8rem;
+        height: 14rem;
+    }
+    .prod-primary-area
+    {
+        background: rgba(254, 209, 3, 0.1);
+        font-size: 12px;
+        width: 40%;
+    }
+      
+    .prod-recomm-area
+    {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.5rem !important;
+        line-height: 14px;
+        /* identical to box height */
+        text-align: center;
+        color: #333333;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .prodCardHead
+    {
+        background-color: transparent;
+        border: 0;   
+    }
+    .productData
+    {
+        color: black;
+        font-size: 0.5rem !important;
+        font-weight: bolder;
+        margin-top: 0.2rem;
+        text-align: center;   
+    }
+    .prodImage
+    {
+        height: 5rem;
+        width: auto;
+        margin-top: -2.3rem;
+    } 
+    
+}
+
+@media only screen and (max-width:376px)
+{
+    .card1 ,.card2{
+        border:0 !important;
+        box-shadow: none !important;
+    }
+    .cardBody1
+    {
+        margin-left: 0;
+    }
+    .card-lists
+    {
+        margin-top: 0.5rem;
+    }
+    .card-text
+    {
+        margin-left: -1rem;
+    }
+    .cardTitle1
+    {
+        font-size: 1.3rem;
+        text-align: center;
+        margin-top: -2rem;
+        margin-bottom: 1rem !important;
+    } 
+    .card1Lists
+    {
+        margin-top: -2rem;
+        font-size: 0.6rem;
+        font-weight: bolder;
+    }
+    .card1line
+    {
+        color: black !important;
+        height: 3px !important;
+        margin-top: -1rem;
+    }
+
+    .cardTitle2
+    {
+        font-size: 1.3rem;
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+    .recommTitle
+    {
+        font-size: 1.3rem;
+        margin-top: -0.5rem;
+    }
+    .productCards
+    {
+        border: 1px solid rgb(212, 208, 208) !important;
+        width: 9.8rem;
+        height: 12rem;
+    }
+    .prod-recomm-area
+    {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.4rem !important;
+        line-height: 14px;
+        /* identical to box height */
+        text-align: center;
+        color: #333333;
+        margin-left: 10px;
+        margin-right: 10px;
+        
+    }
+    .prod-primary-area{
+        background: rgba(254, 209, 3, 0.1);
+        font-size: 12px;
+        width: 40% ;
+    }
+      
+    .prodCardHead
+    {
+        background-color: transparent;
+        border: 0;   
+    }
+    .productData
+    {
+        color: black;
+        font-size: 0.4rem !important;
+        font-weight: bolder;
+        margin-top: -0.5rem;
+        text-align: center; 
+        line-height: 10px !important;  
+    }
+    .prodImage
+    {
+        height: 4rem;
+        width: auto;
+        margin-top: -3rem;
+    }
+}
+
+@media only screen and (max-width:321px)
+{
+    .card1 ,.card2{
+        border:0 !important;
+        box-shadow: none !important;
+    }
+    .card1{
+        height: 25rem;
+    }
+    
+    .cardBody1
+    {
+        margin-left: 0;
+    }
+    .card-lists
+    {
+        margin-top: 0rem;
+    }
+    .card-text
+    {
+        margin-left: -0.9rem;
+    }
+    .cardTitle1
+    {
+        font-size: 1.3rem;
+        text-align: center;
+        margin-top: -2rem;
+        margin-bottom: 1rem !important;
+    } 
+    .card1Lists
+    {
+        font-size: 0.6rem;
+        font-weight: bolder;
+    }
+    .card1line
+    {
+        color: black !important;
+        height: 3px !important;
+        margin-top: -6rem;
+    }
+    /* .card2line
+    {
+        color: black !important;
+        height: 3px !important;
+        margin-top: -6rem;
+    } */
+
+    .cardTitle2
+    {
+        font-size: 1rem;
+        text-align: center;
+        margin-top: -5rem;
+        margin-bottom: 2rem;
+    }
+    .recommTitle
+    {
+        font-size: 1rem;
+    }
+    
+}

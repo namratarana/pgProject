@@ -1,0 +1,51 @@
+.cardView2
+{
+    background: #ffffff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px !important;
+    padding: 2em;
+}
+
+.description
+{
+    font-size: 0.6rem !important;
+    font-weight: bolder !important;
+}
+.mobileProductTitle 
+{
+    font-weight: bolder !important;
+    font-size: 0.8rem !important;
+    line-height: 19px;   
+}
+.mobileProductSubTitle1 {
+    color: #003E7D;
+    font-weight: 600;
+    width: 25% ;
+}
+
+.sdsText 
+{
+    font-weight: 300;
+    font-size: 0.6rem;
+    line-height: 14px;
+    color: #333333;
+}
+.mobileSizeData{ 
+    font-weight: 300;
+    font-size: 0.6rem;
+    line-height: 14px;
+    color: #333333;
+    text-align: right;
+  }
+
+.buyNowButton1{
+    max-width: 150px;
+    height: 2rem;
+    color: white !important;
+    background-color: #003E7E  !important;
+    border-radius: 25px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    /* margin-left: 50% !important; */
+}

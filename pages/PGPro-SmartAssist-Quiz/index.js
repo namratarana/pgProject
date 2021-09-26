@@ -1024,7 +1024,7 @@ export class Questions extends React.PureComponent {
 
                       {q.id === 'qTensions' ?
 
-                        <Link href='/PGPro-SmartAssist-Recommendations'>
+                        <Link href='/PGPro-SmartAssist-Recommendations2'>
                           <button onClick={() => this.setResult(q.id)}
                             disabled={q.id === 'qImportant' && this.state.answersChosen[currentQuestionIndex] != undefined ? this.state.answersChosen[currentQuestionIndex].length === 0 ? (true) : (false)
                               : q.id === 'qPrimaryAreas' ? answersChosen && answersChosen[currentQuestionIndex].length == 0 && this.state.primaryAreasList === true

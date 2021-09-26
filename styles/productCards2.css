@@ -1,0 +1,215 @@
+.recommCard
+{
+    width: 67%;
+    border-radius: 15px;
+    border: 1px solid rgb(168, 162, 162);
+    margin-top: 3rem ;
+}
+.cardView 
+{
+    background: #ffffff;
+    padding: 2em;
+}
+/* .infoContLeft{
+    margin:auto;
+    width:auto;
+} */
+.imgContainer
+{
+    margin-top: -0.5rem;
+    margin-left: -2.5rem;
+    vertical-align: middle;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* .productRecommImage
+{
+    display: block;
+    max-width:150px;
+    
+    width: auto;
+    height: auto;
+} */
+.productRecommImage
+{
+    display: block;
+    max-width:150px;
+    width:10rem;
+    height: 9rem;
+}
+.prod-primary-area2
+{
+    background: rgba(254, 209, 3, 0.1);
+    font-size: 0.6rem;
+    width: 30%;
+    text-align: center;
+    color: #333333;
+    margin-bottom: 0.2rem;
+}
+.descriptionProd
+{
+    margin-left: -0.5rem;
+    font-size: 0.7rem  !important;
+    font-weight: bolder !important;
+}
+.mobileProductTitle 
+{
+    font-weight: bolder !important;
+    font-size: 0.6rem !important;
+    line-height: 19px;   
+}
+.mobileProductSubTitle {
+    color: #003E7D;
+    font-weight: 600;
+    width: 80%;
+    font-size: 1rem;
+
+}
+.mobileProductSubInfo
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.mobileSizeData{ 
+    font-weight: 300;
+    font-size: 0.6rem;
+    line-height: 14px;
+    color: #333333;
+    text-align: right;
+  }
+
+
+.buyNowButton{
+
+    height: 2rem;
+    color: white !important;
+    background-color: #003E7E  !important;
+    border-radius: 25px !important;
+    justify-content: center !important;
+    margin-left: 40% !important;
+}
+.scrollItems
+{
+    overflow:hidden
+}
+.cleanLocations
+{
+    margin-top: -1rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: bolder !important;
+    color: #003E7E;
+}
+
+.prod-tensions
+{
+    background: rgba(239, 65, 41, 0.1);
+    font-size: 0.6rem;
+    font-weight: bolder !important;
+    width: 40%;
+    text-align: center;
+    color: #333333;
+    margin-bottom: 0.2rem;
+}
+/* ************************************* */
+  .cardHeader{
+    width:60%;
+    /* margin:auto; */
+}
+.mobileCardHeader {
+    display: none;
+}
+.cardFlex{
+    display:flex;
+    flex-direction: column;
+  }
+
+.cardInfoFlex{
+    display: flex;
+}
+
+.cardInfoContainer{
+    display:flex;
+}
+.superiorityContainer{
+    width:50%;
+}
+/* 
+.desktopSds{
+    display: flex;
+    width: 50%;
+} */
+
+.mobileSds{
+    display: none;
+}
+
+.chips{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.productTitle {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+  }
+.productSubInfo{
+    display: flex;
+    align-items: center;
+    width:60%;
+}
+.sdsText 
+{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 14px;
+    color: #333333;
+    
+}
+ 
+.sizeData{ 
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 14px;
+    color: #333333;
+  }
+
+
+.superioritySpan {
+    line-height: 1.5;
+}
+
+.superscript {
+    position: relative;
+    bottom: 0.5em;
+    font-size: 0.8em;
+}
+
+.recommendContainer {
+    width: 50%;
+}
+.ps-widget {
+    border: none!important;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 17px;
+    outline: 0px !important;
+  }
+
+
+
+/* ************************** */
+@media only screen and (max-width:1025px)
+{
+    .recommCard
+    {
+        width: 75%;
+    }
+}
