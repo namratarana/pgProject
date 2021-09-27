@@ -6,7 +6,15 @@
   background: rgba(0, 62, 126, 0.1);
   max-width: 65%;
   margin: auto;
-  padding:1em;
+  padding: 1em;
+}
+
+.emailIcon {
+  position: absolute;
+  top: 0.6rem;
+  /* left: 3rem; */
+  left: 0;
+  margin-left: -0.35rem;
 }
 .resultHeadPage {
   font-style: normal;
@@ -34,11 +42,10 @@
   border: 1px solid #003e7d;
   box-sizing: border-box;
   border-radius: 2px;
-  
 }
 .emailInput {
-  width: 15rem !important;
-  height: 2.4rem !important;
+  width: 15rem;
+  height: 2.4rem;
   border: 1.5px solid #4fa0f1;
   box-sizing: border-box;
   border-radius: 6px;
@@ -48,25 +55,25 @@
 .checkBox {
   width: 18px;
   height: 18px;
-  background:white;
+  background: white;
   border-color: black;
 }
 .checkBoxLabel {
   font-style: normal;
-  font-weight: bold;
+  /* font-weight: bold; */
   font-size: xx-small !important;
   line-height: 0.7rem;
   color: black;
   margin-left: 0rem;
   width: 90%;
-
+  text-align: justify;
+  word-spacing: 1px;
 }
 
-.card2subText
-{
-    font-size: 0.8rem !important;
-    font-weight: 500;
-    text-align: left;
+.card2subText {
+  font-size: 0.8rem !important;
+  font-weight: 500;
+  text-align: left;
 }
 .emailResultsLinks {
   color: #9a9a9a;
@@ -91,13 +98,17 @@
   align-items: center;
   position: relative;
 }
-.form-check {
+/* .form-check {
   max-width: 398px;
+} */
+
+.terms {
+  width: 15rem;
 }
 
 .emailResultsButton {
-  width: 60% !important;
-  height: 2.3rem !important;
+  width: 60% !important ;
+  height: 2.3rem;
   cursor: pointer;
   background: #003e7d;
   border-radius: 26px;
@@ -107,8 +118,8 @@
 }
 
 .emailResultsButton:disabled {
-  background:#003e7d;
-  color:white ;
+  background: #003e7d;
+  color: white;
 }
 
 .formIFrame {
@@ -138,22 +149,69 @@
   background-color: #ffffff;
   font-size: 12px;
 }
+.emailInput2 {
+  width: 25rem;
+  padding: 10px;
+}
 
-@media only screen and (max-width:1025px) and  (min-width:769px)
-{
+@media only screen and (max-width: 1026px) and (min-width: 768px) {
   /* .emailIcon
   {
     height:30px;
     width:30px;
   } */
-  .emailInput
-  {
-    width: 12rem;
+  .emailInput {
+    width: 10rem;
+    height: 1.8rem;
   }
-  
+  .emailIcon {
+    height: 20px;
+    width: 20px;
+  }
+  .emailResultsButton {
+    width: 50% !important;
+    height: 1.8rem;
+  }
+  .terms {
+    width: 10rem;
+    font-size: xx-small;
+  }
 }
 
-@media only screen and (max-width:769px)
-{
- 
+@media only screen and (max-width: 769px) {
+
+  .terms {
+    width: 25rem;
+  }
+  .emailResultsButton {
+    background: white !important;
+    border: 2px solid #003e7d;
+    color: #003e7d !important;
+    height: 2.5rem;
+  }
+
+}
+
+
+@media only screen and (max-width: 426px) {
+
+  .emailInput2 {
+    width: 18rem;
+  }
+  .terms {
+    width: 18rem;
+  }
+
+}
+
+@media only screen and (max-width: 321px) {
+
+  .emailInput2 {
+    margin-top: -1.5rem;
+  }
+  .terms{
+    margin-top: -1rem;
+  }
+
+
 }

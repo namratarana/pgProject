@@ -88,7 +88,7 @@
   }
   
   .emailResultsButton1 {
-    width: 20%;
+    width: 40%;
     height: 2.3rem;
     cursor: pointer;
     border: 1px solid black;
@@ -147,6 +147,9 @@
     {
       width: 12rem;
     }
+    .emailResultsButton1{
+      width: 40%;
+    }
     
   }
   
@@ -156,26 +159,40 @@
     {
       width: 11rem;
     }
+    .emailResultsButton1{
+      width: 40%;
+    }
   }
   @media only screen and (max-width:426px)
   {
     .emailInput1
     {
-      width: 8rem;
+      width: 14rem !important ;
+    }
+    .emailResultsButton1{
+      width: 40%;
     }
   }
   @media only screen and (max-width:376px)
   {
     .emailInput1
     {
-      width: 9rem;
+      width: 12rem !important;
+    }
+    .emailResultsButton1{
+      width: 40%;
     }
   }
+
   @media only screen and (max-width:321px)
   {
     .emailInput1
     {
-      width: 9rem;
+      width: 10rem !important;
+    }
+    .emailResultsButton1{
+      width: 40%;
+      font-size: x-small;
     }
   }
   
