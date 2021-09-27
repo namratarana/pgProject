@@ -1,26 +1,68 @@
-.cardView2
+
+.recommCard1
+{
+    width: 32%;
+    border-radius: 0;
+    /* border: 1px solid #E5E5E5; */
+    box-shadow: 0 4px 4px  rgba(0, 0, 0, 0.25);
+    margin-top: 3rem ;
+    margin-right: 1rem;
+    /* background-color: white; */
+}
+.cardView1
 {
     background: #ffffff;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 !important;
     border-radius: 15px !important;
-    padding: 2em;
+}
+.imgContainer1
+{
+    margin-top: -0.5rem;
+    margin-left: -2.5rem;
+    vertical-align: middle;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.productRecommImage1
+{
+    display: block;
+    /* max-width:150px; */
+    width: auto;
+    height: 8rem;
+}
+.container .recommCard1
+{
+    flex: none !important;
+}
+.descriptionPoints
+{
+    font-size: 0.7rem ;
+    margin-left: -2rem !important;
+    font-weight: 900 !important;
+    color: black;
+}
+.description1
+{
+    font-size: 0.8rem ;
+    font-weight: bolder !important;
+    margin-bottom: 0.5rem;
 }
 
-.description
+.descriptionTitle
 {
-    font-size: 0.6rem !important;
-    font-weight: bolder !important;
-}
-.mobileProductTitle 
-{
-    font-weight: bolder !important;
-    font-size: 0.8rem !important;
-    line-height: 19px;   
-}
-.mobileProductSubTitle1 {
+    align-items: flex-start !important;
+    margin-left: 1rem;
     color: #003E7D;
-    font-weight: 600;
-    width: 25% ;
+    flex: none !important;
+}
+.mobileProductSubTitle1 
+{
+    width: 85%;
+    font-size: 1.1rem;
+    font-weight: bolder;
+    color: #003E7D;
+
 }
 
 .sdsText 
@@ -44,8 +86,19 @@
     color: white !important;
     background-color: #003E7E  !important;
     border-radius: 25px !important;
-    display: flex;
-    align-items: center;
+    display: flex !important;
+    align-items: center !important;
     justify-content: center ;
     /* margin-left: 50% !important; */
+}
+
+@media only screen and (max-width:1025px) 
+{
+    .mobileProductSubTitle1 
+    {
+        
+        font-size: 0.9rem;
+        font-weight: bolder;
+        color: #003E7D;
+    }
 }

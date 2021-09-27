@@ -1,0 +1,181 @@
+
+.resultsPage {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    background: rgba(0, 62, 126, 0.1);
+    max-width: 65%;
+    margin: auto;
+    padding:1em;
+  }
+  .resultHeadPage {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    color: #003e7d;
+  }
+  .resultContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 8%;
+    grid-row-gap: 10px;
+    justify-content: center;
+    justify-items: center;
+  }
+  .emailButton1 {
+    background: #003e7d;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: white;
+    border: 1px solid #003e7d;
+    box-sizing: border-box;
+    border-radius: 2px;
+    
+  }
+  .emailInput1{
+    width: 20rem !important;
+    height: 2.4rem !important;
+    border: 1.5px solid #8f959b;
+    box-sizing: border-box;
+    padding-left: 1em;
+    color: #003e7d;
+    border-radius: 0 !important;
+  }
+  
+  .checkBoxLabel {
+    font-style: normal;
+    font-weight: bold;
+    font-size: xx-small !important;
+    line-height: 0.7rem;
+    color: black;
+    margin-left: 0rem;
+    width: 90%;
+  }
+  
+  .card2subText
+  {
+      font-size: 0.8rem !important;
+      font-weight: 500;
+      text-align: left;
+  }
+  .emailResultsLinks {
+    color: #9a9a9a;
+    text-decoration: underline;
+  }
+  
+  .emailResultsLinks:hover {
+    color: #01a0e0;
+  }
+  .resultPageText {
+    color: #003e7d;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 36px;
+    text-align: center;
+  }
+  
+  .emailContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: center;
+    position: relative;
+  }
+  
+  .emailResultsButton1 {
+    width: 20%;
+    height: 2.3rem;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 25px;
+    font-size: 0.8rem ;
+    font-weight: bold;
+    color: #003e7d;
+    margin-left: 1rem;
+    
+  }
+  
+  .emailResultsButton:disabled {
+    background:#003e7d;
+    color:white ;
+  }
+  
+  .formIFrame {
+    border: none;
+    margin: 0;
+    height: 250px;
+    width: 100%;
+  }
+  .emailButton2
+  {
+      width: 20% !important;
+  }
+  /* .formIFrame.submitted {
+    opacity: 0;
+    height: 0;
+  } */
+  
+  .email-error {
+    position: absolute;
+    top: 0;
+    transform: translateY(-100%);
+    color: #9a9a9a;
+  }
+  
+  .messageText {
+    color: red;
+  }
+  .btnRestartQuiz {
+    color: #9a9a9a;
+    background-color: #ffffff;
+    font-size: 12px;
+  }
+  
+  @media only screen and (max-width:1025px) and  (min-width:769px)
+  {
+    /* .emailIcon
+    {
+      height:30px;
+      width:30px;
+    } */
+    .emailInput1
+    {
+      width: 12rem;
+    }
+    
+  }
+  
+  @media only screen and (max-width:769px)
+  {
+    .emailInput1
+    {
+      width: 11rem;
+    }
+  }
+  @media only screen and (max-width:426px)
+  {
+    .emailInput1
+    {
+      width: 8rem;
+    }
+  }
+  @media only screen and (max-width:376px)
+  {
+    .emailInput1
+    {
+      width: 9rem;
+    }
+  }
+  @media only screen and (max-width:321px)
+  {
+    .emailInput1
+    {
+      width: 9rem;
+    }
+  }
+  

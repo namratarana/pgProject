@@ -14,12 +14,12 @@ export default function ClaimsTable(props) {
     return (
         <div>
             <div className="mobileFlex">
-                <div className="container moreRecommText mt-3">
+                <div className="container moreRecommText">
                     Claims
                 </div>
                 <div className="yellowAccent mb2"></div>
 
-                <div className="claimsCard container mt-2 mb-2">
+                <div className="claimsCard container mb-2">
                     <div className="claimsContainer">
                         { Claims.ClaimsList.map((q, i) => {
                             return <div key={i} className="claimsLi">

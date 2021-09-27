@@ -1,20 +1,19 @@
-.recommCard2
+.recommCard2-small
 {
     width: 67%;
     border-radius: 15px;
-    border: 1px solid rgb(168, 162, 162);
-    margin-top: 3rem ;
+    /* border: 1px solid rgb(168, 162, 162); */
+    margin-top: 1rem ;
 }
-.cardView 
+.cardView-small
 {
     background: #ffffff;
-    padding: 2em;
 }
 /* .infoContLeft{
     margin:auto;
     width:auto;
 } */
-.imgContainer
+.imgContainer-small
 {
     margin-top: -0.5rem;
     margin-left: -2.5rem;
@@ -31,14 +30,14 @@
     width: auto;
     height: auto;
 } */
-.productRecommImage
+.productRecommImage-small
 {
     display: block;
     max-width:150px;
     width:10rem;
     height: 9rem;
 }
-.prod-primary-area2
+.prod-primary-area2-small
 {
     background: rgba(254, 209, 3, 0.1);
     font-size: 0.6rem;
@@ -47,32 +46,36 @@
     color: #333333;
     margin-bottom: 0.2rem;
 }
-.descriptionProd
+.descriptionProd-small
 {
     margin-left: -0.5rem;
     font-size: 0.7rem  !important;
     font-weight: bolder !important;
 }
-.mobileProductTitle 
+.mobileProductTitle-small
 {
     font-weight: bolder !important;
     font-size: 0.6rem !important;
     line-height: 19px;   
 }
-.mobileProductSubTitle {
-    color: #003E7D;
-    font-weight: 600;
+.mobileProductSubTitle-small {
+    color: black;
+    font-weight: bold;
     width: 80%;
     font-size: 1rem;
 }
-.mobileProductSubInfo
+.mobileProductSubInfo-small
 {
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
-
-.mobileSizeData{ 
+.prodLink
+{
+    font-size: 0.9rem;
+    color: #003E7E;
+}
+.mobileSizeData-small{ 
     font-weight: 300;
     font-size: 0.6rem;
     line-height: 14px;
@@ -81,20 +84,23 @@
   }
 
 
-.buyNowButton{
+.buyNowButton-small{
 
     height: 2rem;
     color: white !important;
     background-color: #003E7E  !important;
     border-radius: 25px !important;
+    display: flex !important;
     justify-content: center !important;
-    margin-left: 35% !important;
+    align-items: center;
+    width: 50%;
+    margin-left: 20% !important;
 }
-.scrollItems
+.scrollItems-small
 {
     overflow:hidden
 }
-.cleanLocations
+.cleanLocations-small
 {
     margin-top: -1rem;
     margin-bottom: 0.5rem;
@@ -103,7 +109,7 @@
     color: #003E7E;
 }
 
-.prod-tensions
+.prod-tensions-small
 {
     background: rgba(239, 65, 41, 0.1);
     font-size: 0.6rem;
@@ -114,26 +120,26 @@
     margin-bottom: 0.2rem;
 }
 /* ************************************* */
-  .cardHeader{
+  .cardHeader-small{
     width:60%;
     /* margin:auto; */
 }
-.mobileCardHeader {
+.mobileCardHeader-small {
     display: none;
 }
-.cardFlex{
+.cardFlex-small{
     display:flex;
     flex-direction: column;
   }
 
-.cardInfoFlex{
+.cardInfoFlex-small{
     display: flex;
 }
 
-.cardInfoContainer{
+.cardInfoContainer-small{
     display:flex;
 }
-.superiorityContainer{
+.superiorityContainer-small{
     width:50%;
 }
 /* 
@@ -142,27 +148,27 @@
     width: 50%;
 } */
 
-.mobileSds{
+.mobileSds-small{
     display: none;
 }
 
-.chips{
+.chips-small{
     display: flex;
     flex-wrap: wrap;
 }
 
-.productTitle {
+.productTitle-small{
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
     line-height: 19px;
   }
-.productSubInfo{
+.productSubInfo-small{
     display: flex;
     align-items: center;
     width:60%;
 }
-.sdsText 
+.sdsText-small 
 {
     font-style: normal;
     font-weight: 300;
@@ -172,7 +178,7 @@
     
 }
  
-.sizeData{ 
+.sizeData-small{ 
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -181,20 +187,20 @@
   }
 
 
-.superioritySpan {
+.superioritySpan-small {
     line-height: 1.5;
 }
 
-.superscript {
+.superscript-small {
     position: relative;
     bottom: 0.5em;
     font-size: 0.8em;
 }
 
-.recommendContainer {
+.recommendContainer-small {
     width: 50%;
 }
-.ps-widget {
+.ps-widget-small {
     border: none!important;
     font-style: normal;
     font-size: 12px;
@@ -205,10 +211,3 @@
 
 
 /* ************************** */
-@media only screen and (max-width:1025px)
-{
-    .recommCard
-    {
-        width: 75%;
-    }
-}

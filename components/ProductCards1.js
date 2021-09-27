@@ -32,71 +32,67 @@ const ProductCard = (props) => {
     const ProductIndex = props.i
 
     return (
-        <div id={"Product" + ProductIndex} className="container mt-2">
-            <div className="card cardView col-12">
-                    <div className="row">
-                        <div className="col col-12">
-                            
-                            <div className="mobileProductSubTitle1 ms-5">
-                                {ProductInfo.ProductName}
-                            </div>
-                            <div className=" text-center infoContLeft pr-4">
-                                <div className="imgContainer">
-                                    <img
-                                        className="productRecommImage mb-2"
-                                        src={ProductInfo.ImageUrl}
-                                        alt={ProductInfo.ProductBrand + " " + ProductInfo.ProductName}
-                                    />
-                                </div>       
-                            </div>
-                            <div
-                                className="ps-widget buyNowButton1 event_buy_now event_buy_now_chose_product mt-4"
-                                ps-widget-type="lightbox"
-                                role="button"
-                                aria-disabled="false"
-                                aria-label="Find where to buy this product"
-                                data-action-detail={ProductInfo.Sku}
-                                ps-sku={ProductInfo.Sku}>
-                                    Buy Now
-                            </div>
-                                
-                            <div className="col col-12">
-                                <p><u style={{color:"#003E7E "}}>Description</u></p>
-                                <div className="row px-2 ">
-                                    <div className="row">
-                                        <div className="description" dangerouslySetInnerHTML={{__html: ProductInfo.BulletProductDescriptionData }} />
-                                        <div className="description" dangerouslySetInnerHTML={{__html: ProductInfo.BulletProductSuperiorityData }} />
-                                    </div>
-                                </div>
-                            </div>
-                             
-                        </div>
-
-                        <div className="col col-12">
-                            <p className="mt-3"><u style={{color:"#003E7E "}}>Your locations it can clean</u></p>
-                            <div className="chips">
-                                {ProductInfo.PrimaryArea.map((y, j) => (
-                                    <div className="py-2 px-1" key={j}>
-                                        <span className="p-2 prod-recomm-area prod-primary-area">{y}</span>
-                                    </div>
-                                ))}
-                            </div>
-
-                            <p className="mt-3"><u style={{color:"#003E7E "}}>Your problems it tackles</u></p>
-                            <div className="chips"> 
-                                {ProductInfo.Tensions.map((y, j) => (
-                                    <div className="py-2 px-1" key={j}>
-                                        <span className="p-2 prod-recomm-area prod-tensions">{y}</span>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
-                        
-                        
-                        
-                    </div>
-                
+        <div id={"Product" + ProductIndex} className="col-lg-4 recommCard1 ">
+            <div className="d-flex justify-content-center">
+                <div className="mobileProductSubTitle1 text-wrap text-center mt-2">
+                        {ProductInfo.ProductName}
+                </div>
             </div>
+
+            <div className="d-flex justify-content-center mt-2">
+                <img
+                    className="productRecommImage1"
+                    src={ProductInfo.ImageUrl}
+                    alt={ProductInfo.ProductBrand + " " + ProductInfo.ProductName}
+                />
+            </div>
+            <div className="d-flex justify-content-center mt-4">
+                <div
+                    className="ps-widget buyNowButton1 event_buy_now event_buy_now_chose_product "
+                    ps-widget-type="lightbox"
+                    role="button"
+                    aria-disabled="false"
+                    aria-label="Find where to buy this product"
+                    data-action-detail={ProductInfo.Sku}
+                    ps-sku={ProductInfo.Sku}>
+                        
+                </div>
+            </div>
+            <div className="descriptionTitle mt-2">
+                
+                <u><p className="description1">Description</p></u>
+                <div className="row ms-2 text-wrap">
+                        <div className="descriptionPoints" dangerouslySetInnerHTML={{__html: ProductInfo.BulletProductDescriptionData }} />
+                        <div className="descriptionPoints" dangerouslySetInnerHTML={{__html: ProductInfo.BulletProductSuperiorityData }} />
+                        
+                
+                </div>
+            </div>
+            <div className="descriptionTitle mt-2">
+                
+                <u><p className="description1">Your Locations it Will Clean</p></u>
+                <div className="row text-wrap">
+                <div className="chips">
+                        {ProductInfo.PrimaryArea.map((y, j) => (
+                            <div className="py-1 px-1" key={j}>
+                                <span className="p-2 prod-recomm-area prod-primary-area">{y}</span>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+
+                <u><p className="description1 mt-1">Your Problems it Tackles</p></u>
+                <div className="row text-wrap">
+                <div className="chips">
+                {ProductInfo.Tensions.map((y, j) => (
+                            <div className="py-2 px-1" key={j}>
+                                <span className="p-2 prod-recomm-area prod-tensions">{y}</span>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </div>
+            
         </div>
     )
 }

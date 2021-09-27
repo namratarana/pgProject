@@ -25,7 +25,7 @@ const emailResults = ({
 }) => {
 
   // Email form
-  const [checkBoxStatus, setCheckBoxStatus] = useState(false);
+  // const [checkBoxStatus, setCheckBoxStatus] = useState(false);
   const [emailAddress, setEmailAddress] = useState('');
   const [validEmail, setValidEmail] = useState(false);
   const [validEmailMessage, setValidEmailMessage] = useState('');
@@ -125,9 +125,9 @@ const emailResults = ({
     { name: 'product_10_img', value: imageUrl[9] }
   ];
 
-  const handleCheckBox = evt => {
-    setCheckBoxStatus(evt.target.checked);
-  };
+  // const handleCheckBox = evt => {
+  //   setCheckBoxStatus(evt.target.checked);
+  // };
 
   const handleReset = () => {
     setProductResult([])
@@ -197,7 +197,7 @@ const emailResults = ({
                       <input
                           disabled={
                             // emailSubmitted ||
-                            !(validEmail && checkBoxStatus)
+                            !(validEmail)
                           }
                           className='emailResultsButton d-flex justify-content-center mt-3 event_button_click'
                           type='submit'
@@ -241,7 +241,7 @@ const emailResults = ({
 
 
       <div
-        className={`submittedButtonContainer ${!emailSubmitted && 'd-none'}`}
+        className={`submittedButtonContainer text-center w-100 ${!emailSubmitted && 'd-none'}`}
       >
         <input
           disabled={true}

@@ -32,7 +32,7 @@ const ProductCard = (props) => {
     const ProductIndex = props.i
 
     return (
-        <div id={"Product" + ProductIndex} className="container recommCard">
+        <div id={"Product" + ProductIndex} className="container recommCard2">
             <div className="card cardView col-12">
                     <div className="row">
                         <div className="col col-lg-4 col-12">

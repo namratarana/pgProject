@@ -10,12 +10,12 @@ function SDSModal(props) {
   console.log(productDetails.SDSurls);
 
   return (
-    <Modal
+    <Modal className="langModal"
       show={modalFlag} size="lg"
       aria-labelledby="example-custom-modal-styling-title"
     >
       <Modal.Header>
-        <img src={ImageReferenceData.SdsImage}alt="SDS icon"/>
+        <img className="sds-Img" src={ImageReferenceData.SdsImage}alt="SDS icon"/>
         <button className="closeButton" onClick={() => props.setModalFlag()}>&#10006;</button>
       </Modal.Header>
       <Modal.Body className="show-grid">
@@ -25,9 +25,9 @@ function SDSModal(props) {
         </div>
         <div className="mx-3 selectProduct"><p>Select Language to Download SDS sheet</p></div>
         <div className="container">
-          <div className="row">
-            <div className="col-md-12">
-              <div className="modalLanguageButton">
+          <div className="row"> 
+            <div className="col-12">
+              <div className="modalLanguageButton text-center">
                 {productDetails?productDetails.SDSurls?Object.entries(productDetails.SDSurls).map((keys, keyIndex) => {
                   return keys[1].map((unit, unitIndex) => (
                   <a href={unit} rel="noopener"><button className="LanguageButtons" >{keys[0]}</button></a>

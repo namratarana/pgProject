@@ -2,7 +2,11 @@ import React, { useState, useEffect }  from "react"
 import Head from "next/head"
 import Result from "../../components/Result"
 import EmailResults from "../../components/EmailResults";
+// import EmailResultsSmall from "../../components/EmailResults-small";
+import EmailResults1 from "../../components/EmailResults1";
 import ProductCards2 from '../../components/ProductCards2';
+import ProductCards2small from '../../components/ProductCards2small';
+
 import Claims from '../../components/Claims';
 import SDSModal from '../../components/SDSModal';
 import Header2 from "../../components/header2"
@@ -126,7 +130,9 @@ const Recommendations = (props) => {
                             <div className="col col-lg-6 offset-lg-1 col-12">
                             <div class="card card1 align-items-center">
                                 <div class="card-body cardBody1">
-                                    <h5 class="card-title cardTitle1">Your Business Profile</h5>
+                                    
+                                    <p class="card-title cardTitle1 "><span  className="yellowLine">Your Business Profile</span></p>
+                                    <div/>
                                     
                                     {/* <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> */}
                                     <p class="card-text">
@@ -150,8 +156,8 @@ const Recommendations = (props) => {
                                                 </svg>
                                             </span>
                                             <span >
-                                                <li  className ="ms-4">
-                                                    <span className="card1Lists">You are a {answersChosen[1]=='5-9'?"medium sized business": "small sized business"} in the {answersChosen[0]} industry.</span>
+                                                <li  className ="ms-4 card1Lists">
+                                                    You are a {answersChosen[1]=='5-9'?"medium sized business": "small sized business"} in the {answersChosen[0]} industry.
                                                 </li> 
                                             </span>
                                         </div>
@@ -171,8 +177,8 @@ const Recommendations = (props) => {
                                             </svg>
 
                                             <span>
-                                                <li  className ="ms-4">
-                                                    <span className="card1Lists">There are several important needs when buying products.</span>
+                                                <li  className ="ms-4 card1Lists">
+                                                    There are several important needs when buying products.
                                                 </li> 
                                             </span>
                                         </div>
@@ -190,8 +196,8 @@ const Recommendations = (props) => {
                                             </svg>
                                             </span>
                                             <span>
-                                                <li  className ="ms-4">
-                                                    <span className="card1Lists">{answersChosen[3]}</span>
+                                                <li  className ="ms-4 card1Lists">
+                                                    {answersChosen[3]}
                                                 </li> 
                                             </span>
                                         </div>
@@ -212,8 +218,8 @@ const Recommendations = (props) => {
 
                                             </span>
                                             <span>
-                                                <li  className ="ms-4">
-                                                <span className="card1Lists">A key challenge you encounter is{answersChosen[5]}</span>
+                                                <li  className ="ms-4 card1Lists">
+                                                A key challenge you encounter is{answersChosen[5]}.
                                                 </li> 
                                             </span>
                                         </div>
@@ -231,11 +237,20 @@ const Recommendations = (props) => {
                                     <p class="card-text cardText2">
                                         <div className="d-flex justify-content-center">
                                             
-                                            <EmailResults
-                                                answersChosen={props.answersChosen}
-                                                uniqueProductImages={uniqueProductImages}
-                                                SubAnswerChosen={props.SubAnswerChosen}
-                                            />
+                                            <div className="">
+                                                <EmailResults
+                                                    answersChosen={props.answersChosen}
+                                                    uniqueProductImages={uniqueProductImages}
+                                                    SubAnswerChosen={props.SubAnswerChosen}
+                                                />
+                                            </div>
+                                            {/* <div className="d-lg-none d-block">
+                                                <EmailResults1
+                                                    answersChosen={props.answersChosen}
+                                                    uniqueProductImages={uniqueProductImages}
+                                                    SubAnswerChosen={props.SubAnswerChosen}
+                                                />
+                                            </div> */}
                                         </div>
                                     </p>
                                 </div>
@@ -349,13 +364,13 @@ const Recommendations = (props) => {
                                     
                 {/*  */}
 
-                <div className="d-lg-none d-block mt-3">
-                    <h2 className="d-flex justify-content-center recommTitle"><b>Your Custom Kit</b></h2>
-                </div>
+                    <div className="d-lg-none d-block mt-5">
+                        <h2 className="d-flex justify-content-center recommTitle-small"><b>Your Custom Kit</b></h2>
+                    </div>
 
-                {/* vertical stack of products */}
+                    {/* vertical stack of products */}
             
-                    
+                        <div className="d-lg-block d-none">                                
                         {coreData.map((x, i) => (
                                 <ProductCards2
                                     x={x}
@@ -364,7 +379,18 @@ const Recommendations = (props) => {
                                     setModalProductData={setModalProductData}
                                 />
                             ))}
-                    
+                        </div>
+
+                        <div className="d-lg-none d-block">                                
+                        {coreData.map((x, i) => (
+                                <ProductCards2small
+                                    x={x}
+                                    i={i}
+                                    key={i}
+                                    setModalProductData={setModalProductData}
+                                />
+                            ))}
+                        </div>
                 
                 {/*  */}
 
@@ -373,7 +399,7 @@ const Recommendations = (props) => {
                     <div className="text-center">
                         <h4 className="fw-bold mt-5">Save Your Results</h4>
                         <p className="fw-bold lowEmailText">Just enter your email and we’ll send you a copy of your results!</p>
-                        <EmailResults className="ms-5"
+                        <EmailResults1 className="ms-5"
                             answersChosen={props.answersChosen}
                             uniqueProductImages={uniqueProductImages}
                             SubAnswerChosen={props.SubAnswerChosen}
