@@ -177,9 +177,8 @@ const emailResults = ({
 
               <div className="d-flex flex-column align-items-center position-relative  w-100">
 
-                <div className="d-lg-block d-none">
+                <div className="">
                   <p className="card2subText text-start ms-2 pb-1 ">Your email address</p>
-
                   <input
                     name='email'
                     type='text'
@@ -191,32 +190,18 @@ const emailResults = ({
                   // disabled={emailSubmitted}
                   />
                 </div>
-                <div className="d-lg-none d-block">
 
-                  <input
-                    name='email'
-                    type='text'
-                    className=' ms-2 emailInput2'
-                    value={emailAddress}
-                    placeholder="Your email address"
-                    onChange={e => setEmailAddress(e.target.value)}
-                    aria-label='Email Address'
-                    aria-describedby='basic-addon2'
-                  // disabled={emailSubmitted}
-                  />
-                </div>
-
-                  <input
-                    disabled={
-                      // emailSubmitted ||
-                      !(validEmail)
-                    }
-                    className='emailResultsButton w-100 mt-3 event_button_click'
-                    type='submit'
-                    value='Get My Results'
-                    readOnly
-                    data-action-detail="email_results-button"
-                  />
+                <input
+                  disabled={
+                    // emailSubmitted ||
+                    !(validEmail)
+                  }
+                  className='emailResultsButton w-100 mt-3 event_button_click'
+                  type='submit'
+                  value='Get My Results'
+                  readOnly
+                  data-action-detail="email_results-button"
+                />
                 <div className="text-center terms">
                   <label className='form-check-label checkBoxLabel mt-4'>
                     By proceeding, I agree to receive emails from SmartAssist and other trusted P&G brands and programs. Click to read
@@ -255,7 +240,7 @@ const emailResults = ({
       >
         <input
           disabled={true}
-          className='mt-3 emailResultsButton emailButton1'
+          className='mt-3 submittedButton'
           type='submit'
           value='Email Submitted'
           style={{ pointerEvents: 'none' }}

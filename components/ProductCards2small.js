@@ -34,19 +34,19 @@ const ProductCard = (props) => {
 
     return (
         <div id={"Product" + ProductIndex} className="container recommCard2-small">
-            {Link=== false?
+        {Link=== false?
             <div className="card cardView-small col-12">
                 <hr/>
                 <div className="chips">
                     {ProductInfo.PrimaryArea.map((y, j) => (
                         // <div className="py-2 px-1" key={j}>
-                            <span className="me-2 py-1 fw-bold prod-primary-area2">{y}</span>
+                            <span className="me-2 py-1 fw-bold prod-primary-area2-small">{y}</span>
                         // </div>d
                     ))}
                 </div>
                 <div className="imgContainer mt-2">
                 <img
-                    className="productRecommImage mb-2"
+                    className="productRecommImage-small mb-2"
                     src={ProductInfo.ImageUrl}
                     alt={ProductInfo.ProductBrand + " " + ProductInfo.ProductName}
                 />

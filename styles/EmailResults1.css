@@ -1,5 +1,5 @@
 
-.resultsPage {
+  .resultsPage {
     font-weight: 500;
     font-size: 14px;
     line-height: 24px;
@@ -25,28 +25,50 @@
     justify-content: center;
     justify-items: center;
   }
-  .emailButton1 {
-    background: #003e7d;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 22px;
-    color: white;
-    border: 1px solid #003e7d;
-    box-sizing: border-box;
-    border-radius: 2px;
-    
-  }
+
+  
+
+/* email input box */
   .emailInput1{
-    width: 20rem !important;
-    height: 2.4rem !important;
-    border: 1.5px solid #8f959b;
+    width: 18rem;
+    height: 2.3rem !important;
+    border: 1.4px solid #8f959b;
     box-sizing: border-box;
     padding-left: 1em;
     color: #003e7d;
     border-radius: 0 !important;
+    margin-top: -1.2rem;
+    margin-bottom: 3rem;
   }
-  
+  /* get my results button */
+  .emailResultsButton1 {
+    width: 16%;
+    height: 2.3rem;
+    cursor: pointer;
+    border: 1.5px solid rgb(48, 47, 47);
+    border-radius: 25px;
+    font-size: 0.8rem ;
+    font-weight: bold;
+    color: #003e7d;
+    margin-left: 0.5rem;  
+    margin-top: -1.2rem;
+    margin-bottom: 3rem;
+  }
+
+  /* Submitted button */
+  .submittedButton1{
+    width: 16%;
+    height: 2.3rem;
+    cursor: pointer;
+    border-radius: 25px;
+    font-size: 0.8rem ;
+    font-weight: bold;
+    background-color: #003e7d;
+    color: white;
+    margin-top: -1.2rem;
+    margin-bottom: 3rem;
+  }
+/* Disclaimer */
   .checkBoxLabel {
     font-style: normal;
     font-weight: bold;
@@ -55,6 +77,24 @@
     color: black;
     margin-left: 0rem;
     width: 90%;
+  }
+/* Save your results */
+  .upperEmailText
+  {
+    font-size: 1.35rem;
+    font-weight: bolder;
+    color: black;
+    letter-spacing: 0.5px;
+    margin-top: 2.5rem;
+  }
+/* just enter your..... */
+  .lowerEmailText
+  {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: black;
+    letter-spacing: 0.5px;
+    margin-top: -0.1rem;
   }
   
   .card2subText
@@ -87,18 +127,7 @@
     position: relative;
   }
   
-  .emailResultsButton1 {
-    width: 40%;
-    height: 2.3rem;
-    cursor: pointer;
-    border: 1px solid black;
-    border-radius: 25px;
-    font-size: 0.8rem ;
-    font-weight: bold;
-    color: #003e7d;
-    margin-left: 1rem;
-    
-  }
+  
   
   .emailResultsButton:disabled {
     background:#003e7d;
@@ -111,10 +140,10 @@
     height: 250px;
     width: 100%;
   }
-  .emailButton2
+  /* .emailButton2
   {
       width: 20% !important;
-  }
+  } */
   /* .formIFrame.submitted {
     opacity: 0;
     height: 0;
@@ -138,17 +167,12 @@
   
   @media only screen and (max-width:1025px) and  (min-width:769px)
   {
-    /* .emailIcon
-    {
-      height:30px;
-      width:30px;
-    } */
     .emailInput1
     {
-      width: 12rem;
+      width: 18rem;
     }
     .emailResultsButton1{
-      width: 40%;
+      width: 15%;
     }
     
   }

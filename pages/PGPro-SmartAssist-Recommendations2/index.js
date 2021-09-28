@@ -231,23 +231,11 @@ const Recommendations = (props) => {
                             <div class="card-body">
                                 <h5 class="card-title cardTitle2">Where should we send your results?</h5>
                                 <p class="card-text cardText2">
-                                    {/* <div className="d-flex justify-content-center"> */}
-
-                                        {/* <div className=""> */}
-                                            <EmailResults
-                                                answersChosen={props.answersChosen}
-                                                uniqueProductImages={uniqueProductImages}
-                                                SubAnswerChosen={props.SubAnswerChosen}
-                                            />
-                                        {/* </div> */}
-                                        {/* <div className="d-lg-none d-block">
-                                                <EmailResults1
-                                                    answersChosen={props.answersChosen}
-                                                    uniqueProductImages={uniqueProductImages}
-                                                    SubAnswerChosen={props.SubAnswerChosen}
-                                                />
-                                            </div> */}
-                                    {/* </div> */}
+                                    <EmailResults
+                                        answersChosen={props.answersChosen}
+                                        uniqueProductImages={uniqueProductImages}
+                                        SubAnswerChosen={props.SubAnswerChosen}
+                                    />
                                 </p>
                             </div>
                         </div>
@@ -336,7 +324,7 @@ const Recommendations = (props) => {
                                         <div className="chips row ">
                                             {s.PrimaryArea.map((y, j) => (
                                                 // <div className="py-2 px-1" key={j}>
-                                                <span className=" mt-2 fw-bold ms-2 col col-lg-4  prod-recomm-area prod-primary-area">{y}</span>
+                                                <span className=" mt-2 fw-bold ms-2 col col-lg-6 prod-recomm-area prod-primary-area">{y}</span>
                                                 // </div>d
                                             ))}
                                         </div>
@@ -391,11 +379,23 @@ const Recommendations = (props) => {
             {/*  */}
 
             {/* Save your results */}
-            <div>
+            <div className="d-lg-block d-none">
                 <div className="text-center">
-                    <h4 className="fw-bold mt-5">Save Your Results</h4>
-                    <p className="fw-bold lowEmailText">Just enter your email and we’ll send you a copy of your results!</p>
-                    <EmailResults1 className="ms-5"
+                    <h5 className="upperEmailText">Save Your Results</h5>
+                    <p className="lowerEmailText">Just enter your email and we’ll send you a copy of your results!</p>
+                    <EmailResults1
+                        answersChosen={props.answersChosen}
+                        uniqueProductImages={uniqueProductImages}
+                        SubAnswerChosen={props.SubAnswerChosen}
+                    />
+                </div>
+            </div>
+
+            <div className="d-lg-none d-block">
+                <div className="text-center">
+                    <hr/>
+                    <p className="upperEmailText">Save Your Results,Get Exclusive Offers</p>
+                    <EmailResults
                         answersChosen={props.answersChosen}
                         uniqueProductImages={uniqueProductImages}
                         SubAnswerChosen={props.SubAnswerChosen}
@@ -404,11 +404,7 @@ const Recommendations = (props) => {
             </div>
 
             {/*  Claims */}
-
-            <div>
-                <Claims />
-            </div>
-
+            <Claims/>
         </div>
     )
 }

@@ -139,7 +139,7 @@ const EmailResults1 = ({
   // Head tags for iframe to bring all styles from parent window
   const initialContent = _document ? parse(_document.head.innerHTML) : [];
   return (
-    <div className='container mt-1'>
+    <div className=''>
       {/* <div
         head={initialContent}
         className={`formIFrame ${emailSubmitted && 'd-none'}`}
@@ -169,7 +169,7 @@ const EmailResults1 = ({
                 </div>
               )}
                 
-                <div className="d-flex justify-content-center  w-100">
+                <div className="d-flex justify-content-center ">
                     
                     <input
                       name='email'
@@ -182,7 +182,7 @@ const EmailResults1 = ({
                       aria-describedby='basic-addon2'
                       // disabled={emailSubmitted}
                     />
-                  
+
                     <input
                         disabled={
                         // emailSubmitted ||
@@ -208,7 +208,7 @@ const EmailResults1 = ({
       >
         <input
           disabled={true}
-          className='mt-3 emailResultsButton1 emailButton2'
+          className='mt-3 submittedButton1'
           type='submit'
           value='Email Submitted'
           style={{ pointerEvents: 'none' }}
