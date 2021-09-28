@@ -9,6 +9,9 @@
 {
     background: #ffffff;
 }
+.hr{
+    margin-top: 0rem;
+}
 /* .infoContLeft{
     margin:auto;
     width:auto;
@@ -217,7 +220,7 @@
 {
     .productRecommImage-small
     {
-        width:7rem;
+        width:auto;
         height: 8rem;
     }
 }

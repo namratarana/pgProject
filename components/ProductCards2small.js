@@ -36,7 +36,7 @@ const ProductCard = (props) => {
         <div id={"Product" + ProductIndex} className="container recommCard2-small">
         {Link=== false?
             <div className="card cardView-small col-12">
-                <hr/>
+                <hr className="hr"/>
                 <div className="chips">
                     {ProductInfo.PrimaryArea.map((y, j) => (
                         // <div className="py-2 px-1" key={j}>
@@ -100,7 +100,7 @@ const ProductCard = (props) => {
                         </button>
                     </div>   
                 </div>
-                <hr/>
+                <hr className="hr"/>
                 
                     <u><p className="cleanLocations">Your locations it can clean</p></u>
                     <div className="chips">
@@ -119,7 +119,7 @@ const ProductCard = (props) => {
                             // </div>
                         ))}
                     </div>
-                    <hr/>
+                    <hr className="hr"/>
                     <u><p className="cleanLocations">Descriptions</p></u>
                     <div className="row">
                         <div className="row g-0">
