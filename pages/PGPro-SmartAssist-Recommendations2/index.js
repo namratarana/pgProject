@@ -134,7 +134,7 @@ const Recommendations = (props) => {
                             <div class="card card1 align-items-center">
                                 <div class="card-body cardBody1">
 
-                                    <p class="card-title cardTitle1 "><span className="yellowLine">Your Business Profile</span></p>
+                                    <h4 class="card-title cardTitle1 "><span className="yellowLine">Your Business Profile</span></h4>
                                     <div />
 
                                     {/* <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> */}
@@ -142,7 +142,7 @@ const Recommendations = (props) => {
 
                                     <ul>
                                         <div className="d-flex card-lists">
-                                            <span>
+                                            <span className="me-1">
                                                 <svg width="25" height="30" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M7.59946 27.0001H0.386525C0.284012 27.0001 0.185698 26.9615 0.11321 26.8929C0.040723 26.8243 0 26.7313 0 26.6343V7.96399C0 7.867 0.040723 7.77397 0.11321 7.70539C0.185698 7.6368 0.284012 7.59827 0.386525 7.59827H7.59946C7.70198 7.59827 7.80029 7.6368 7.87278 7.70539C7.94526 7.77397 7.98599 7.867 7.98599 7.96399V26.6343C7.98599 26.7313 7.94526 26.8243 7.87278 26.8929C7.80029 26.9615 7.70198 27.0001 7.59946 27.0001ZM0.773049 26.2686H7.21294V8.32972H0.773049V26.2686Z" fill="#231F20" />
                                                     <path d="M26.6134 27H19.4004C19.2979 27 19.1996 26.9614 19.1271 26.8927C19.0546 26.824 19.0139 26.7308 19.0139 26.6337V13.2905C19.0139 13.1933 19.0546 13.1002 19.1271 13.0315C19.1996 12.9628 19.2979 12.9242 19.4004 12.9242H26.6134C26.7159 12.9242 26.8142 12.9628 26.8867 13.0315C26.9592 13.1002 26.9999 13.1933 26.9999 13.2905V26.6337C26.9999 26.7308 26.9592 26.824 26.8867 26.8927C26.8142 26.9614 26.7159 27 26.6134 27ZM19.787 26.2674H26.2269V13.6568H19.787V26.2674Z" fill="#231F20" />
@@ -235,7 +235,7 @@ const Recommendations = (props) => {
                         : null}
                     <hr className="card1line d-lg-none d-block" />
                     {/* Rightcard */}
-                    <div className="col col-lg-4 col-12 h-100">
+                    <div className="col col-lg-4 col-12 ">
                         <div class="card card2">
                             <div class="card-body">
                                 <h5 class="card-title cardTitle2">Where should we send your results?</h5>
