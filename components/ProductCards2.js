@@ -96,7 +96,6 @@ const ProductCard = (props) => {
                             <div className="row">
                                     <div className="row g-0">
                                         <div className="descriptionProd" dangerouslySetInnerHTML={{__html: ProductInfo.BulletProductDescriptionData }} />
-                                        <div className="descriptionProd" dangerouslySetInnerHTML={{__html: ProductInfo.BulletProductSuperiorityData }} />
                                     </div>
                             </div>
                             <div

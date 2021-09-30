@@ -139,11 +139,11 @@ const EmailResults1 = ({
   // Head tags for iframe to bring all styles from parent window
   const initialContent = _document ? parse(_document.head.innerHTML) : [];
   return (
-    <div className=''>
-      {/* <div
+    // <div className=''>
+       <Frame
         head={initialContent}
         className={`formIFrame ${emailSubmitted && 'd-none'}`}
-      > */}
+        >
         <div>
             <form
                 action='https://go.pgpro.com/l/769383/2021-01-07/cf7mpk'
@@ -215,7 +215,7 @@ const EmailResults1 = ({
           readOnly
         />
       </div>
-    </div>
+    </Frame>
   )
 }
 

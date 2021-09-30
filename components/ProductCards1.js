@@ -80,7 +80,7 @@ const ProductCard = (props) => {
                     </div>
                 </div>
 
-                <u><p className="description1 mt-1">Your Problems it Tackles</p></u>
+                <u><p className="description1 mt-3">Your Problems it Tackles</p></u>
                 <div className="row text-wrap">
                 <div className="chips">
                 {ProductInfo.Tensions.map((y, j) => (
