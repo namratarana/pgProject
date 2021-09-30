@@ -15,7 +15,7 @@ import { setModalFlag } from "../../action/RecommendationAction";
 import { useRouter } from 'next/router';
 
 import { setAnswersChosen, setProductResult, setSubAnswerChosen } from '../../action/nextPageAction'
-import { yellow } from "@material-ui/core/colors";
+import dynamic from 'next/dynamic';
 
 export async function getStaticProps(context) {
 
@@ -32,6 +32,12 @@ export async function getStaticProps(context) {
         }, // will be passed to the page component as props
     }
 }
+
+const SliderPage = dynamic(
+    () => import('./Slider'),
+    { ssr: false }
+)
+
 const businessSizeMapping = value => {
     switch (value) {
         case "1-4":
@@ -103,15 +109,15 @@ const Recommendations = (props) => {
         if (window.innerWidth < 768) {
             setcardWidth()
         }
-        const buttonRight = document.getElementById('slideRight');
-        const buttonLeft = document.getElementById('slideLeft');
+        // const buttonRight = document.getElementById('slideRight');
+        // const buttonLeft = document.getElementById('slideLeft');
 
-        buttonRight.onclick = function () {
-            document.getElementById('scrollItems').scrollLeft += 220;
-        };
-        buttonLeft.onclick = function () {
-            document.getElementById('scrollItems').scrollLeft -= 220;
-        };
+        // buttonRight.onclick = function () {
+        //     document.getElementById('scrollItems').scrollLeft += 220;
+        // };
+        // buttonLeft.onclick = function () {
+        //     document.getElementById('scrollItems').scrollLeft -= 220;
+        // };
     }, []);
 
 
@@ -275,14 +281,15 @@ const Recommendations = (props) => {
                 ></script>
             </Head>
 
-            <div className="scrollContainer mt-4">
+            {/* previous slider */}
+            {/* <div className="scrollContainer mt-4">
                 <button className="buttonContainerLeft" id="slideLeft">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="black" className="bi bi-chevron-left" viewBox="0 0 16 16">
                         <path fillRule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
                     </svg>
                 </button>
 
-                {/* <div className="col col-sm-2"> */}
+            <div className="col col-sm-2"> 
                 <div className="scrollItems" id="scrollItems">
                     {coreData.map((s, i) => (
                         <div key={i}>
@@ -337,16 +344,19 @@ const Recommendations = (props) => {
                     ))}
 
                 </div>
-                {/* </div> */}
+                 </div>
                 <button className="buttonContainerRight" id="slideRight">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="black" className="bi bi-chevron-right" viewBox="0 0 16 16">
                         <path fillRule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
                     </svg>
                 </button>
 
-            </div>
+            </div> */}
 
             {/*  */}
+            <div className="px-5">
+                <SliderPage coreData={coreData} />
+            </div>
 
             <div className="d-lg-none d-block mt-5">
                 <h2 className="d-flex justify-content-center recommTitle-small"><b>Your Custom Kit</b></h2>
@@ -393,7 +403,7 @@ const Recommendations = (props) => {
 
             <div className="d-lg-none d-block">
                 <div className="text-center">
-                    <hr/>
+                    <hr />
                     <p className="upperEmailText">Save Your Results,Get Exclusive Offers</p>
                     <EmailResults
                         answersChosen={props.answersChosen}
@@ -404,7 +414,7 @@ const Recommendations = (props) => {
             </div>
 
             {/*  Claims */}
-            <Claims/>
+            <Claims />
         </div>
     )
 }
