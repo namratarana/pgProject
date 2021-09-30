@@ -23,8 +23,8 @@ export default function ClaimsTable(props) {
                     <div className="claimsContainer">
                         { Claims.ClaimsList.map((q, i) => {
                             return <div key={i} className="claimsLi">
-                                <div className="mr-2">{ i + 1 }</div>
-                                <div className="mr-2">{ q } </div>
+                                <div className="me-2">{ i + 1 }.</div>
+                                <div className="me-2 ">{ q } </div>
                             </div>
                             })
                         }

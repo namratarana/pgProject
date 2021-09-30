@@ -39,7 +39,7 @@
 
 .chips{
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 .productTitle {
@@ -173,7 +173,7 @@ li {
     
     .chips{
         display: flex;
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
     }
     
     .productTitle, .sdsText{

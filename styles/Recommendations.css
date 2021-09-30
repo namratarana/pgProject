@@ -368,7 +368,7 @@ color: #003E7D;
 }
 
 .buttonContainerLeft{
-  background: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+  background: transparent;
   width:70px;
   height:200px;
   margin-right: -15px;
@@ -379,7 +379,7 @@ color: #003E7D;
 }
 
 .buttonContainerRight{
-  background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0)100%);
+  background: transparent;
   width:70px;
   height:200px;
   margin-left: -15px;

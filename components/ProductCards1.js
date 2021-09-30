@@ -34,7 +34,7 @@ const ProductCard = (props) => {
     return (
         <div id={"Product" + ProductIndex} className="col-lg-4 recommCard1 ">
             <div className="d-flex justify-content-center">
-                <div className="mobileProductSubTitle1 text-wrap text-center mt-2">
+                <div className="mobileProductSubTitle1 caroHead2 text-wrap text-center mt-2">
                         {ProductInfo.ProductName}
                 </div>
             </div>
@@ -62,8 +62,7 @@ const ProductCard = (props) => {
                 
                 <u><p className="description1">Description</p></u>
                 <div className="row ms-2 text-wrap">
-                        <div className="descriptionPoints" dangerouslySetInnerHTML={{__html: ProductInfo.BulletProductDescriptionData }} />
-                        <div className="descriptionPoints" dangerouslySetInnerHTML={{__html: ProductInfo.BulletProductSuperiorityData }} />
+                        <div className="descriptionPoints p-2" dangerouslySetInnerHTML={{__html: ProductInfo.BulletProductDescriptionData }} />
                         
                 
                 </div>

@@ -37,28 +37,33 @@ const ProductCard = (props) => {
         {Link=== false?
             <div className="card cardView-small col-12">
                 <hr className="hr"/>
-                <div className="chips">
+                <div className="chips-small row">
+                    <div className="row row-cols-2">
                     {ProductInfo.PrimaryArea.map((y, j) => (
-                        // <div className="py-2 px-1" key={j}>
+                        <div className="col">
+                        {/* // <div className="py-2 px-1" key={j} */}
                             <span className="me-2 py-1 fw-bold prod-primary-area2-small">{y}</span>
-                        // </div>d
+                        {/* // </div> */}
+                        </div>
                     ))}
+                    </div>
                 </div>
                 <div className="imgContainer mt-2">
-                <img
-                    className="productRecommImage-small mb-2"
-                    src={ProductInfo.ImageUrl}
-                    alt={ProductInfo.ProductBrand + " " + ProductInfo.ProductName}
-                />
+                    <img
+                        className="productRecommImage-small  mb-2"
+                        src={ProductInfo.ImageUrl}
+                        alt={ProductInfo.ProductBrand + " " + ProductInfo.ProductName}
+                    />
                 </div>
                 <div className="mobileProductSubTitle-small ms-2">
                     {ProductInfo.ProductName}
                 </div>
-                <div className="prodLink ms-2 mt-1">
+                <div className="prodLink mt-1">
                     <a  onClick={e=> console.log(setLink(true))}><u>Why do I need this?</u></a>
                 </div> 
+                
                 <div
-                    className="ps-widget buyNowButton-small event_buy_now event_buy_now_chose_product mt-3"
+                    className="ps-widget-small buyNowButton-small event_buy_now event_buy_now_chose_product mt-3"
                     ps-widget-type="lightbox"
                     role="button"
                     aria-disabled="false"
@@ -69,13 +74,14 @@ const ProductCard = (props) => {
             </div>
             :
             <div className="card cardView-small col-12">
-                <div className="imgContainer mt-2">
-                <div onClick={e=> setLink(false)}>X</div>
-                <img
-                    className="productRecommImage mb-2"
-                    src={ProductInfo.ImageUrl}
-                    alt={ProductInfo.ProductBrand + " " + ProductInfo.ProductName}
-                />
+                <hr className="hr"/>
+                <div className="imgContainer-small d-flex justify-content-center mt-2">
+                    <div onClick={e=> setLink(false)}>X</div>
+                    <img
+                        className="productRecommImage-small mb-2"
+                        src={ProductInfo.ImageUrl}
+                        alt={ProductInfo.ProductBrand + " " + ProductInfo.ProductName}
+                    />
                 </div>
                 <div className="mobileProductTitle-small ms-2">
                     {ProductInfo.ProductBrand}®
@@ -83,7 +89,7 @@ const ProductCard = (props) => {
                 <div className="mobileProductSubTitle-small ms-2">
                     {ProductInfo.ProductName}
                 </div>
-                <div className="mobileProductSubInfo-small">
+                <div className="">
                     <div className="desktopSds-small">
                         <button onClick={()=>{props.setModalProductData(ProductInfo);props.setModalFlag(true)}} className=" buttonWrapper d-inline-flex align-items-center buttonView event_button_click" data-action-detail="sds_button">
                             <img
@@ -91,7 +97,7 @@ const ProductCard = (props) => {
                                     ImageReferenceData.SdsImage
                                 }
                                 alt="SDS icon"
-                                height="20px" width="20px"
+                                className="sdsImg"
                             />
                             <div className="sdsText-small me-3">View SDS</div>
                             <span className="mobileSizeData-small">
@@ -100,27 +106,36 @@ const ProductCard = (props) => {
                         </button>
                     </div>   
                 </div>
-                <hr className="hr"/>
+                <hr className="hr "/>
                 
-                    <u><p className="cleanLocations">Your locations it can clean</p></u>
-                    <div className="chips">
-                        {ProductInfo.PrimaryArea.map((y, j) => (
-                            // <div className="py-2 px-1" key={j}>
-                                <span className="me-2 py-1 fw-bold prod-primary-area2">{y}</span>
-                            // </div>d
-                        ))}
+                <u><p className="cleanLocations-small">Your locations it can clean</p></u>
+                <div className="chips-small row">
+                    <div className="row row-cols-2">
+                    {ProductInfo.PrimaryArea.map((y, j) => (
+                        <div className="col">
+                        {/* // <div className="py-2 px-1" key={j} */}
+                            <span className="me-2 py-1 fw-bold prod-primary-area2-small">{y}</span>
+                        {/* // </div> */}
+                        </div>
+                    ))}
                     </div>
+                </div>
 
-                    <u><p className="cleanLocations mt-2">Your problems it tackles</p></u>
-                    <div className="chips"> 
+                <u><p className="cleanLocations-small mt-2">Your problems it tackles</p></u>
+                <div className="chips-small row">
+                    <div className="row row-cols-2">
                         {ProductInfo.Tensions.map((y, j) => (
-                            // <div className="py-2 px-1" key={j}>
-                                <span className="me-2 py-1 prod-recomm-area prod-tensions">{y}</span>
-                            // </div>
+                         <div className="col">
+
+                            {/* // <div className="py-2 px-1" key={j}> */}
+                                <span className="me-2 py-1 prod-tensions-small">{y}</span>
+                            {/* // </div> */}
+                        </div>
                         ))}
                     </div>
+                </div>
                     <hr className="hr"/>
-                    <u><p className="cleanLocations">Descriptions</p></u>
+                    <u><p className="cleanLocations-small">Descriptions</p></u>
                     <div className="row">
                         <div className="row g-0">
                             <div className="descriptionProd-small" dangerouslySetInnerHTML={{__html: ProductInfo.BulletProductDescriptionData }} />
@@ -128,7 +143,7 @@ const ProductCard = (props) => {
                         </div>
                     </div>
                     <div
-                        className="ps-widget buyNowButton-small event_buy_now event_buy_now_chose_product mt-3"
+                        className="ps-widget-small buyNowButton-small event_buy_now event_buy_now_chose_product mt-3"
                         ps-widget-type="lightbox"
                         role="button"
                         aria-disabled="false"

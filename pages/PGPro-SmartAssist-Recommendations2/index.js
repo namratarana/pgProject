@@ -84,11 +84,18 @@ const Recommendations = (props) => {
     const [cardWidth, setcardWidth] = useState()
     let coreData = uniqueProductImages.filter(x => x.Core == "Core")
     let nonCoreData = uniqueProductImages.filter(x => x.Core != "Core")
-
+    console.log("ac",props.answersChosen, props.subAnswerChosen);
+    const [businessProfile, setbusinessProfile] = useState()
+    
 
     React.useEffect(() => {
+        setbusinessProfile(JSON.parse(localStorage.getItem('businessProfile')));
+
         let RecommendedProducts = localStorage.getItem('recommendedResults');
         let answerChosen = localStorage.getItem('answerChosen');
+        console.log("props^^^^^^",props,"subanswer", props.subAnswerChosen);
+        
+        
 
         if (!RecommendedProducts) {
             Router.push('/')
@@ -122,7 +129,7 @@ const Recommendations = (props) => {
             <div>
                 <div className="row mt-5">
                     {/* Leftcard */}
-                    {answersChosen ?
+                    {businessProfile ?
                         <div className="col col-lg-6 offset-lg-1 col-12">
                             <div class="card card1 align-items-center">
                                 <div class="card-body cardBody1">
@@ -133,6 +140,7 @@ const Recommendations = (props) => {
                                     {/* <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> */}
                                     <p class="card-text">
 
+                                    <ul>
                                         <div className="d-flex card-lists">
                                             <span>
                                                 <svg width="25" height="30" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -153,12 +161,12 @@ const Recommendations = (props) => {
                                             </span>
                                             <span >
                                                 <li className="ms-4 card1Lists">
-                                                    You are a {answersChosen[1] == '5-9' ? "medium sized business" : "small sized business"} in the {answersChosen[0]} industry.
+                                                        {businessProfile[0]}
                                                 </li>
                                             </span>
                                         </div>
                                         <div className="d-flex card-lists">
-                                            <svg width="25" height="30" viewBox="0 0 26 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <svg width="40" height="50" viewBox="0 0 26 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M8.54615 15.6461H4.71979C4.45322 15.6458 4.19763 15.5413 4.00913 15.3555C3.82063 15.1697 3.71462 14.9178 3.71436 14.655V10.8833C3.71462 10.6205 3.82063 10.3686 4.00913 10.1828C4.19763 9.99697 4.45322 9.89247 4.71979 9.89221H8.54615C8.81264 9.8926 9.0681 9.99716 9.25649 10.183C9.44488 10.3687 9.55083 10.6206 9.55109 10.8833V14.655C9.55083 14.9177 9.44488 15.1695 9.25649 15.3553C9.0681 15.5411 8.81264 15.6457 8.54615 15.6461ZM4.71979 10.8774L4.7138 10.8833V14.655L8.54615 14.6609L8.55165 10.8833L4.71979 10.8774Z" fill="#231F20" />
                                                 <path d="M8.54615 23.4924H4.71979C4.45326 23.4923 4.19768 23.3879 4.00916 23.2021C3.82065 23.0164 3.71462 22.7645 3.71436 22.5017V18.7292C3.71462 18.4664 3.82065 18.2145 4.00916 18.0288C4.19768 17.8431 4.45326 17.7387 4.71979 17.7385H8.54615C8.8126 17.7388 9.06805 17.8432 9.25646 18.029C9.44486 18.2147 9.55083 18.4665 9.55109 18.7292V22.5017C9.55083 22.7644 9.44486 23.0162 9.25646 23.2019C9.06805 23.3877 8.8126 23.4921 8.54615 23.4924ZM4.71979 18.7238L4.7138 18.7292V22.5017L8.54615 22.5071L8.55165 18.7292L4.71979 18.7238Z" fill="#00AAE7" />
                                                 <path d="M8.54615 30.8154H4.71979C4.45322 30.8151 4.19763 30.7201 4.00913 30.5512C3.82063 30.3823 3.71462 30.1533 3.71436 29.9144V26.4856C3.71462 26.2467 3.82063 26.0177 4.00913 25.8487C4.19763 25.6798 4.45322 25.5848 4.71979 25.5846H8.54615C8.81264 25.585 9.0681 25.68 9.25649 25.8489C9.44488 26.0178 9.55083 26.2468 9.55109 26.4856V29.9144C9.55083 30.1532 9.44488 30.3822 9.25649 30.5511C9.0681 30.72 8.81264 30.815 8.54615 30.8154ZM4.71979 26.4802L4.7138 26.4856V29.9144L8.54615 29.9198L8.55165 26.4856L4.71979 26.4802Z" fill="#00AAE7" />
@@ -174,7 +182,7 @@ const Recommendations = (props) => {
 
                                             <span>
                                                 <li className="ms-4 card1Lists">
-                                                    There are several important needs when buying products.
+                                                    {businessProfile[1]}
                                                 </li>
                                             </span>
                                         </div>
@@ -193,7 +201,7 @@ const Recommendations = (props) => {
                                             </span>
                                             <span>
                                                 <li className="ms-4 card1Lists">
-                                                    {answersChosen[3]}
+                                                    {businessProfile[2]}
                                                 </li>
                                             </span>
                                         </div>
@@ -215,10 +223,11 @@ const Recommendations = (props) => {
                                             </span>
                                             <span>
                                                 <li className="ms-4 card1Lists">
-                                                    A key challenge you encounter is{answersChosen[5]}.
+                                                    {businessProfile[3]}.
                                                 </li>
                                             </span>
                                         </div>
+                                    </ul>
                                     </p>
                                 </div>
                             </div>
@@ -227,10 +236,10 @@ const Recommendations = (props) => {
                     <hr className="card1line d-lg-none d-block" />
                     {/* Rightcard */}
                     <div className="col col-lg-4 col-12 h-100">
-                        <div class="card card2 ">
+                        <div class="card card2">
                             <div class="card-body">
                                 <h5 class="card-title cardTitle2">Where should we send your results?</h5>
-                                <p class="card-text cardText2">
+                                <p class="card-text cardText2 ">
                                     <EmailResults
                                         answersChosen={props.answersChosen}
                                         uniqueProductImages={uniqueProductImages}
@@ -245,10 +254,10 @@ const Recommendations = (props) => {
             </div>
             {/* your custom kit title */}
             <div className="d-lg-block d-none mt-5">
-                <h3 className="d-flex justify-content-center"><b>Your Custom Kit</b></h3>
+                <h3 className="d-flex justify-content-center"><b>Your Custom Cleaning Recommendations</b></h3>
             </div>
             <div className="d-lg-block d-none fw-bold">
-                {productData ? <i className="d-flex justify-content-center fw-bold fst-italic">({productData.length}) Products to meet your Business Needs</i> : null}
+                {productData ? <i className="d-flex justify-content-center fw-bold fst-italic">({coreData.length}) Products to meet your Business Needs</i> : null}
             </div>
 
             {/* *****custom kit for small devices***** */}
@@ -275,6 +284,14 @@ const Recommendations = (props) => {
                 ></script>
             </Head>
 
+            {/* <Splide>
+                <SplideSlide>
+                    <img src="image1.jpg" alt="Image 1"/>
+                </SplideSlide>
+                <SplideSlide>
+                    <img src="image2.jpg" alt="Image 2"/>
+                </SplideSlide>
+            </Splide> */}
             <div className="scrollContainer mt-4">
                 <button className="buttonContainerLeft" id="slideLeft">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="black" className="bi bi-chevron-left" viewBox="0 0 16 16">
@@ -290,7 +307,7 @@ const Recommendations = (props) => {
 
                             <div class="card productCards grow-on-hover mx-2">
                                 <div class="card-header prodCardHead d-lg-block d-none">
-                                    <div className="productData ">
+                                    <div className="productData">
                                         {s.ProductName}
                                     </div>
                                 </div>
@@ -321,7 +338,7 @@ const Recommendations = (props) => {
                                         </div>
                                     </div>
                                     <p class="card-text my-2 d-lg-block d-none">
-                                        <div className="chips row ">
+                                        <div className="chips d-flex justify-content-center">
                                             {s.PrimaryArea.map((y, j) => (
                                                 // <div className="py-2 px-1" key={j}>
                                                 <span className=" mt-2 fw-bold ms-2 col col-lg-6 prod-recomm-area prod-primary-area">{y}</span>

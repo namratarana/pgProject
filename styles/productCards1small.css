@@ -13,6 +13,10 @@
     margin:auto;
     width:auto;
 } */
+.chips-small{
+    display: flex;
+}
+
 .imgContainer-small
 {
     margin-top: -0.5rem;
@@ -152,10 +156,6 @@
     display: none;
 }
 
-.chips-small{
-    display: flex;
-    flex-wrap: wrap;
-}
 
 .productTitle-small{
     font-style: normal;

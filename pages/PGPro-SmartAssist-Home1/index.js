@@ -8,6 +8,7 @@ import Index from '../index'
 
 function LandingPage()
 {
+
         useEffect(() => 
         {
             localStorage.removeItem('recommendedResults') 

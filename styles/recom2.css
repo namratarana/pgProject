@@ -1,9 +1,10 @@
+
 .card1
 {
     border-radius: 0;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     /* height: 20rem; */
-    height: 100%;
+    height: 25rem;
 }
 .yellowLine
 {
@@ -16,14 +17,14 @@
 .card-lists
 {
     margin-top: 1rem;
+    margin-left: -2rem;
 }
 .card2
 {
     border-radius: 0;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     /* height: 20rem; */
-    height: 100%;
-    max-height: 100%;
+    height: 25rem;
     width: auto;
 }
 .cardTitle1
@@ -60,7 +61,7 @@
 .productCards
 {
     border: 1.1px solid rgb(212, 208, 208) !important;
-    width: 12.2rem;
+    width: 12.4rem;
     height: 15.5rem;
     border-radius:5px;
 }
@@ -155,7 +156,7 @@
     }
       
 }
-@media only screen and (max-width:768px) and (min-width:426px)
+@media only screen and (max-width:769px) and (min-width:426px)
 {
     .card1 ,.card2{
         border:0 !important;
@@ -202,52 +203,54 @@
     {
         font-size: 1.5rem;
         text-align: center;
-        /* margin-top: 1rem; */
         margin-bottom: 1rem;
     }
+
+    /* upper carousel */
     .productCards
     {
         border: 0px solid rgb(212, 208, 208) !important;
-        width: 12.2rem;
-        height: 16rem;
+        width: 18.7rem;
+        height: 21rem;
     
     }
     .prod-primary-area
     {
         background: rgba(254, 209, 3, 0.1);
-        font-size: 12px;
-        width: 45%;
+        font-size: 2rem ;
+        width: 50%;
     }
       
     .prod-recomm-area
     {
         font-style: normal;
-        font-weight: 500;
-        font-size: 0.6rem !important;
-        line-height: 14px;
+        font-weight: 400;
+        font-size: 0.8rem !important;
+        line-height: 16px;
+        padding-top: 3px;
+        padding-bottom: 3px;
         /* identical to box height */
         text-align: center;
         color: #333333;
     }    
-    .prodCardHead
-    {
-        background-color: transparent;
-        border: 0;   
-    }
+    
     .productData
     {
         color: black;
-        font-size: 0.8rem;
-        font-weight: bolder;
+        font-size: 1rem;
+        font-weight: bold;
         margin-top: 0.5rem;
-        text-align: center;   
+        text-align: center;
+        width: 16rem;   
     }
     .prodImage
     {
-        height: 7rem;
+        height: 10rem;
         width: auto;
-        margin-top: -2.3rem;
+        margin-top: -2.5rem;
     }  
+    /* end of upper 
+    carousel */
 }
 
 @media only screen and (max-width:426px)
@@ -259,7 +262,7 @@
     
     .cardBody1
     {
-        margin-left: 0;
+        margin-left: 0.2rem !important;
     }
     .card-text
     {
@@ -284,7 +287,6 @@
         margin-top: -1rem;
         opacity: 90%;
     }
-
     .cardTitle2
     {
         font-size: 1.2rem;
@@ -292,50 +294,37 @@
         /* margin-top: 1rem; */
         margin-bottom: 1rem;
     }
+    /* upper carousel */
     .productCards
     {
         border: 0px solid rgb(212, 208, 208) !important;
-        width: 9.8rem;
-        height: 14rem;
+        width: 9.7rem;
+        height: 17rem;
     }
-    .prod-primary-area
-    {
-        background: rgba(254, 209, 3, 0.1);
-        font-size: 12px;
-        width: 40%;
-    }
-      
     .prod-recomm-area
-    {
-        font-style: normal;
+    {   
+        padding-top: 2px;
+        padding-bottom: 2px;
         font-weight: 500;
-        font-size: 0.5rem !important;
-        line-height: 14px;
-        /* identical to box height */
-        text-align: center;
-        color: #333333;
-        margin-left: 10px;
-        margin-right: 10px;
+        font-size: 0.7rem !important;
+        width: 50%;
     }
-    .prodCardHead
-    {
-        background-color: transparent;
-        border: 0;   
-    }
+
     .productData
     {
-        color: black;
-        font-size: 0.5rem !important;
-        font-weight: bolder;
+        font-size: 0.7rem;
+        width: 8.8rem;
+        font-weight: bold;
         margin-top: 0.2rem;
-        text-align: center;   
+        margin-left: -1.5rem;
     }
     .prodImage
     {
-        height: 5rem;
+        height: 6rem;
         width: auto;
-        margin-top: -2.3rem;
+        margin-top: -3rem;
     } 
+     /*end of upper carousel */
     
 }
 
@@ -396,51 +385,38 @@
         font-size: 1.3rem;
         margin-top: -0.5rem;
     }
+    /* upper carousel */
     .productCards
     {
-        border: 1px solid rgb(212, 208, 208) !important;
-        width: 9.8rem;
-        height: 12rem;
+        border: 0px solid rgb(212, 208, 208) !important;
+        width: 8rem;
+        height: 18rem;
     }
     .prod-recomm-area
     {
-        font-style: normal;
-        font-weight: 500;
-        font-size: 0.4rem !important;
-        line-height: 14px;
-        /* identical to box height */
-        text-align: center;
-        color: #333333;
-        margin-left: 10px;
-        margin-right: 10px;
-        
-    }
-    .prod-primary-area{
-        background: rgba(254, 209, 3, 0.1);
-        font-size: 12px;
-        width: 40% ;
-    }
-      
-    .prodCardHead
-    {
-        background-color: transparent;
-        border: 0;   
+        font-weight: 400;
+        font-size: 0.6rem;
+        padding-left: 1px;
+        padding-right: 1px;  
+        width: 40%;      
     }
     .productData
     {
         color: black;
-        font-size: 0.4rem !important;
+        font-size: 0.6rem;
         font-weight: bolder;
-        margin-top: -0.5rem;
+        margin-top: 0rem;
         text-align: center; 
         line-height: 10px !important;  
+        width: 7.2rem;
     }
     .prodImage
     {
-        height: 4rem;
+        height: 6rem;
         width: auto;
         margin-top: -3rem;
     }
+    /* end of upper carousel */
 }
 
 @media only screen and (max-width:321px)
@@ -455,7 +431,6 @@
     .card2{
         height: 11rem;
     }
-    
     .cardBody1
     {
         margin-left: 0;
@@ -463,6 +438,10 @@
     .card-lists
     {
         margin-top: 0.5rem;
+    }
+    .spanlists
+    {
+        text-align: justify;
     }
     .card-text
     {
@@ -506,5 +485,36 @@
     {
         font-size: 1rem;
     }
+    /* upper carousel */
+    .productCards
+    {
+        border: 0px solid rgb(212, 208, 208) !important;
+        width: 14rem;
+        height: 21rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .prod-recomm-area
+    {
+        font-weight: 400;
+        font-size: 1rem;
+        padding-top: 3px;
+        padding-right: 5px;
+        padding-left: 5px;  
+        width: 60%;      
+    }
+    .productData
+    {
+        font-size: 0.8rem;
+        line-height: 1rem !important;  
+        width: 13rem;
+    }
+    .prodImage
+    {
+        height: 8rem;
+        width: auto;
+        margin-top: -3rem;
+    }
+    /* end of upper carousel */
     
 }
