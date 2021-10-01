@@ -493,13 +493,15 @@ export class Questions extends React.PureComponent {
     }
 
     // key challenges
-          let keyChallenges ="The challenges you face is/are: ";
+          
+          let KC = [];
           answersChosen[5].map(i=>
               {
-                  keyChallenges = keyChallenges+i+", ";
+                  KC.push(i);
               })
-          console.log("KC:", keyChallenges);
-          businessProfile.push(keyChallenges);
+          console.log("KC:", KC);
+          businessProfile.push(KC);
+          console.log("BFat3",businessProfile[3]);
       }
       localStorage.setItem('subAnswer',JSON.stringify(subAnswerChosen));
       localStorage.setItem('businessProfile',JSON.stringify(businessProfile));
