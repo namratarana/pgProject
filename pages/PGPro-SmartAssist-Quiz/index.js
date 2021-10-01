@@ -945,7 +945,7 @@ export class Questions extends React.PureComponent {
       <div className={currentQuestionIndex < QuestionsData.Data.Questions.length ? "imgBackground" : ""}>
         <Header2 />
 
-        <Progress data={this.state.currentQuestionIndex} SubSubAnswers={this.state.SubSubAnswers} SubAnswers={this.state.SubAnswers} buttonIndex={this.state.buttonIndex} />
+        <Progress data={this.state.currentQuestionIndex} SubSubAnswers={this.state.SubSubAnswers} SubAnswers={this.state.SubAnswers} hasSubQuestion = {this.state.hasSubQuestion} hasSubSubQuestion={this.state.hasSubSubQuestion} buttonIndex={this.state.buttonIndex} />
 
         <NoProductModal />
 

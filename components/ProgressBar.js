@@ -5,7 +5,7 @@ import Questions from "../data/Questions.json"
 
 export async function getStaticProps(context) {
     return {
-    props: {currentQuestionIndex:0, SubAnswers:"", SubSubAnswers:"", buttonIndex:0}
+    props: {currentQuestionIndex:0, SubAnswers:"", SubSubAnswers:"",hasSubSubQuestion:false,hasSubQuestion:false, buttonIndex:0}
     }
    }
 
@@ -22,19 +22,23 @@ const Progress = (props) => {
                 console.log("progress check*****:",props.data);
 
                 percent=11;
-                if (props.SubSubAnswers !== "" && props.SubAnswers !== "") 
+                if (props.hasSubSubQuestion) 
                 {
                     percent=33;   
                 }
-                else 
+                if(props.hasSubQuestion)
                 {
-                    if (props.SubSubAnswers === "" && props.SubAnswers !== "") 
-                    {   
-                            
-                        percent=22;
-                    }
-                    
+                    percent=22;
                 }
+                // else 
+                // {
+                //     if (props.SubSubAnswers === "" && props.SubAnswers !== "") 
+                //     {   
+                            
+                //         percent=22;
+                //     }
+                    
+                // }
                 break;
             case 1:
                 percent=44;
