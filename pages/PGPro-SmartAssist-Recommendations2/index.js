@@ -71,7 +71,7 @@ const Recommendations = (props) => {
     //let productData = [...new Set(props.productResult)] ? [...new Set(props.productResult)] : []
     const [productData, setProductData] = useState();
     const [answersChosen, setanswersChosen] = useState()
-
+    
     console.log("########", props.answersChosen);
     console.log("*****************", productData);
     let uniqueProductImages = productData
@@ -92,7 +92,7 @@ const Recommendations = (props) => {
     let nonCoreData = uniqueProductImages.filter(x => x.Core != "Core")
     console.log("ac",props.answersChosen, props.subAnswerChosen);
     const [businessProfile, setbusinessProfile] = useState()
-    
+    const [subAnswerChosen, setSubAnswerChosen] = useState();
 
     React.useEffect(() => {
         setbusinessProfile(JSON.parse(localStorage.getItem('businessProfile')));
@@ -171,6 +171,7 @@ const Recommendations = (props) => {
                                                 </li>
                                             </span>
                                         </div>
+    {subAnswerChosen=="Not a Business"?
                                         <div className="d-flex card-lists">
                                             <svg width="45" height="45" viewBox="0 0 27 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M8.54615 15.6461H4.71979C4.45322 15.6458 4.19763 15.5413 4.00913 15.3555C3.82063 15.1697 3.71462 14.9178 3.71436 14.655V10.8833C3.71462 10.6205 3.82063 10.3686 4.00913 10.1828C4.19763 9.99697 4.45322 9.89247 4.71979 9.89221H8.54615C8.81264 9.8926 9.0681 9.99716 9.25649 10.183C9.44488 10.3687 9.55083 10.6206 9.55109 10.8833V14.655C9.55083 14.9177 9.44488 15.1695 9.25649 15.3553C9.0681 15.5411 8.81264 15.6457 8.54615 15.6461ZM4.71979 10.8774L4.7138 10.8833V14.655L8.54615 14.6609L8.55165 10.8833L4.71979 10.8774Z" fill="#231F20" />
@@ -192,6 +193,8 @@ const Recommendations = (props) => {
                                                 </li>
                                             </span>
                                         </div>
+                                        :null
+    }
                                         <div className="d-flex card-lists">
                                             <span>
                                                 <svg width="24" height="40" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">

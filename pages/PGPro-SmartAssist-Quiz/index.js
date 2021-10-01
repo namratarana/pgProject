@@ -440,7 +440,7 @@ export class Questions extends React.PureComponent {
                 }
                 else if(subAnswerChosen=="Not a Business")
                 {
-                    businessProfile.push("The P&G Professional team is working to add all business types so that the SmartAssist can serve all small businesses - See our general business cleaning products below");
+                    businessProfile.push("You are not purchasing for a business. The P&G Professional team is working on adding more use cases. See our general cleaning recommendations below.");
                 }
                 else if(subAnswerChosen=="Other")
                 {
@@ -501,6 +501,7 @@ export class Questions extends React.PureComponent {
           console.log("KC:", keyChallenges);
           businessProfile.push(keyChallenges);
       }
+      localStorage.setItem('subAnswer',JSON.stringify(subAnswerChosen));
       localStorage.setItem('businessProfile',JSON.stringify(businessProfile));
 
       localStorage.setItem('recommendedResults', JSON.stringify(data));
