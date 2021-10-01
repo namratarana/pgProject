@@ -216,3 +216,40 @@
         width: 75%;
     }
 }
+@media only screen and (max-width:769px)
+{
+    .buyNowButton
+    {
+        width:30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -0.8rem;
+        font-size: 1.2rem !important;
+    }
+}
+@media only screen and (max-width:376px)
+{
+    .buyNowButton
+    {
+        width:25%;
+        height: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem !important;
+    }
+}
+
+@media only screen and (max-width:769px)
+{
+    .buyNowButton
+    {
+        width:30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -0.8rem;
+        font-size: 1.2rem !important;
+    }
+}

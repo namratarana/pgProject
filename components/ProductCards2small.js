@@ -63,7 +63,7 @@ const ProductCard = (props) => {
                 </div> 
                 
                 <div
-                    className="ps-widget-small buyNowButton-small event_buy_now event_buy_now_chose_product mt-3"
+                    className="ps-widget buyNowButton event_buy_now event_buy_now_chose_product mt-3"
                     ps-widget-type="lightbox"
                     role="button"
                     aria-disabled="false"
@@ -83,6 +83,7 @@ const ProductCard = (props) => {
                         alt={ProductInfo.ProductBrand + " " + ProductInfo.ProductName}
                     />
                 </div>
+                
                 <div className="mobileProductTitle-small ms-2">
                     {ProductInfo.ProductBrand}®
                 </div>
@@ -106,7 +107,7 @@ const ProductCard = (props) => {
                         </button>
                     </div>   
                 </div>
-                <hr className="hr "/>
+                {/* <hr className="hr "/> */}
                 
                 <u><p className="cleanLocations-small">Your locations it can clean</p></u>
                 <div className="chips-small row">
@@ -134,7 +135,7 @@ const ProductCard = (props) => {
                         ))}
                     </div>
                 </div>
-                    <hr className="hr"/>
+                    {/* <hr className="hr"/> */}
                     <u><p className="cleanLocations-small">Descriptions</p></u>
                     <div className="row">
                         <div className="row g-0">
@@ -142,7 +143,7 @@ const ProductCard = (props) => {
                         </div>
                     </div>
                     <div
-                        className="ps-widget-small buyNowButton-small event_buy_now event_buy_now_chose_product mt-3"
+                        className="ps-widget buyNowButton event_buy_now event_buy_now_chose_product mt-3"
                         ps-widget-type="lightbox"
                         role="button"
                         aria-disabled="false"
