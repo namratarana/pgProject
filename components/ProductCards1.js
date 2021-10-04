@@ -74,7 +74,7 @@ const ProductCard = (props) => {
                 <div className="chips">
                         {ProductInfo.PrimaryArea.map((y, j) => (
                             <div className="py-1 px-1" key={j}>
-                                <span className="p-2 prod-recomm-area prod-primary-area">{y}</span>
+                                <span className="p-2 prod-recomm-area text-center prod-primary-area">{y}</span>
                             </div>
                         ))}
                     </div>
@@ -87,7 +87,7 @@ const ProductCard = (props) => {
                     <div className="chips">
                     {ProductInfo.Tensions.map((y, j) => (
                                 <div className="py-2 px-1" key={j}>
-                                    <span className="p-2 prod-recomm-area prod-tensions">{y}</span>
+                                    <span className="p-2 prod-recomm-area text-center prod-tensions">{y}</span>
                                 </div>
                             ))}
                         </div>

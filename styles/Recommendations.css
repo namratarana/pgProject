@@ -218,7 +218,8 @@ color: #003E7D;
 .prod-primary-area{
   background: rgba(254, 209, 3, 0.1);
   font-size: 12px;
-  width: 45%;
+  /* width: 45%; */
+  /* justify-content: center; */
   }
   .prod-tensions
   {
