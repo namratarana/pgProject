@@ -66,7 +66,7 @@
 {
     border: 1.1px solid rgb(212, 208, 208) !important;
     width: 12.4rem;
-    height: 15.5rem;
+    height: auto;
     border-radius:5px;
 }
 .prod-recomm-area
@@ -76,7 +76,10 @@
     font-size: 0.6rem !important;
     line-height: 14px;
     /* identical to box height */
-    text-align: center;
+    text-align: center !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
     color: #333333;
 }
 .prodCardHead

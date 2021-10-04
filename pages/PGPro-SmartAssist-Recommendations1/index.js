@@ -358,10 +358,10 @@ const Recommendations = (props) => {
                                         </div>
                                     </div>
                                     <p class="card-text my-2 d-lg-block d-none">
-                                        <div className="chips row ">
+                                        <div className="chips row text-wrap">
                                             {s.PrimaryArea.map((y, j) => (
                                                 // <div className="py-2 px-1" key={j}>
-                                                <span className=" mt-2 fw-bold ms-2 col col-lg-4  prod-recomm-area prod-primary-area">{y}</span>
+                                                <span className=" mt-2 fw-bold ms-2 col col-lg-4  prod-recomm-area text-wrap prod-primary-area">{y}</span>
                                                 // </div>d
                                             ))}
                                         </div>
