@@ -135,12 +135,12 @@
     color:white ;
   }
   
-  .formIFrame {
+  /* .formIFrame {
     border: none;
     margin: 0;
     height: 250px;
     width: 100%;
-  }
+  } */
   /* .emailButton2
   {
       width: 20% !important;
@@ -175,27 +175,39 @@
     .emailResultsButton1{
       width: 15%;
     }
-    
+      
   }
   
   @media only screen and (max-width:769px)
   {
     .emailInput1
     {
-      width: 11rem;
+      width: 20rem;
     }
     .emailResultsButton1{
-      width: 40%;
+      width: 20%;
     }
   }
   @media only screen and (max-width:426px)
   {
     .emailInput1
     {
-      width: 14rem !important ;
+      width: 15rem ;
     }
     .emailResultsButton1{
-      width: 40%;
+      width: 30%;
+    }
+    .submittedButton1{
+      width: 30%;
+      height: 2.3rem;
+      cursor: pointer;
+      border-radius: 25px;
+      font-size: 0.8rem ;
+      font-weight: bold;
+      background-color: #003e7d;
+      color: white;
+      margin-top: -1.2rem;
+      margin-bottom: 3rem;
     }
   }
   @media only screen and (max-width:376px)
@@ -206,6 +218,18 @@
     }
     .emailResultsButton1{
       width: 40%;
+    }
+    .submittedButton1{
+      width: 40%;
+      height: 2.3rem;
+      cursor: pointer;
+      border-radius: 25px;
+      font-size: 0.8rem ;
+      font-weight: bold;
+      background-color: #003e7d;
+      color: white;
+      margin-top: -1.2rem;
+      margin-bottom: 3rem;
     }
   }
 
@@ -218,6 +242,18 @@
     .emailResultsButton1{
       width: 40%;
       font-size: x-small;
+    }
+    .submittedButton1{
+      width: 40%;
+      height: 2.3rem;
+      cursor: pointer;
+      border-radius: 25px;
+      font-size: 0.8rem ;
+      font-weight: bold;
+      background-color: #003e7d;
+      color: white;
+      margin-top: -1.2rem;
+      margin-bottom: 3rem;
     }
   }
   

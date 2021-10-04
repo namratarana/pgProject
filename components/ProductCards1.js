@@ -80,16 +80,19 @@ const ProductCard = (props) => {
                     </div>
                 </div>
 
-                <u><p className="description1 mt-3">Your Problems it Tackles</p></u>
-                <div className="row text-wrap">
-                <div className="chips">
-                {ProductInfo.Tensions.map((y, j) => (
-                            <div className="py-2 px-1" key={j}>
-                                <span className="p-2 prod-recomm-area prod-tensions">{y}</span>
-                            </div>
-                        ))}
-                    </div>
-                </div>
+                {ProductInfo.Tensions.length>0 ?
+                <div>
+                    <u><p className="description1 mt-3">Your Problems it Tackles</p></u>
+                    <div className="row text-wrap">
+                    <div className="chips">
+                    {ProductInfo.Tensions.map((y, j) => (
+                                <div className="py-2 px-1" key={j}>
+                                    <span className="p-2 prod-recomm-area prod-tensions">{y}</span>
+                                </div>
+                            ))}
+                        </div>
+                    </div> 
+                </div>:null}
             </div>
             
         </div>

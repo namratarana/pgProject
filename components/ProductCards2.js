@@ -81,18 +81,21 @@ const ProductCard = (props) => {
                                 ))}
                             </div>
 
-                            <u><p className="cleanLocations mt-2">Your problems it tackles</p></u>
-                            <div className="chips"> 
-                                {ProductInfo.Tensions.map((y, j) => (
-                                    // <div className="py-2 px-1" key={j}>
-                                        <span className="me-2 py-1 prod-recomm-area prod-tensions">{y}</span>
-                                    // </div>
-                                ))}
-                            </div>
+                            {ProductInfo.Tensions.length>0 ?
+                            <div>
+                                <u><p className="cleanLocations mt-2">Your problems it tackles</p></u>
+                                <div className="chips"> 
+                                    {ProductInfo.Tensions.map((y, j) => (
+                                        // <div className="py-2 px-1" key={j}>
+                                            <span className="me-2 py-1 prod-recomm-area prod-tensions">{y}</span>
+                                        // </div>
+                                    ))}
+                                </div>
+                            </div>:null}
                         </div>
                         
                         <div className="col col-lg-4 col-12">
-                            <u><p className="cleanLocations">Description</p></u>
+                            <u><p className="cleanLocations mt-2">Description</p></u>
                             <div className="row">
                                     <div className="row g-0">
                                         <div className="descriptionProd" dangerouslySetInnerHTML={{__html: ProductInfo.BulletProductDescriptionData }} />

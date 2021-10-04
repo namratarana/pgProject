@@ -115,28 +115,31 @@ const ProductCard = (props) => {
                     {ProductInfo.PrimaryArea.map((y, j) => (
                         <div className="col">
                         {/* // <div className="py-2 px-1" key={j} */}
-                            <span className="me-2 py-1 fw-bold prod-primary-area2-small">{y}</span>
+                            <span className="me-2 py-1 px-1 text-center fw-bold prod-primary-area2-small">{y}</span>
                         {/* // </div> */}
                         </div>
                     ))}
                     </div>
                 </div>
 
-                <u><p className="cleanLocations-small mt-2">Your problems it tackles</p></u>
-                <div className="chips-small row">
-                    <div className="row row-cols-2">
-                        {ProductInfo.Tensions.map((y, j) => (
-                         <div className="col">
+             {ProductInfo.Tensions.length>0?
+                <div>
+                    <u><p className="cleanLocations-small mt-2">Your problems it tackles</p></u>
+                    <div className="chips-small row">
+                        <div className="row row-cols-2">
+                            {ProductInfo.Tensions.map((y, j) => (
+                            <div className="col">
 
-                            {/* // <div className="py-2 px-1" key={j}> */}
-                                <span className="me-2 py-1 prod-tensions-small">{y}</span>
-                            {/* // </div> */}
+                                {/* // <div className="py-2 px-1" key={j}> */}
+                                    <span className="me-2 py-1 px-1 text-center fw-bold prod-tensions-small">{y}</span>
+                                {/* // </div> */}
+                            </div>
+                            ))}
                         </div>
-                        ))}
                     </div>
-                </div>
+                </div>:null}
                     {/* <hr className="hr"/> */}
-                    <u><p className="cleanLocations-small">Descriptions</p></u>
+                    <u><p className="cleanLocations-small mt-2">Descriptions</p></u>
                     <div className="row">
                         <div className="row g-0">
                             <div className="descriptionProd-small" dangerouslySetInnerHTML={{__html: ProductInfo.BulletProductDescriptionData }} />

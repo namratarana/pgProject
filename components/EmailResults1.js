@@ -139,7 +139,7 @@ const EmailResults1 = ({
   // Head tags for iframe to bring all styles from parent window
   const initialContent = _document ? parse(_document.head.innerHTML) : [];
   return (
-    // <div className=''>
+     <div>
        <Frame
         head={initialContent}
         className={`formIFrame ${emailSubmitted && 'd-none'}`}
@@ -198,7 +198,8 @@ const EmailResults1 = ({
             </div>
           </form>
         </div>
-      {/* </div> */}
+        
+        </Frame>
 
    
 
@@ -215,7 +216,10 @@ const EmailResults1 = ({
           readOnly
         />
       </div>
-    </Frame>
+      
+    </div>
+
+    
   )
 }
 
