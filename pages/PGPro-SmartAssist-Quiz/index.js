@@ -373,20 +373,20 @@ export class Questions extends React.PureComponent {
             {
                 if(subAnswerChosen=="Hotel")
                 {
-                    businessProfile.push("For Hotel you want to make your guests comfertable the moment they walk in the door, and there is not better way than clean linens, a fresh scent, and a smile")
+                    businessProfile.push("For Hotel you want to make your guests comfortable the moment they walk in the door, and there is not better way than clean linens, a fresh scent, and a smile")
                 }
                 else if(subAnswerChosen=="Motel")
                 {
-                    businessProfile.push("For Motel you want to make your guests comfertable the moment they walk in the door, and there is not better way than clean linens, a fresh scent, and a smile")
+                    businessProfile.push("For Motel you want to make your guests comfortable the moment they walk in the door, and there is not better way than clean linens, a fresh scent, and a smile")
                 }
                 else if(subAnswerChosen=="Bed & Breakfast")
                 {
-                    businessProfile.push("For Bed & Breakfast you want to make your guests comfertable the moment they walk in the door, and there is not better way than clean linens, a fresh scent, and a smile")
+                    businessProfile.push("For Bed & Breakfast you want to make your guests comfortable the moment they walk in the door, and there is not better way than clean linens, a fresh scent, and a smile")
                     
                 }
                 else if(subAnswerChosen=="Casino")
                 {
-                    businessProfile.push("For Casino you want to make your guests comfertable the moment they walk in the door, and there is not better way than clean linens, a fresh scent, and a smile")
+                    businessProfile.push("For Casino you want to make your guests comfortable the moment they walk in the door, and there is not better way than clean linens, a fresh scent, and a smile")
                 }
             }
         }

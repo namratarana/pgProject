@@ -193,7 +193,7 @@ const emailResults = ({
                   className='emailResultsButton  event_profile_register w-100 mt-3 '
                   type='submit'
                   value='Get My Results'
-                  readOnly
+                  
                   data-action-detail="email_results-button"
                 />
                 <div className="text-center terms">

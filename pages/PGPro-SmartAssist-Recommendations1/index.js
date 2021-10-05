@@ -176,7 +176,7 @@ const Recommendations = (props) => {
                                                 </li>
                                             </span>
                                         </div>
-    {mySubAns !="Not a Business"?
+    {/* {mySubAns !="Not a Business"?
                                         <div className="d-flex card-lists">
                                         <span>
                                             <svg className="iconMargin" width="40" height="40" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -200,7 +200,7 @@ const Recommendations = (props) => {
                                             </span>
                                         </div>
                                         :null
-    }
+    } */}
                                         <div className="d-flex card-lists">
                                             <span>
                                                 <svg width="40" height="50" viewBox="0 0 40 50" fill="none" xmlns="http://www.w3.org/2000/svg">
