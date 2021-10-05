@@ -600,7 +600,12 @@ export class Questions extends React.PureComponent {
 
     // SETTING the TOGGLE QUESTIONS to FALSE when in we are finished with the TOGGLING Question
     if (id == "qLocations") {
-      this.setState({ hasToggleQuestion: false })
+      if(this.state.answersChosen[0] == "Hospitality")
+      {
+        
+        this.state.answersChosen[1] = '1-4';
+      }
+      this.setState({ hasToggleQuestion: false ,answersChosen: this.state.answersChosen})
     }
 
     // SETTING the PRIMARY AREA ANSWERS AOT==== START
@@ -874,6 +879,11 @@ export class Questions extends React.PureComponent {
     if(this.state.answersChosen[0]== "Business Service Contractors/Contract Cleaners")
     {
       this.state.answersChosen[1] = '5-10';
+      this.state.buttonIndex -=1;
+    }
+    else if(this.state.answersChosen[0]== "Hospitality")
+    {
+      this.state.answersChosen[1] = '1-4';
       this.state.buttonIndex -=1;
     }
     else
