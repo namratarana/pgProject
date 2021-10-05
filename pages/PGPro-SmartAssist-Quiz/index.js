@@ -347,151 +347,154 @@ export class Questions extends React.PureComponent {
 
       if(answersChosen.length !=0)
     {   
-        if(answersChosen[0]=="Restaurants")
-        {
-            if(subAnswerChosen=="Quick Serve")
-            {
-                businessProfile.push("The restaurant business has 3 main costs: Rent, Food, & Staff. Help your staff focus on high value tasks with the right cleaning products")
-            }
-            else if(subAnswerChosen =="Fast Casual")
-            {
-                businessProfile.push("The restaurant business has 3 main costs: Rent, Food, & Staff. Help your staff focus on high value tasks with the right cleaning products")
-            }
-            else if(subAnswerChosen =="Midscale/Casual")
-            {
-                businessProfile.push("The restaurant business has 3 main costs: Rent, Food, & Staff. Help your staff focus on high value tasks with the right cleaning products")
-                
-            }
-            else if(subAnswerChosen=="Fine Dining")
-            {
-                businessProfile.push("The restaurant business has 3 main costs: Rent, Food, & Staff. Help your staff focus on high value tasks with the right cleaning products")
-                
-            }
-        }
-        else if(answersChosen[0]=="Hospitality")
-        {
-            {
-                if(subAnswerChosen=="Hotel")
-                {
-                    businessProfile.push("For Hotel you want to make your guests comfortable the moment they walk in the door, and there is not better way than clean linens, a fresh scent, and a smile")
+        
+      if(answersChosen[0]=="Restaurants")
+      {
+          if(subAnswerChosen=="Quick Serve")
+          {
+              businessProfile.push("The restaurant business has 3 main costs: Rent, Food, & Staff. Help your staff focus on high value tasks with the right cleaning products.")
+          }
+          else if(subAnswerChosen =="Fast Casual")
+          {
+              businessProfile.push("The restaurant business has 3 main costs: Rent, Food, & Staff. Help your staff focus on high value tasks with the right cleaning products.")
+          }
+          else if(subAnswerChosen =="Midscale/Casual")
+          {
+              businessProfile.push("The restaurant business has 3 main costs: Rent, Food, & Staff. Help your staff focus on high value tasks with the right cleaning products.")
+              
+          }
+          else if(subAnswerChosen=="Fine Dining")
+          {
+              businessProfile.push("The restaurant business has 3 main costs: Rent, Food, & Staff. Help your staff focus on high value tasks with the right cleaning products.")
+              
+          }
+      }
+      else if(answersChosen[0]=="Hospitality")
+      {
+          {
+              if(subAnswerChosen=="Hotel")
+              {
+                  businessProfile.push("For Hotels you want to make your guests comfortable the moment they walk in the door, and there is no better way than clean linens, a fresh scent, and a smile.")
+              }
+              else if(subAnswerChosen=="Motel")
+              {
+                  businessProfile.push("At a Motels you want to make your guests comfortable the moment they walk in the door, and there is no better way than clean linens, a fresh scent, and a smile.")
+              }
+              else if(subAnswerChosen=="Bed & Breakfast")
+              {
+                  businessProfile.push("At a Bed & Breakfast you want to make your guests comfortable the moment they walk in the door, and there is no better way than clean linens, a fresh scent, and a smile.")
+                  
+              }
+              else if(subAnswerChosen=="Casino")
+              {
+                  businessProfile.push("At a Casino you want to make your guests comfortable the moment they walk in the door, and there is no better way than clean tables, a fresh scent, and a smile.")
+              }
+          }
+      }
+      else if(answersChosen[0]=="Independent Care Home")
+      {
+          {
+              if(subAnswerChosen=="Hospital")
+              {
+                  businessProfile.push("In hospitals, sanitization and disinfection are essential for both staff and patients - use EPA registered products when possible/required.")
+              }
+              else if(subAnswerChosen=="Senior Care")
+              {
+                  businessProfile.push("At Senior Care Facilities safety is a top priority. A well trained staff, proper cleaning procedures, & good resident habits are first steps to a safe environment.")   
+              }
+              else if(subAnswerChosen=="Doctor's Office")
+              {
+                  businessProfile.push("In a Doctor's Office, staff and patients safety is priority #1 - use EPA registered products when possible/required with proper procedures.")
+                  
+              }
+              else if(subAnswerChosen="Outpatient Facility")
+              {
+                  businessProfile.push("At an Outpatient Facility, safety is a top priority. A well trained staff, proper cleaning procedures, & good resident habits are first steps to a safe environment.")   
+              }
+          }
+      }
+      else if(answersChosen[0]=="Other")  
+      {
+          {
+              if(subAnswerChosen=="Dry Cleaning/Laundry")
+              {
+                  businessProfile.push("The cleanliness of your business is central to your customer's experience and how they perceive your service - make it count!")
+              }
+              else if(subAnswerChosen=="Retail")
+              {
+                  businessProfile.push("The cleanliness of your store is key to your customer's experience and how they perceive your products - make it count!")
+                  
+              }
+              else if(subAnswerChosen=="Education")
+              {
+                if(SubSubAnswer=="K-12") {
+                  businessProfile.push("In schools, budgets and resources are often stretched, so focus on versatile products that get the job done right the first time.")
                 }
-                else if(subAnswerChosen=="Motel")
-                {
-                    businessProfile.push("For Motel you want to make your guests comfortable the moment they walk in the door, and there is not better way than clean linens, a fresh scent, and a smile")
+                else if(SubSubAnswer=="College & Universities") {
+                  businessProfile.push("In schools, budgets and resources are often stretched, so focus on versatile products that get the job done right the first time.")
                 }
-                else if(subAnswerChosen=="Bed & Breakfast")
-                {
-                    businessProfile.push("For Bed & Breakfast you want to make your guests comfortable the moment they walk in the door, and there is not better way than clean linens, a fresh scent, and a smile")
-                    
-                }
-                else if(subAnswerChosen=="Casino")
-                {
-                    businessProfile.push("For Casino you want to make your guests comfortable the moment they walk in the door, and there is not better way than clean linens, a fresh scent, and a smile")
-                }
-            }
-        }
-        else if(answersChosen[0]=="Independent Care Home")
-        {
-            {
-                if(subAnswerChosen=="Hospital")
-                {
-                    businessProfile.push("In hopsitals sanitization and disinfection are essential in keeping staff and patients safe - use EPA registered products when possible/required.")
-                }
-                else if(subAnswerChosen=="Senior Care")
-                {
-                    businessProfile.push("At Senior Care Facilities, not only is cleaning and disinfection central to providing residents a great experience, its vital to their safety.")
-                    
-                }
-                else if(subAnswerChosen=="Doctor's Office")
-                {
-                    businessProfile.push("In a Doctor's Office, sanitization and disinfection are essential in keeping staff and patients safe - use EPA registered products when possible/required.")
-                    
-                }
-                else if(subAnswerChosen="Outpatient Facility")
-                {
-                    businessProfile.push("At Senior Care Facilities, not only is cleaning and disinfection central to providing residents a great experience, its vital to their safety.")
-                    
-                }
-            }
-        }
-        else if(answersChosen[0]=="Other")  
-        {
-            {
-                if(subAnswerChosen=="Dry Cleaning/Laundry")
-                {
-                    businessProfile.push("The cleanliness of your business is central to your customer's experience and how they percieve the your service - make it count!")
-                }
-                else if(subAnswerChosen=="Retail")
-                {
-                    businessProfile.push("The cleanliness of your business is central to your customer's experience and how they percieve the your service - make it count!")
-                    
-                }
-                else if(subAnswerChosen=="Education")
-                {
-                    console.log("SubsubAns::", SubSubAnswer);
-                    businessProfile.push("Strict cleaning and disinfecting in schools help reduce the spread of illness and help give students the best experience ")
-                }
-                else if(subAnswerChosen=="Fitness Centers/Gyms")
-                {
-                    businessProfile.push("The cleanliness of your Fitness Center or Gym is central to your customer's experience and how they percieve the your business")
-                }
-                else if(subAnswerChosen=="Hair/Beauty")
-                {
-                    businessProfile.push("The cleanliness of your salon is central to your customer's experience and how they percieve the your service - make it count")
-                }
-                else if(subAnswerChosen=="Not a Business")
-                {
-                    businessProfile.push("You are not purchasing for a business. The P&G Professional team is working on adding more use cases. See our general cleaning recommendations below.");
-                }
-                else if(subAnswerChosen=="Other")
-                {
-                    businessProfile.push("The P&G Professional team is working to add all business types so that the SmartAssist can serve all small businesses - See our general business cleaning products below");
-                    
-                }
-            }
-        }
-        else if(answersChosen[0] =="Coffee Shop/Cafe/Bar")
-        {
-            businessProfile.push("The food service business has 3 main costs: Rent, Food, & Staff. Help your staff focus on high value tasks with the right cleaning products")
+              }
+              else if(subAnswerChosen=="Fitness Centers/Gyms")
+              {
+                  businessProfile.push("The cleanliness of your Fitness Center or Gym is central to your customer's experience and how they perceive your business.")
+              }
+              else if(subAnswerChosen=="Hair/Beauty")
+              {
+                  businessProfile.push("The cleanliness of your salon is central to your customer's experience and how they perceive your service - make it count!")
+              }
+              else if(subAnswerChosen=="Not a Business")
+              {
+                  businessProfile.push("You are not purchasing for a business. The P&G Professional team is working on adding more use cases. See our general cleaning recommendations below.");
+              }
+              else if(subAnswerChosen=="Other")
+              {
+                  businessProfile.push("The P&G Professional team is working to add all business types so that the SmartAssist can serve all small businesses - See our general business cleaning recommendations below:");
+                  
+              }
+          }
+      }
+      else if(answersChosen[0] =="Coffee Shop/Cafe/Bar")
+      {
+          businessProfile.push("The food service business has 3 main costs: Rent, Food, & Staff. Help your staff focus on high value tasks with the right cleaning products.")
 
-        }
-        else if(answersChosen[0] =="Business Service Contractors/Contract Cleaners")
-       {
-           businessProfile.push("Empower your team with strong training, procedures, and products to get the job done right, the first time.");
-        }
-        else if(answersChosen[0] =="General Office Building")
-        {
-           businessProfile.push("Office Buildings can be hubs for germs as people come in and out every day. Protect your employees with routine cleaning and disinfection to keep them safe and healthy. ")
-        }
-    
-       console.log("businessProfile",businessProfile);
-    //business size choice
-    if(answersChosen[1]=="1-4" || answersChosen[1]=="Less than 5")
-    {
-        businessProfile.push("Small business are pillars of our community - that's why P&G Professional makes products that help you ensure every experience counts.");
-    }
-    else
-    {
-        businessProfile.push("Small & medium business are pillars of our community - that's why P&G Professional makes products that help you ensure every experience counts.")
-    }
-    
-    //type cleaner
-    if(answersChosen[3]=="You try and get cleaning done as easily as possible – as little time and as few products as possible.")
-    {
-        businessProfile.push("For you, when it comes to cleaning, the simpler the better. Ready to use products are already diluted to save you time.")
-    }
-    else if(answersChosen[3]=="You are a perfection seeker and cleaning is a way to demonstrate your high standards to your customers.")
-    {
-        businessProfile.push("You have a high level of cleanliness that because that shows your high standards and creates a the perfect first impression.")
-    }
-    else if(answersChosen[3]=="Like everything else in your business, it is important for you to find products that are environmentally conscious and can get the job done.")
-    {
-        businessProfile.push("You value using cleaning products that are enviormentally conscious - focus on high performers that use less water and reduce rewash.")
-    }
-    else if(answersChosen[3]=="Cleaning is a “must do task” and something you try to do as inexpensively as possible. You want the cheapest product that will get the job done.")
-    {
-        businessProfile.push("You look for good cleaning results, with least expense. Focus on multi-purpose products to for a versitile clean.")
-    }
+      }
+      else if(answersChosen[0] =="Business Service Contractors/Contract Cleaners")
+     {
+         businessProfile.push("Empower your team with strong training, procedures, and products to get the job done right, the first time.");
+      }
+      else if(answersChosen[0] =="General Office Building")
+      {
+         businessProfile.push("Office Buildings can be hubs for germs as people come and go. There are lots of places people touch without realizing it - focus on high touch surfaces.")
+      }
+  
+     console.log("businessProfile",businessProfile);
+  //business size choice
+  if(answersChosen[1]=="1-4" || answersChosen[1]=="Less than 5")
+  {
+      businessProfile.push("Small business are pillars of our community - that's why P&G Professional makes products that help you ensure every experience counts.");
+  }
+  else
+  {
+      businessProfile.push("Small & medium business are pillars of our community - that's why P&G Professional makes products that help you ensure every experience counts.")
+  }
+  
+  //type cleaner
+  if(answersChosen[3]=="You try and get cleaning done as easily as possible – as little time and as few products as possible.")
+  {
+      businessProfile.push("For you, when it comes to cleaning, the simpler the better. Ready-to-use products are already diluted to save you time.")
+  }
+  else if(answersChosen[3]=="You are a perfection seeker and cleaning is a way to demonstrate your high standards to your customers.")
+  {
+      businessProfile.push("You have a high level of cleanliness that shows your high standards and creates the perfect first impression.")
+  }
+  else if(answersChosen[3]=="Like everything else in your business, it is important for you to find products that are environmentally conscious and can get the job done.")
+  {
+      businessProfile.push("You value using cleaning products that are environmentally conscious. Focus on high-quality products that use less water and reduce rewash.")
+  }
+  else if(answersChosen[3]=="Cleaning is a “must do task” and something you try to do as inexpensively as possible. You want the cheapest product that will get the job done.")
+  {
+      businessProfile.push("You look for good cleaning results, with the least expense. Focus on multi-purpose products to for a versatile clean.")
+  }
 
     // key challenges
           
