@@ -46,6 +46,15 @@
     letter-spacing: 1px;
     margin-top: 1.5rem;
 }
+.cardSubTitle2
+{
+    color:black;
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-align: center;
+    /* letter-spacing: 0.5px; */
+    margin-top: 1.5rem;
+}
 .cardText2
 {
     margin-top: -0.8rem;
@@ -135,6 +144,15 @@
     .cardTitle2
     {
         font-size: 0.9rem;
+    }
+    .cardSubTitle2
+    {
+        color:black;
+        font-weight: bold;
+        font-size: 0.7rem;
+        text-align: center;
+        /* letter-spacing: 0.5px; */
+        margin-top: 1.5rem;
     }
     .cardText2
     {
@@ -304,6 +322,7 @@
         /* margin-top: 1rem; */
         margin-bottom: 1rem;
     }
+    
     /* upper carousel */
     .productCards
     {
@@ -393,6 +412,15 @@
         text-align: center;
         /* margin-top: 1rem; */
         /* margin-bottom: 2rem; */
+    }
+    .cardSubTitle2
+    {
+        color:black;
+        font-weight: bold;
+        font-size: 0.85rem;
+        text-align: center;
+        /* letter-spacing: 0.5px; */
+        margin-top: 1rem;
     }
     .recommTitle
     {
@@ -492,10 +520,19 @@
 
     .cardTitle2
     {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         text-align: center;
         margin-top: -4.5rem;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
+    }
+    .cardSubTitle2
+    {
+        color:black;
+        font-weight: bold;
+        font-size: 0.75rem;
+        text-align: center;
+        /* letter-spacing: 0.5px; */
+        margin-top: 0.2rem !important;
     }
     .recommTitle
     {

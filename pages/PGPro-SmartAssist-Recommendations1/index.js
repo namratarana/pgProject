@@ -254,6 +254,8 @@ const Recommendations = (props) => {
                         <div class="card card2">
                             <div class="card-body">
                                 <h5 class="card-title cardTitle2">Where should we send your results?</h5>
+                                <p class="cardSubTitle2">Sign up to receive exclusive offers and discounts.</p>
+
                                 <p class="card-text cardText2 ">
                                 <div className="d-flex flex-column align-items-center position-relative  w-100">
                                 <svg className="emailIcon mt-4 d-lg-block d-none" width="50" height="50" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">

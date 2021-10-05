@@ -428,6 +428,7 @@ export class Questions extends React.PureComponent {
                 }
                 else if(subAnswerChosen=="Education")
                 {
+                    console.log("SubsubAns::", SubSubAnswer);
                     businessProfile.push("Strict cleaning and disinfecting in schools help reduce the spread of illness and help give students the best experience ")
                 }
                 else if(subAnswerChosen=="Fitness Centers/Gyms")
