@@ -455,7 +455,7 @@ export class Questions extends React.PureComponent {
       }
       else if(answersChosen[0] =="Coffee Shop/Cafe/Bar")
       {
-          businessProfile.push("The food service business has 3 main costs: Rent, Food, & Staff. Help your staff focus on high value tasks with the right cleaning products.")
+          businessProfile.push("The foodservice business has 3 main costs: Rent, Food, & Staff. Help your staff focus on high value tasks with the right cleaning products.")
 
       }
       else if(answersChosen[0] =="Business Service Contractors/Contract Cleaners")
