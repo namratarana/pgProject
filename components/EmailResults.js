@@ -140,10 +140,10 @@ const emailResults = ({
   const initialContent = _document ? parse(_document.head.innerHTML) : [];
   return (
     <div className=' mt-3'>
-      <Frame
+      {/* <Frame
         head={initialContent}
         className={`formIFrame ${emailSubmitted && 'd-none'}`}
-      >
+      > */}
         <div>
           <form
             action='https://go.pgpro.com/l/769383/2021-01-07/cf7mpk'
@@ -224,7 +224,7 @@ const emailResults = ({
             </div>
           </form>
         </div>
-      </Frame>
+      {/* </Frame> */}
 
 
 
