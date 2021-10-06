@@ -31,7 +31,8 @@
   top: 0.6rem;
   /* left: 3rem; */
   left: 0;
-  margin-left: 1.35rem;
+  margin-top: -1rem;
+  /* margin-left: 1.35rem; */
   
 }
 /* Submitted button */
@@ -49,7 +50,7 @@
 }
 /* email input box */
 .emailInput {
-  width: 2rem;
+  width: 18rem;
   height: 2.4rem;
   border: 1.5px solid #4fa0f1;
   box-sizing: border-box;
@@ -59,8 +60,8 @@
 }
 /* get my results */
 .emailResultsButton {
-  width: 60% !important ;
-  height: 2.3rem;
+  width: 50% !important ;
+  height: 2rem;
   cursor: pointer;
   background: #003e7d;
   border-radius: 26px;
@@ -71,11 +72,9 @@
 /* Disclaimer */
 .checkBoxLabel {
   font-style: normal;
-  /* font-weight: bold; */
   font-size: xx-small !important;
   line-height: 0.7rem;
   color: black;
-  margin-left: 0rem;
   width: 90%;
   text-align: justify;
   word-spacing: 1px;
@@ -92,6 +91,7 @@
   font-size: 0.8rem !important;
   font-weight: 500;
   text-align: left;
+  margin-top: -0.9rem;
 }
 .emailResultsLinks {
   color: #9a9a9a;
@@ -121,7 +121,7 @@
 } */
 
 .terms {
-  width: 15rem;
+  width: 18rem;
 }
 
 
@@ -165,22 +165,25 @@
 @media only screen and (max-width: 1026px) and (min-width: 768px) {
   
   .emailInput {
-    width: 1rem;
+    width: 14rem;
     height: 1.8rem;
+    margin-left: 2rem !important;
   }
   .emailIcon {
     height: 15px;
     width: 15px;
-    margin-left: -1rem;
+    margin-left: 0rem;
 
   }
   .emailResultsButton {
     width: 45% !important;
-    height: 1.8rem;
+    height: 1.6rem;
     font-size: 0.7rem !important;
+    margin-top: 1rem !important;
   }
   .terms {
-    width: 12rem;
+    width: 15rem;
+    margin-left: 2rem !important;
     font-size: xx-small;
   }
 }
@@ -188,11 +191,11 @@
 @media only screen and (max-width: 769px) {
 
   .terms {
-    width: 20rem;
+    width: 24rem;
   }
   .emailInput
   {
-    width: 20rem;
+    width: 25rem;
     height: 2.6rem;
   }
   .card2subText {
@@ -200,14 +203,16 @@
     font-weight: 500;
     text-align: left;
     margin-top: -1rem;
+    margin-left: 2rem !important;
+
   }
   .emailResultsButton 
   {
     color: white;
     border: 2px solid #003e7d;
     background-color: #003e7d;
-    height: 2.5rem;
-    width: 17rem !important;
+    height: 2.3rem;
+    width: 18rem !important;
   }
   .upperEmailText
   {
@@ -220,30 +225,34 @@
   }
   .checkBoxLabel
   {
-    margin-bottom: -2rem;
+    margin-bottom: 1rem;
+
   }
   
 }
 
 @media only screen and (max-width: 426px) {
   .terms {
-    width: 20rem;
+    width: 18rem;
   }
   .emailInput{
-    width: 19rem;
+    width: 17rem;
+    height: 2rem;
   }
   .card2subText {
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 500;
     text-align: left;
     margin-top: -1rem;
+    margin-left: 0.5rem !important;
   }
   .emailResultsButton 
   {
     color: white;
     border: 2px solid #003e7d;
     background-color: #003e7d;
-    height: 2.5rem;
+    height: 2rem;
+    width: 13rem !important;
   }
   .upperEmailText
   {
@@ -256,56 +265,18 @@
   }
   .checkBoxLabel
   {
-    margin-bottom: -2rem;
+    margin-bottom: 2rem;
   }
 
 }
 @media only screen and (max-width: 376px) {
   .terms{
     margin-top: 0rem;
-    width: 17rem;
+    width: 18rem;
   }
   .emailInput {
     width: 17rem;
-    height:2rem
-  }
-  .card2subText {
-    font-size: 1rem;
-    font-weight: 500;
-    text-align: left;
-    margin-top: -1rem;
-  }
-  .emailResultsButton 
-  {
-    color: white;
-    border: 2px solid #003e7d;
-    background-color: #003e7d;
-    height: 2.3rem;
-  }
-  .upperEmailText
-  {
-    font-size: 0.9rem !important;
-    font-weight: bolder;
-    color: black;
-    letter-spacing: 0.5px;
-    margin-top: 2.5rem;
-    margin-bottom: -0.5rem;
-  }
-  .checkBoxLabel
-  {
-    margin-bottom: -2rem;
-  }
-}
-
-@media only screen and (max-width: 321px) {
-
-  .terms{
-    margin-top: -1rem;
-    width: 16rem;
-  }
-  .emailInput {
-    width: 15rem;
-    height:2rem
+    height:1.8rem
   }
   .card2subText {
     font-size: 1rem;
@@ -319,7 +290,45 @@
     border: 2px solid #003e7d;
     background-color: #003e7d;
     height: 2rem;
-    width: 13rem !important
+  }
+  .upperEmailText
+  {
+    font-size: 0.9rem !important;
+    font-weight: bolder;
+    color: black;
+    /* letter-spacing: 0.5px; */
+    margin-top: 2.5rem;
+    margin-bottom: -0.5rem;
+  }
+  .checkBoxLabel
+  {
+    margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 321px) {
+
+  .terms{
+    margin-top: -1rem;
+    width: 16rem;
+  }
+  .emailInput {
+    width: 15rem;
+    height:1.7rem
+  }
+  .card2subText {
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: left;
+    margin-top: -1rem;
+  }
+  .emailResultsButton 
+  {
+    color: white;
+    border: 2px solid #003e7d;
+    background-color: #003e7d;
+    height: 1.8rem;
+    width: 10rem !important
   }
   .upperEmailText
   {
@@ -330,8 +339,16 @@
     margin-top: 2.5rem;
     margin-bottom: -0.5rem;
   }
-  .checkBoxLabel
-  {
-    margin-bottom: -2rem;
+  .checkBoxLabel {
+    font-style: normal;
+    font-size: xx-small !important;
+    line-height: 0.7rem;
+    color: black;
+    width: 90%;
+    text-align: justify;
+    margin-bottom: 1rem;
+    margin-top: 2rem !important;
+    /* word-spacing: 1px; */
   }
+  
 }
