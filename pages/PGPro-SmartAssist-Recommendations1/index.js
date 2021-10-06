@@ -5,7 +5,7 @@ import EmailResults from "../../components/EmailResults";
 // import EmailResultsSmall from "../../components/EmailResults-small";
 import EmailResults1 from "../../components/EmailResults1";
 import ProductCards1 from '../../components/ProductCards1';
-import ProductCards2small from '../../components/ProductCards2small';
+import ProductCards1small from '../../components/ProductCards1small';
 
 import Claims from '../../components/Claims';
 import SDSModal from '../../components/SDSModal';
@@ -363,10 +363,21 @@ const Recommendations = (props) => {
                                         <div className="chips row text-wrap">
                                             {s.PrimaryArea.map((y, j) => (
                                                 // <div className="py-2 px-1" key={j}>
-                                                <span className=" mt-2 fw-bold ms-2 col col-lg-4  prod-recomm-area text-wrap prod-primary-area">{y}</span>
+                                                <span className=" mt-2 fw-bold ms-1 me-1 col   prod-recomm-area text-wrap prod-primary-area">{y}</span>
                                                 // </div>d
                                             ))}
                                         </div>
+                                        {/* <div className="chips-small row ">
+                                            <div className="row row-cols-auto">
+                                            {s.PrimaryArea.map((y, j) => (
+                                                <div className="col mb-1">
+                                               
+                                                    <span className="py-1 px-1 text-center fw-bold prod-primary-area">{y}</span>
+                                                
+                                                </div>
+                                            ))}
+                                            </div>
+                                        </div> */}
                                     </p>
 
                                 </div>
@@ -424,7 +435,7 @@ const Recommendations = (props) => {
 
             <div className="d-lg-none d-block">
                 {coreData.map((x, i) => (
-                    <ProductCards2small
+                    <ProductCards1small
                         x={x}
                         i={i}
                         key={i}

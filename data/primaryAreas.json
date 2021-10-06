@@ -1,0 +1,22 @@
+{
+    "Magic Eraser":["Front of House","Guest Rooms","Public Areas","Public Spaces"],
+    "Microban Sanitizing Spray":["Front of House","Public Areas","Public Spaces"],
+    "Finished Floor Cleaner":["Front of House","Public Spaces","Public Areas","Restrooms"],
+    "3-in-1":["Front of House","Guest Room Kitchenette","Public Spaces","Public Areas","Guest Rooms","Restrooms"],
+    "Dusters":["Front of House","Public Spaces","Public Areas","Guest Rooms"],
+    "Disinfecting Cleaner with Bleach":["Restrooms"],
+    "Disinfecting-Sanitizing Bathroom Cleaner":["Restrooms"],
+    "Multi-purpose Cleaner":["Restrooms","Guest Rooms"],
+    "Powdered Chlorine Sanitizer":["Guest Room Kitchenette","Kitchen"],
+    "Air Effects":["Guest Rooms","Public Areas"],
+    "Deep Penetrating Fabric Refresher":["Guest Rooms","Public Areas"],
+    "Heavy Duty Floor Cleaner":["Kitchen"],
+    "Manual Pot & Pan":["Outdoor Areas","Kitchen","Guest Room Kitchenette"],
+    "Multi-Surface Heavy Duty Degreaser":["Outdoor Areas","Kitchen","Guest Room Kitchenette"],
+    "Power Dissolver":["Kitchen"],
+    "Paper Towels":["Guest Room Kitchenette"],
+    "Carpet Extraction Cleaner":["Public Areas"],
+    "Hand Sanitizer Gel":["Public Areas","Restrooms"],
+    "Antibacterial Liquid Hand Soap":["Restrooms"],
+    "Sweeper":["Restrooms"]
+}

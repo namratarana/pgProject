@@ -6,6 +6,7 @@ import EmailResults from "../../components/EmailResults";
 import EmailResults1 from "../../components/EmailResults1";
 import ProductCards2 from '../../components/ProductCards2';
 import ProductCards2small from '../../components/ProductCards2small';
+import primary_Areas from "../../data/primaryAreas.json"
 
 import Claims from '../../components/Claims';
 import SDSModal from '../../components/SDSModal';
@@ -311,7 +312,8 @@ const Recommendations = (props) => {
             {/* <div className="px-3">
                 <SliderPage coreData={coreData} />
             </div> */}
-            <div className="scrollContainer mt-4">
+            <div className="d-lg-block d-none">
+            <div className="scrollContainer  mt-4">
                 <button className="buttonContainerLeft" id="slideLeft">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="black" className="bi bi-chevron-left" viewBox="0 0 16 16">
                         <path fillRule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
@@ -326,7 +328,7 @@ const Recommendations = (props) => {
 
                             <div class="card productCards grow-on-hover mx-2">
                                 <div class="card-header prodCardHead d-lg-block d-none">
-                                    <div className="productData">
+                                    <div className="productData ">
                                         {s.ProductName}
                                     </div>
                                 </div>
@@ -357,13 +359,29 @@ const Recommendations = (props) => {
                                         </div>
                                     </div>
                                     <p class="card-text my-2 d-lg-block d-none">
-                                        <div className="chips text-wrap d-flex justify-content-center">
+                                        <div className="chips row text-wrap">
+                                           {console.log("prodname:",s.ProductName)}
+                                            
+                                            {console.log("primary-area:",primary_Areas)}
+                                            {/* {console.log("primary-area.prodName:",primary_Areas)} */}
+
                                             {s.PrimaryArea.map((y, j) => (
                                                 // <div className="py-2 px-1" key={j}>
-                                                <span className=" mt-2 fw-bold ms-2 col col-lg-6 prod-recomm-area text-wrap prod-primary-area">{y}</span>
+                                                <span className=" mt-2 fw-bold ms-1 me-1 col   prod-recomm-area text-wrap prod-primary-area">{y}</span>
                                                 // </div>d
                                             ))}
                                         </div>
+                                        {/* <div className="chips-small row ">
+                                            <div className="row row-cols-auto">
+                                            {s.PrimaryArea.map((y, j) => (
+                                                <div className="col mb-1">
+                                               
+                                                    <span className="py-1 px-1 text-center fw-bold prod-primary-area">{y}</span>
+                                                
+                                                </div>
+                                            ))}
+                                            </div>
+                                        </div> */}
                                     </p>
 
                                 </div>
@@ -380,9 +398,11 @@ const Recommendations = (props) => {
                     </svg>
                 </button>
 
+            </div>                                   
             </div>
 
-            {/*  */}
+            
+                        {/*  */}
 
             <div className="d-lg-none d-block mt-5">
                 <h2 className="d-flex justify-content-center recommTitle-small"><b>Your Custom Kit</b></h2>
