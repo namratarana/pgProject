@@ -96,6 +96,7 @@
     background-color: transparent;
     border: 0;   
 }
+
 .productData
 {
     color: black;
@@ -114,7 +115,7 @@
 {
     background: rgba(254, 209, 3, 0.1);
     font-size: 12px;
-    /* width: 45%; */
+    width: 45%;
 }
   
 .lowerEmailText
@@ -171,7 +172,7 @@
     .productCards
     {
         width: 12.5rem;
-        height: auto;   
+        height: 100%;   
     }
     .prod-recomm-area
     {
@@ -259,9 +260,9 @@
     /* upper carousel */
     .productCards
     {
-        border: 1px solid rgb(212, 208, 208) !important;
+        border: 0px solid rgb(212, 208, 208) !important;
         width: 18.7rem;
-        height: auto;
+        height: 100% !important;
     
     }
     .prod-primary-area
@@ -292,6 +293,11 @@
         margin-top: 0.5rem;
         text-align: center;
         width: 16rem;   
+        
+    }
+    .mobileCarouselHeight
+    {
+        height: 100%;
     }
     .prodImage
     {
@@ -362,15 +368,19 @@
     {
         border: 0px solid rgb(212, 208, 208) !important;
         width: 9.7rem;
-        height: auto;
+        height: 100%;
+    }
+    .mobileCarouselHeight
+    {
+        height: 100%;
     }
     .prod-recomm-area
     {   
         padding-top: 2px;
         padding-bottom: 2px;
         font-weight: 500;
-        font-size: 0.7rem !important;
-        width: 50%;
+        font-size: 0.7rem ;
+        width: 45%;
     }
 
     .productData
@@ -467,14 +477,14 @@
     {
         border: 0px solid rgb(212, 208, 208) !important;
         width: 8rem;
-        height: auto;
+        height: 100%;
     }
     .prod-recomm-area
     {
         font-weight: 400;
         font-size: 0.6rem;
-        padding-left: 1px;
-        padding-right: 1px;  
+        /* padding-left: 1px; */
+        /* padding-right: 1px;   */
         width: 40%;      
     }
     .productData
@@ -486,6 +496,10 @@
         text-align: center; 
         line-height: 10px !important;  
         width: 7.2rem;
+    }
+    .mobileCarouselHeight
+    {
+        height: 100%;
     }
     .prodImage
     {
@@ -578,10 +592,14 @@
     {
         border: 0px solid rgb(212, 208, 208) !important;
         width: 14rem;
-        height: auto;
+        height: 100%;
         margin-left: 1rem;
         margin-right: 1rem;
     }
+    .mobileCarouselHeight
+    {
+        height: 100%;
+    }   
     .prod-recomm-area
     {
         font-weight: 400;
@@ -605,4 +623,4 @@
     }
     /* end of upper carousel */
     
-}
+}   

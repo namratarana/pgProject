@@ -62,7 +62,7 @@ const ProductCard = (props) => {
                     {ProductInfo.ProductName}
                 </div>
                 <div className="prodLink mt-1">
-                    <a  onClick={e=> console.log(setLink(true))}><u>Why do I need this?</u></a>
+                    <p  onClick={e=> console.log(setLink(true))}><u>Why do I need this?</u></p>
                 </div> 
                 
                 <div

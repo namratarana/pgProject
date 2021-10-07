@@ -77,7 +77,7 @@ const ProductCard = (props) => {
                 <div className="chips">
                         {areas?areas.map((y, j) => (
                             <div className="py-1 px-1" key={j}>
-                                <span className="p-2 prod-recomm-area text-center prod-primary-area">{y}</span>
+                                <span className="p-2 text-center prod-primary-area2">{y}</span>
                             </div>
                         )):null}
                     </div>

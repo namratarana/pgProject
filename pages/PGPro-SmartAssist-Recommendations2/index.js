@@ -311,10 +311,8 @@ const Recommendations = (props) => {
             </Head>
 
             
-            {/* <div className="px-3">
-                <SliderPage coreData={coreData} />
-            </div> */}
-            <div className="d-lg-block d-none">
+           
+        <div className="">
             <div className="scrollContainer  mt-4">
                 <button className="buttonContainerLeft" id="slideLeft">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="black" className="bi bi-chevron-left" viewBox="0 0 16 16">
@@ -337,11 +335,12 @@ const Recommendations = (props) => {
                                             {s.ProductName}
                                         </div>
                                     </div>
-                                    <p class="card-text mt-2 mb-5 d-lg-none d-block">
-                                        <div className="chips row ">
+                                    <p class="card-text mobileCarouselHeight mt-2 mb-5 d-lg-none d-block">
+                                        <div className="chips justify-content-center text-wrap  row ">
                                             {areas?areas.map((y, j) => (
                                                 // <div className="py-2 px-1" key={j}>
-                                                <span className=" mt-2 fw-bold ms-3 me-3 col col prod-recomm-area prod-primary-area">{y}</span>
+                                                <span className=" mt-2 fw-bold me-1 col-lg-6 prod-recomm-area text-wrap prod-primary-area">{y}</span>
+
                                                 // </div>d
                                             )):null}
                                         </div>
@@ -364,7 +363,7 @@ const Recommendations = (props) => {
                                             </div>
                                         </div>
                                         <p class="card-text my-2 d-lg-block d-none">
-                                            <div className="chips row text-wrap">
+                                            <div className="chips row justify-content-center text-wrap">
                                                {/* {console.log("prodname:",s.ProductName)} */}
                                                 
                                                 {/* {console.log("primary-area:",primary_Areas)} */}
@@ -373,7 +372,7 @@ const Recommendations = (props) => {
                                                 {areas?areas.map((y, j) => (
                                                     
                                                     // <div className="py-2 px-1" key={j}>
-                                                    <span className=" mt-2 fw-bold ms-1 me-1 col prod-recomm-area text-wrap prod-primary-area">{y}</span>
+                                                    <span className=" mt-2 fw-bold me-1 col-lg-6 prod-recomm-area text-wrap prod-primary-area">{y}</span>
                                                     // </div>d
                                                 )):null}
                                             </div>
@@ -407,7 +406,7 @@ const Recommendations = (props) => {
                 </button>
 
             </div>                                   
-            </div>
+        </div>
 
             
                         {/*  */}

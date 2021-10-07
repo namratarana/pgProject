@@ -85,6 +85,7 @@ const ProductCard = (props) => {
                                 )):null}
                             </div>
 
+
                             {ProductInfo.Tensions.length>0 ?
                             <div>
                                 <u><p className="cleanLocations mt-2">Your problems it tackles</p></u>

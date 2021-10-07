@@ -32,7 +32,7 @@ line-height: 19px;
 color: #003E7D;
 }
 
-.buyButton {
+/* .buyButton {
   box-sizing: border-box;
   border-radius: 26px;
   cursor: pointer;
@@ -43,7 +43,7 @@ color: #003E7D;
   height: 40px;
   color: white;
   border: none;
-}
+} */
 .productRecommImage {
   height: 150px;
   object-fit: contain;

@@ -366,10 +366,12 @@ const Recommendations = (props) => {
                                         </div>
                                     </div>
                                     <p class="card-text my-2 d-lg-block d-none">
-                                        <div className="chips row text-wrap">
+                                        <div className="chips row justify-content-center text-wrap">
                                             {areas?areas.map((y, j) => (
                                                 // <div className="py-2 px-1" key={j}>
-                                                <span className=" mt-2 fw-bold ms-1 me-1 col   prod-recomm-area text-wrap prod-primary-area">{y}</span>
+                                                <span className=" mt-2 fw-bold me-1 col-lg-6 prod-recomm-area text-wrap prod-primary-area">{y}</span>
+
+                                                
                                                 // </div>d
                                             )):null}
                                         </div>
