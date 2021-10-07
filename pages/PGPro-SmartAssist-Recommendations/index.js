@@ -1,7 +1,7 @@
 import React, { useState, useEffect }  from "react"
 import Head from "next/head"
 import Result from "../../components/Result"
-import EmailResults from "../../components/EmailResults";
+import EmailFormTop from "../../components/EmailFormTop";
 import ProductCard from '../../components/ProductCard';
 import Claims from '../../components/Claims';
 import SDSModal from '../../components/SDSModal';
@@ -213,7 +213,7 @@ const Recommendations = (props) => {
 
                     </div>
                     <div className="text-center mx-auto">
-                        <EmailResults
+                        <EmailFormTop
                             answersChosen={props.answersChosen}
                             uniqueProductImages={uniqueProductImages}
                             SubAnswerChosen={props.SubAnswerChosen}

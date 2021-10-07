@@ -17,7 +17,7 @@ export async function getStaticProps(context) {
   };
 }
 
-const emailResults = ({
+const EmailFormTop = ({
   answersChosen,
   uniqueProductImages,
   subAnswerChosen,
@@ -266,7 +266,6 @@ const emailResults = ({
   )
 }
 
-// export default emailResults;
 const mapStateToProps = ({ nextPageReducer }) => ({
   productResult: nextPageReducer.productResult,
   answersChosen: nextPageReducer.answersChosen,
@@ -279,4 +278,4 @@ export default connect(
     setProductResult,
     setAnswersChosen,
     setSubAnswerChosen
-  })(emailResults)
+  })(EmailFormTop)

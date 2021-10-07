@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react"
 import Head from "next/head"
 import Result from "../../components/Result"
-import EmailResults from "../../components/EmailResults";
-// import EmailResultsSmall from "../../components/EmailResults-small";
-import EmailResults1 from "../../components/EmailResults1";
+import EmailFormTop from "../../components/EmailFormTop";
+import EmailFormBottom from "../../components/EmailFormBottom";
 import ProductCards1 from '../../components/ProductCards1';
 import ProductCards1small from '../../components/ProductCards1small';
 import primary_Areas from "../../data/primaryAreas.json"
@@ -269,7 +268,7 @@ const Recommendations = (props) => {
                                     <path d="M30.1985 27.8675H17.887C17.7402 27.8675 17.5994 27.8092 17.4957 27.7054C17.3919 27.6016 17.3336 27.4609 17.3336 27.3141C17.3336 27.1674 17.3919 27.0266 17.4957 26.9228C17.5994 26.819 17.7402 26.7607 17.887 26.7607H30.1985C30.3453 26.7607 30.486 26.819 30.5898 26.9228C30.6936 27.0266 30.7519 27.1674 30.7519 27.3141C30.7519 27.4609 30.6936 27.6016 30.5898 27.7054C30.486 27.8092 30.3453 27.8675 30.1985 27.8675Z" fill="#00AAE7" />
                                     <path d="M40.2577 40.7557C40.1634 40.7556 40.0706 40.7314 39.9882 40.6854L33.9797 37.3402H24.87C24.2851 37.3405 23.724 37.1088 23.3097 36.6959C22.8955 36.283 22.662 35.7227 22.6603 35.1378V31.6183C22.6603 31.4716 22.7186 31.3308 22.8224 31.227C22.9262 31.1232 23.067 31.0649 23.2137 31.0649C23.3605 31.0649 23.5012 31.1232 23.605 31.227C23.7088 31.3308 23.7671 31.4716 23.7671 31.6183V35.1378C23.7684 35.4292 23.8853 35.7083 24.092 35.9137C24.2988 36.1191 24.5785 36.2341 24.87 36.2335H34.1235C34.2179 36.2336 34.3107 36.2577 34.393 36.3038L39.7055 39.261V36.7869C39.7055 36.6401 39.7638 36.4993 39.8675 36.3956C39.9713 36.2918 40.1121 36.2335 40.2588 36.2335H41.0336C41.3241 36.2332 41.6027 36.1177 41.8082 35.9123C42.0137 35.7069 42.1294 35.4284 42.1298 35.1378V24.6895C42.1304 24.3978 42.0151 24.1177 41.8094 23.9109C41.6036 23.7041 41.3242 23.5875 41.0325 23.5866H34.5579C34.4112 23.5866 34.2704 23.5283 34.1666 23.4245C34.0629 23.3208 34.0046 23.18 34.0046 23.0332C34.0046 22.8865 34.0629 22.7457 34.1666 22.6419C34.2704 22.5382 34.4112 22.4799 34.5579 22.4799H41.0325C41.6174 22.4813 42.1779 22.7148 42.5909 23.1291C43.0039 23.5433 43.2357 24.1045 43.2354 24.6895V35.1372C43.2349 35.7213 43.0026 36.2813 42.5896 36.6944C42.1765 37.1074 41.6165 37.3397 41.0325 37.3402H40.8111V40.2029C40.8111 40.3496 40.7528 40.4904 40.649 40.5942C40.5452 40.6979 40.4045 40.7562 40.2577 40.7562V40.7557Z" fill="#231F20" />
                                 </svg> */}
-                                    <EmailResults
+                                    <EmailFormTop
                                         answersChosen={props.answersChosen}
                                         uniqueProductImages={uniqueProductImages}
                                         SubAnswerChosen={props.SubAnswerChosen}
@@ -459,7 +458,7 @@ const Recommendations = (props) => {
                 <div className="text-center">
                     <h5 className="upperEmailText">Save Your Results</h5>
                     <p className="lowerEmailText">Just enter your email and we’ll send you a copy of your results!</p>
-                    <EmailResults1
+                    <EmailFormBottom
                         answersChosen={props.answersChosen}
                         uniqueProductImages={uniqueProductImages}
                         SubAnswerChosen={props.SubAnswerChosen}
@@ -471,7 +470,7 @@ const Recommendations = (props) => {
                 <div className="text-center">
                     <hr/>
                     <p className="upperEmailText">Save Your Results,Get Exclusive Offers</p>
-                    <EmailResults
+                    <EmailFormTop
                         answersChosen={props.answersChosen}
                         uniqueProductImages={uniqueProductImages}
                         SubAnswerChosen={props.SubAnswerChosen}
