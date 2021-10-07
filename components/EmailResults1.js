@@ -135,6 +135,10 @@ const EmailResults1 = ({
     setAnswersChosen([])
     setSubAnswerChosen('')
   };
+  const handleSubmit = (e)=>
+  {
+    e.preventDefault();
+  }
 
   // Head tags for iframe to bring all styles from parent window
   const initialContent = _document ? parse(_document.head.innerHTML) : [];
@@ -191,6 +195,8 @@ const EmailResults1 = ({
                           className='emailResultsButton1 event_button_click'
                           type='submit'
                           value='Get My Results'
+                          // onClick = {e=>handleSubmit(e)}
+
                           readOnly
                           data-action-detail="email_results-button"
                       />

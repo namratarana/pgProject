@@ -33,9 +33,11 @@ const emailResults = ({
   // Submitting form
   const [emailSubmitted, setEmailSubmitted] = useState(false);
   const [_document, setDocument] = useState();
+
   useEffect(() => {
     setDocument(document);
   }, []);
+
   const formRef = useCallback(node => {
     // console.log({ node });
     if (node !== null) {
@@ -135,6 +137,11 @@ const emailResults = ({
     setAnswersChosen([])
     setSubAnswerChosen('')
   };
+  const handleSubmit = (e)=>
+  {
+    e.preventDefault();
+
+  }
 
   // Head tags for iframe to bring all styles from parent window
   const initialContent = _document ? parse(_document.head.innerHTML) : [];
@@ -190,6 +197,7 @@ const emailResults = ({
                     className='emailInput ms-2'
                     value={emailAddress}
                     onChange={e => setEmailAddress(e.target.value)}
+                    
                     aria-label='Email Address'
                     aria-describedby='basic-addon2'
                   // disabled={emailSubmitted}
@@ -203,10 +211,12 @@ const emailResults = ({
                   }
                   className='emailResultsButton  event_profile_register w-100 mt-1'
                   type='submit'
+                  onClick = {e=>handleSubmit(e)}
                   value='Get My Results'
                   
                   data-action-detail="email_results-button"
                 />
+                
                 <div className="text-center terms">
                   <label className='form-check-label checkBoxLabel mt-3'>
                     By proceeding, I agree to receive emails from SmartAssist and other trusted P&G brands and programs. Click to read
