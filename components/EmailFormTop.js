@@ -34,6 +34,9 @@ const EmailFormTop = ({
   const [emailSubmitted, setEmailSubmitted] = useState(false);
   const [_document, setDocument] = useState();
 
+  // Email Form Value
+  const [emailFormButton, setEmailFormButton] = useState('Get My Results')
+
   useEffect(() => {
     setDocument(document);
   }, []);
@@ -137,10 +140,12 @@ const EmailFormTop = ({
     setAnswersChosen([])
     setSubAnswerChosen('')
   };
-  const handleSubmit = (e)=>
-  {
-    e.preventDefault();
 
+  // Prevents page refresh on email submission
+  const handleSubmit = (e) =>
+  {
+    setEmailFormButton('E-Mail Submitted')
+    e.preventDefault();
   }
 
   // Head tags for iframe to bring all styles from parent window
@@ -206,14 +211,13 @@ const EmailFormTop = ({
 
                 <input
                   disabled={
-                    // emailSubmitted ||
+                    emailSubmitted ||
                     !(validEmail)
                   }
-                  className='emailResultsButton  event_profile_register w-100 mt-1'
+                  className='emailResultsButton event_profile_register w-100 mt-1'
                   type='submit'
                   onClick = {e=>handleSubmit(e)}
-                  value='Get My Results'
-                  
+                  value={emailFormButton}                
                   data-action-detail="email_results-button"
                 />
                 

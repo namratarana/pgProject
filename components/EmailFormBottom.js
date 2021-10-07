@@ -33,6 +33,9 @@ const EmailFormBottom = ({
   // Submitting form
   const [emailSubmitted, setEmailSubmitted] = useState(false);
   const [_document, setDocument] = useState();
+
+  const [ emailFormButton, setEmailFormButton] = useState('Get My Results')
+
   useEffect(() => {
     setDocument(document);
   }, []);
@@ -126,17 +129,11 @@ const EmailFormBottom = ({
     { name: 'product_10_img', value: imageUrl[9] }
   ];
 
-  // const handleCheckBox = evt => {
-  //   setCheckBoxStatus(evt.target.checked);
-  // };
-
-  const handleReset = () => {
-    setProductResult([])
-    setAnswersChosen([])
-    setSubAnswerChosen('')
-  };
-  const handleSubmit = (e)=>
+  // Prevents page refresh on email submission
+  // Prevents page refresh on email submission
+  const handleSubmit = (e) =>
   {
+    setEmailFormButton('E-Mail Submitted')
     e.preventDefault();
   }
 
@@ -144,10 +141,10 @@ const EmailFormBottom = ({
   const initialContent = _document ? parse(_document.head.innerHTML) : [];
   return (
      <div>
-       <Frame
+       {/* <Frame
         head={initialContent}
         className={`formIFrame ${emailSubmitted && 'd-none'}`}
-        >
+        > */}
         <div>
             <form
                 action='https://go.pgpro.com/l/769383/2021-01-07/cf7mpk'
@@ -189,14 +186,13 @@ const EmailFormBottom = ({
 
                     <input
                         disabled={
-                        // emailSubmitted ||
+                        emailSubmitted ||
                         !(validEmail)
                         }
                           className='emailResultsButton1 event_button_click'
                           type='submit'
-                          value='Get My Results'
-                          // onClick = {e=>handleSubmit(e)}
-
+                          value={emailFormButton}
+                          onClick = {e=>handleSubmit(e)}
                           readOnly
                           data-action-detail="email_results-button"
                       />
@@ -205,7 +201,7 @@ const EmailFormBottom = ({
           </form>
         </div>
         
-        </Frame>
+        {/* </Frame> */}
 
    
 
