@@ -1,5 +1,7 @@
 import React from "react";
 import ImageReferenceData from '../data/ImageReference.json';
+import primary_Areas from "../data/primaryAreas.json"
+
 import { connect } from "react-redux";
 import { setModalFlag } from "../action/RecommendationAction";
 
@@ -30,7 +32,8 @@ const ProductCard = (props) => {
     // console.log('props:---', props);
     const ProductInfo = props.x
     const ProductIndex = props.i
-
+    let name = ProductInfo.ProductName;
+    let areas = primary_Areas[name];
     return (
         <div id={"Product" + ProductIndex} className="col-lg-4 recommCard1 ">
             <div className="d-flex justify-content-center">
@@ -72,11 +75,11 @@ const ProductCard = (props) => {
                 <u><p className="description1">Your Locations it Will Clean</p></u>
                 <div className="row text-wrap">
                 <div className="chips">
-                        {ProductInfo.PrimaryArea.map((y, j) => (
+                        {areas?areas.map((y, j) => (
                             <div className="py-1 px-1" key={j}>
                                 <span className="p-2 prod-recomm-area text-center prod-primary-area">{y}</span>
                             </div>
-                        ))}
+                        )):null}
                     </div>
                 </div>
 

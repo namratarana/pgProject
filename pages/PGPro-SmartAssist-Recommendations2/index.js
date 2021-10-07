@@ -68,6 +68,8 @@ const handleReset = () => {
 const Recommendations = (props) => {
 
     let Router = useRouter();
+    let areas = [];
+    let name;
     //let productData = [...new Set(props.productResult)] ? [...new Set(props.productResult)] : []
     const [productData, setProductData] = useState();
     const [answersChosen, setanswersChosen] = useState()
@@ -92,7 +94,7 @@ const Recommendations = (props) => {
     let nonCoreData = uniqueProductImages.filter(x => x.Core != "Core")
     console.log("ac",props.answersChosen, props.subAnswerChosen);
     const [businessProfile, setbusinessProfile] = useState()
-    const [mySubAns, setmySubAns] = useState()
+    const [mySubAns, setmySubAns] = useState();
     
     React.useEffect(() => {
         setbusinessProfile(JSON.parse(localStorage.getItem('businessProfile')));
@@ -322,73 +324,79 @@ const Recommendations = (props) => {
 
                 {/* <div className="col col-sm-2"> */}
                 <div className="scrollItems" id="scrollItems">
-                    {coreData.map((s, i) => (
-                        <div key={i}>
-
-
-                            <div class="card productCards grow-on-hover mx-2">
-                                <div class="card-header prodCardHead d-lg-block d-none">
-                                    <div className="productData ">
-                                        {s.ProductName}
-                                    </div>
-                                </div>
-                                <p class="card-text mt-2 mb-5 d-lg-none d-block">
-                                    <div className="chips row ">
-                                        {s.PrimaryArea.map((y, j) => (
-                                            // <div className="py-2 px-1" key={j}>
-                                            <span className=" mt-2 fw-bold ms-3 me-3 col col-lg-4  prod-recomm-area prod-primary-area">{y}</span>
-                                            // </div>d
-                                        ))}
-                                    </div>
-                                </p>
-                                <div class="card-body prodCardBody">
-                                    <div className="d-flex flex-column align-items-center image-container">
-                                        <div >
-                                            <a href={"#Product" + i} rel="noopener" data-action-detail={"#Product" + i} className="event_button_click">
-                                                <img
-                                                    className="prodImage"
-                                                    src={s.ImageUrl}
-                                                    alt={s.ProductBrand + " " + s.ProductName}
-                                                />
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="card-header prodCardHead d-lg-none d-block">
+                    {coreData.map((s, i) =>{
+                        name = s.ProductName;
+                        areas = primary_Areas[name]
+                        return(
+                            <div key={i}>
+                        
+                        
+                                <div class="card productCards grow-on-hover mx-2">
+                                    <div class="card-header prodCardHead d-lg-block d-none">
                                         <div className="productData ">
                                             {s.ProductName}
                                         </div>
                                     </div>
-                                    <p class="card-text my-2 d-lg-block d-none">
-                                        <div className="chips row text-wrap">
-                                           {console.log("prodname:",s.ProductName)}
-                                            
-                                            {console.log("primary-area:",primary_Areas)}
-                                            {/* {console.log("primary-area.prodName:",primary_Areas)} */}
-
-                                            {s.PrimaryArea.map((y, j) => (
+                                    <p class="card-text mt-2 mb-5 d-lg-none d-block">
+                                        <div className="chips row ">
+                                            {areas?areas.map((y, j) => (
                                                 // <div className="py-2 px-1" key={j}>
-                                                <span className=" mt-2 fw-bold ms-1 me-1 col   prod-recomm-area text-wrap prod-primary-area">{y}</span>
+                                                <span className=" mt-2 fw-bold ms-3 me-3 col col prod-recomm-area prod-primary-area">{y}</span>
                                                 // </div>d
-                                            ))}
+                                            )):null}
                                         </div>
-                                        {/* <div className="chips-small row ">
-                                            <div className="row row-cols-auto">
-                                            {s.PrimaryArea.map((y, j) => (
-                                                <div className="col mb-1">
-                                               
-                                                    <span className="py-1 px-1 text-center fw-bold prod-primary-area">{y}</span>
-                                                
-                                                </div>
-                                            ))}
-                                            </div>
-                                        </div> */}
                                     </p>
-
+                                    <div class="card-body prodCardBody">
+                                        <div className="d-flex flex-column align-items-center image-container">
+                                            <div >
+                                                <a href={"#Product" + i} rel="noopener" data-action-detail={"#Product" + i} className="event_button_click">
+                                                    <img
+                                                        className="prodImage"
+                                                        src={s.ImageUrl}
+                                                        alt={s.ProductBrand + " " + s.ProductName}
+                                                    />
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="card-header prodCardHead d-lg-none d-block">
+                                            <div className="productData ">
+                                                {s.ProductName}
+                                            </div>
+                                        </div>
+                                        <p class="card-text my-2 d-lg-block d-none">
+                                            <div className="chips row text-wrap">
+                                               {/* {console.log("prodname:",s.ProductName)} */}
+                                                
+                                                {/* {console.log("primary-area:",primary_Areas)} */}
+                                                {/* {console.log("primary-area.prodName:",primary_Areas[name])} */}
+                                                {/* {console.log("areas",areas)} */}
+                                                {areas?areas.map((y, j) => (
+                                                    
+                                                    // <div className="py-2 px-1" key={j}>
+                                                    <span className=" mt-2 fw-bold ms-1 me-1 col prod-recomm-area text-wrap prod-primary-area">{y}</span>
+                                                    // </div>d
+                                                )):null}
+                                            </div>
+                                            {/* <div className="chips-small row ">
+                                                <div className="row row-cols-auto">
+                                                {s.PrimaryArea.map((y, j) => (
+                                                    <div className="col mb-1">
+                                                   
+                                                        <span className="py-1 px-1 text-center fw-bold prod-primary-area">{y}</span>
+                                                    
+                                                    </div>
+                                                ))}
+                                                </div>
+                                            </div> */}
+                                        </p>
+                        
+                                    </div>
                                 </div>
+                        
                             </div>
+                        )
 
-                        </div>
-                    ))}
+                    } )}
 
                 </div>
                 {/* </div> */}

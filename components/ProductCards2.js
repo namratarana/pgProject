@@ -1,5 +1,7 @@
 import React from "react";
 import ImageReferenceData from '../data/ImageReference.json';
+import primary_Areas from "../data/primaryAreas.json"
+
 import { connect } from "react-redux";
 import { setModalFlag } from "../action/RecommendationAction";
 
@@ -31,6 +33,8 @@ const ProductCard = (props) => {
     const ProductInfo = props.x
     const ProductIndex = props.i
 
+    let name = ProductInfo.ProductName;
+    let areas = primary_Areas[name];
     return (
         <div id={"Product" + ProductIndex} className="container recommCard2">
             <div className="card cardView col-12">
@@ -74,11 +78,11 @@ const ProductCard = (props) => {
                         <div className="col col-lg-4 col-12">
                             <u><p className="cleanLocations">Your locations it can clean</p></u>
                             <div className="chips">
-                                {ProductInfo.PrimaryArea.map((y, j) => (
+                                {areas?areas.map((y, j) => (
                                     // <div className="py-2 px-1" key={j}>
                                         <span className="me-2 py-1 fw-bold prod-primary-area2">{y}</span>
                                     // </div>d
-                                ))}
+                                )):null}
                             </div>
 
                             {ProductInfo.Tensions.length>0 ?

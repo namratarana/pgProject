@@ -6,6 +6,7 @@ import EmailResults from "../../components/EmailResults";
 import EmailResults1 from "../../components/EmailResults1";
 import ProductCards1 from '../../components/ProductCards1';
 import ProductCards1small from '../../components/ProductCards1small';
+import primary_Areas from "../../data/primaryAreas.json"
 
 import Claims from '../../components/Claims';
 import SDSModal from '../../components/SDSModal';
@@ -62,6 +63,8 @@ const handleReset = () => {
 const Recommendations = (props) => {
 
     let Router = useRouter();
+    let areas = [];
+    let name;
     //let productData = [...new Set(props.productResult)] ? [...new Set(props.productResult)] : []
     const [productData, setProductData] = useState();
     const [answersChosen, setanswersChosen] = useState()
@@ -323,7 +326,10 @@ const Recommendations = (props) => {
 
                 {/* <div className="col col-sm-2"> */}
                 <div className="scrollItems" id="scrollItems">
-                    {coreData.map((s, i) => (
+                    {coreData.map((s, i) => {
+                        name = s.ProductName;
+                        areas = primary_Areas[name]
+                        return(
                         <div key={i}>
 
 
@@ -335,11 +341,11 @@ const Recommendations = (props) => {
                                 </div>
                                 <p class="card-text mt-2 mb-5 d-lg-none d-block">
                                     <div className="chips row ">
-                                        {s.PrimaryArea.map((y, j) => (
+                                        {areas?areas.map((y, j) => (
                                             // <div className="py-2 px-1" key={j}>
                                             <span className=" mt-2 fw-bold ms-3 me-3 col col-lg-4  prod-recomm-area prod-primary-area">{y}</span>
                                             // </div>d
-                                        ))}
+                                        )):null}
                                     </div>
                                 </p>
                                 <div class="card-body prodCardBody">
@@ -361,11 +367,11 @@ const Recommendations = (props) => {
                                     </div>
                                     <p class="card-text my-2 d-lg-block d-none">
                                         <div className="chips row text-wrap">
-                                            {s.PrimaryArea.map((y, j) => (
+                                            {areas?areas.map((y, j) => (
                                                 // <div className="py-2 px-1" key={j}>
                                                 <span className=" mt-2 fw-bold ms-1 me-1 col   prod-recomm-area text-wrap prod-primary-area">{y}</span>
                                                 // </div>d
-                                            ))}
+                                            )):null}
                                         </div>
                                         {/* <div className="chips-small row ">
                                             <div className="row row-cols-auto">
@@ -384,7 +390,7 @@ const Recommendations = (props) => {
                             </div>
 
                         </div>
-                    ))}
+                    )})}
 
                 </div>
                 {/* </div> */}

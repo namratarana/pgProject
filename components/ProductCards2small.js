@@ -1,5 +1,7 @@
 import React, {useState} from "react";
 import ImageReferenceData from '../data/ImageReference.json';
+import primary_Areas from "../data/primaryAreas.json"
+
 import { connect } from "react-redux";
 import { setModalFlag } from "../action/RecommendationAction";
 
@@ -31,7 +33,8 @@ const ProductCard = (props) => {
     const ProductInfo = props.x
     const ProductIndex = props.i
     const [Link, setLink] = useState(false);
-
+    let name = ProductInfo.ProductName;
+    let areas = primary_Areas[name];
     return (
         <div id={"Product" + ProductIndex} className="container recommCard2-small">
         {Link=== false?
@@ -39,13 +42,13 @@ const ProductCard = (props) => {
                 <hr className="hr"/>
                 <div className="chips-small row">
                     <div className="row row-cols-2">
-                    {ProductInfo.PrimaryArea.map((y, j) => (
+                    {areas?areas.map((y, j) => (
                         <div className="col">
                         {/* // <div className="py-2 px-1" key={j} */}
                             <span className="me-2 py-1 fw-bold prod-primary-area2-small">{y}</span>
                         {/* // </div> */}
                         </div>
-                    ))}
+                    )):null}
                     </div>
                 </div>
                 <div className="imgContainer mt-2">
@@ -112,13 +115,13 @@ const ProductCard = (props) => {
                 <u><p className="cleanLocations-small">Your locations it can clean</p></u>
                 <div className="chips-small row">
                     <div className="row row-cols-2">
-                    {ProductInfo.PrimaryArea.map((y, j) => (
+                    {areas?areas.map((y, j) => (
                         <div className="col">
                         {/* // <div className="py-2 px-1" key={j} */}
                             <span className="me-2 py-1 px-1 text-center fw-bold prod-primary-area2-small">{y}</span>
                         {/* // </div> */}
                         </div>
-                    ))}
+                    )):null}
                     </div>
                 </div>
 

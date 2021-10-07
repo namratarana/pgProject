@@ -1,5 +1,7 @@
 import React, {useState} from "react";
 import ImageReferenceData from '../data/ImageReference.json';
+import primary_Areas from "../data/primaryAreas.json"
+
 import { connect } from "react-redux";
 import { setModalFlag } from "../action/RecommendationAction";
 
@@ -31,7 +33,8 @@ const ProductCard = (props) => {
     const ProductInfo = props.x
     const ProductIndex = props.i
     const [Link, setLink] = useState(false);
-
+    let name = ProductInfo.ProductName;
+    let areas = primary_Areas[name];
     return (
         <div id={"Product" + ProductIndex} className="container recommCard2-small">
         {Link=== false?

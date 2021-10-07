@@ -18,5 +18,11 @@
     "Carpet Extraction Cleaner":["Public Areas"],
     "Hand Sanitizer Gel":["Public Areas","Restrooms"],
     "Antibacterial Liquid Hand Soap":["Restrooms"],
-    "Sweeper":["Restrooms"]
+    "Sweeper":["Restrooms"],
+    "Duster with extender pole":["Guest Rooms"],
+    "Disinfecting Floor & Surface Cleaner II":["Public Spaces"],
+    "Disinfecting All-Purpose Spray & Glass Cleaner":["Guest Rooms","Front of House","Public Spaces","Guest Room Kitchenette","Restrooms","Public Areas"],
+    "Broad Range Quat Sanitizer":["Guest Room Kitchenette","Kitchen"],
+    "Broad Range Sanitizer":["Kitchen"]
+    
 }
