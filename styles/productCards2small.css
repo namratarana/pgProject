@@ -142,8 +142,10 @@
     line-height: 17px;
     outline: 0px !important;
 }
+/* ************************************** */
+
 /* ************************************* */
-@media only screen and (max-width:426x)
+@media only screen and (max-width:426px)
 {
     .recommCard2-small
     {
@@ -174,7 +176,7 @@
     .prod-primary-area2-small
     {
         background: rgba(254, 209, 3, 0.1);
-        font-size: 0.8rem;
+        font-size: 0.6rem;
         width: 100%;
         display: flex !important;
         justify-content: center !important;
@@ -273,7 +275,7 @@
     .prod-tensions-small
     {
         background: rgba(239, 65, 41, 0.1);
-        font-size: 0.8rem;
+        font-size: 0.6rem;
         width: 100%;
         display: flex !important;
         justify-content: center !important;
@@ -437,7 +439,7 @@
     .prod-tensions-small
     {
         background: rgba(239, 65, 41, 0.1);
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         width: 100%;
         display: flex !important;
         justify-content: center !important;

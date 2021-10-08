@@ -105,6 +105,7 @@ const Recommendations = (props) => {
         // setanswerChosen(JSON.parse(localStorage.getItem('answerChosen')))
 
         let RecommendedProducts = localStorage.getItem('recommendedResults');
+        console.log("Rp:", RecommendedProducts);
         // subAnswer = localStorage.getItem('subAnswerChosen');
         let answerChosen = localStorage.getItem('answerChosen');
         console.log("props^^^^^^",props,"subanswer", props.subAnswerChosen);

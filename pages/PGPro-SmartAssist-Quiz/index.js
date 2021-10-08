@@ -521,6 +521,7 @@ export class Questions extends React.PureComponent {
       });
     }
   };
+  
 
   nextQuestionLogic = (index, id) => {
     const {
