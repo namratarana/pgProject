@@ -65,7 +65,7 @@ const ProductCard = (props) => {
                     <a  onClick={e=> console.log(setLink(true))}><u>Why do I need this?</u></a>
                 </div> 
                 
-                <div
+                {/* <div
                     className="ps-widget buyNowButton event_buy_now event_buy_now_chose_product mt-3"
                     ps-widget-type="lightbox"
                     role="button"
@@ -73,7 +73,7 @@ const ProductCard = (props) => {
                     aria-label="Find where to buy this product"
                     data-action-detail={ProductInfo.Sku}
                     ps-sku={ProductInfo.Sku}
-                />
+                /> */}
             </div>
             :
             <div className="card cardView-small col-12">
@@ -143,11 +143,14 @@ const ProductCard = (props) => {
                 </div>:null}
                     {/* <hr className="hr"/> */}
                     <u><p className="cleanLocations-small mt-2">Descriptions</p></u>
-                    <div className="row">
+                    <div className="row infoContRight">
                         <div className="row g-0">
                             <div className="descriptionProd-small" dangerouslySetInnerHTML={{__html: ProductInfo.BulletProductDescriptionData }} />
                         </div>
                     </div>
+                    
+                    
+            </div>}
                     <div
                         className="ps-widget buyNowButton event_buy_now event_buy_now_chose_product mt-3"
                         ps-widget-type="lightbox"
@@ -157,8 +160,6 @@ const ProductCard = (props) => {
                         data-action-detail={ProductInfo.Sku}
                         ps-sku={ProductInfo.Sku}
                     />
-                    
-            </div>}
         </div>
     )
 }

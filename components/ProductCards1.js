@@ -64,7 +64,7 @@ const ProductCard = (props) => {
             <div className="descriptionTitle mt-2">
                 
                 <u><p className="description1">Description</p></u>
-                <div className="row ms-2 text-wrap">
+                <div className="row infoContRight  ms-2 text-wrap">
                         <div className="descriptionPoints p-2" dangerouslySetInnerHTML={{__html: ProductInfo.BulletProductDescriptionData }} />
                         
                 

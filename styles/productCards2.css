@@ -14,6 +14,19 @@
     margin:auto;
     width:auto;
 } */
+.infoContRight li{ 
+
+    list-style-type: disc !important;
+
+}
+
+
+
+.infoContRight ul{ 
+
+    padding-inline-start: 40px !important;
+
+}
 .imgContainer
 {
     margin-top: -0.5rem;

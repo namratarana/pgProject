@@ -101,7 +101,7 @@ const ProductCard = (props) => {
                         
                         <div className="col col-lg-4 col-12">
                             <u><p className="cleanLocations mt-2">Description</p></u>
-                            <div className="row">
+                            <div className="row infoContRight">
                                     <div className="row g-0">
                                         <div className="descriptionProd" dangerouslySetInnerHTML={{__html: ProductInfo.BulletProductDescriptionData }} />
                                     </div>
