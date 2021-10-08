@@ -59,11 +59,11 @@ const businessSizeMapping = value => {
     };
 };
 
-const handleReset = () => {
-    setProductResult([])
-    setAnswersChosen([])
-    setSubAnswerChosen('')
-};
+// const handleReset = () => {
+//     setProductResult([])
+//     setAnswersChosen([])
+//     setSubAnswerChosen('')
+// };
 
 const Recommendations = (props) => {
 
@@ -95,11 +95,14 @@ const Recommendations = (props) => {
     console.log("ac",props.answersChosen, props.subAnswerChosen);
     const [businessProfile, setbusinessProfile] = useState()
     const [mySubAns, setmySubAns] = useState();
-    
+    // const [RecommendedProducts, setRecommendedProducts] = useState()
+    // const [answerChosen, setanswerChosen] = useState()
     React.useEffect(() => {
+
         setbusinessProfile(JSON.parse(localStorage.getItem('businessProfile')));
         setmySubAns(JSON.parse(localStorage.getItem('subAnswer')))
-        
+        // setRecommendedProducts(JSON.parse(localStorage.getItem('recommendedResults')));
+        // setanswerChosen(JSON.parse(localStorage.getItem('answerChosen')))
 
         let RecommendedProducts = localStorage.getItem('recommendedResults');
         // subAnswer = localStorage.getItem('subAnswerChosen');
@@ -151,7 +154,7 @@ const Recommendations = (props) => {
                                    
                                     <p class="card-text">
 
-                                    <ul>
+                                    <ul class="infoContRight">
                                         <div className="d-flex card-lists">
                                             <span>
                                                 <svg width="25" height="40" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -336,10 +339,10 @@ const Recommendations = (props) => {
                                         </div>
                                     </div>
                                     <p class="card-text mobileCarouselHeight mt-2 mb-5 d-lg-none d-block">
-                                        <div className="chips justify-content-center text-wrap  row ">
+                                        <div className="chips col col-lg-6 justify-content-center text-wrap  row ">
                                             {areas?areas.map((y, j) => (
                                                 // <div className="py-2 px-1" key={j}>
-                                                <span className=" mt-2 fw-bold me-1 col-lg-6 prod-recomm-area text-wrap prod-primary-area">{y}</span>
+                                                <span className=" mt-2 fw-bold me-1  prod-recomm-area text-wrap prod-primary-area">{y}</span>
 
                                                 // </div>d
                                             )):null}

@@ -152,7 +152,7 @@ const ProductCard = (props) => {
                     
             </div>}
                      <div
-                        className="ps-widget buyNowButton event_buy_now event_buy_now_chose_product mt-3"
+                        className="ps-widget buyNowButton-small event_buy_now event_buy_now_chose_product mt-3"
                         ps-widget-type="lightbox"
                         role="button"
                         aria-disabled="false"

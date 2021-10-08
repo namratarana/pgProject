@@ -154,7 +154,7 @@ const Recommendations = (props) => {
                                     {/* <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> */}
                                     <p class="card-text">
 
-                                    <ul>
+                                    <ul class="infoContRight">
                                         <div className="d-flex card-lists">
                                             <span>
                                                 <svg width="25" height="40" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">

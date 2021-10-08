@@ -12,7 +12,7 @@ export async function getStaticProps(context) {
     props: {
       answersChosen: [],
       uniqueProductImages: [],
-      subAnswerChosen: ''
+      subAnswerChosen: '',
     } // will be passed to the page component as props
   };
 }
@@ -211,7 +211,7 @@ const emailResults = ({
                   }
                   className='emailResultsButton  event_profile_register w-100 mt-1'
                   type='submit'
-                  onClick = {e=>handleSubmit(e)}
+                  // onClick = {e=>handleSubmit(e)}
                   value='Get My Results'
                   
                   data-action-detail="email_results-button"

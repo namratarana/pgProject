@@ -22,6 +22,17 @@
     margin-right: 1.6rem;
     text-align: left;
 }
+.infoContRight li{ 
+
+    list-style-type: disc !important;
+
+}
+.infoContRight ul{ 
+
+    padding-inline-start: 40px !important;
+    margin-left: 1rem !important;
+
+}
 .card2
 {
     border: 0px solid black !important;
@@ -233,6 +244,12 @@
         line-height: 1px important;
 
     }
+    .recommTitle
+    {
+        font-size: 1.8rem;
+        margin-top: -2rem !important;
+        margin-bottom: -1rem !important;
+    }
     .card1line
     {
         color: black !important;
@@ -298,6 +315,9 @@
     .mobileCarouselHeight
     {
         height: 100%;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
     }
     .prodImage
     {
@@ -362,7 +382,12 @@
         margin-top: -1rem;
         margin-bottom: 1rem;
     }
-    
+    .recommTitle
+    {
+        font-size: 1.3rem;
+        margin-top: -2rem !important;
+        margin-bottom: -1rem !important;
+    }
     /* upper carousel */
     .productCards
     {
@@ -373,6 +398,9 @@
     .mobileCarouselHeight
     {
         height: 100%;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
     }
     .prod-recomm-area
     {   
@@ -470,7 +498,8 @@
     .recommTitle
     {
         font-size: 1.3rem;
-        margin-top: -0.5rem;
+        margin-top: -2rem !important;
+        margin-bottom: -1rem !important;
     }
     /* upper carousel */
     .productCards
@@ -500,6 +529,9 @@
     .mobileCarouselHeight
     {
         height: 100%;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
     }
     .prodImage
     {
@@ -586,6 +618,8 @@
     .recommTitle
     {
         font-size: 1rem;
+        margin-top: -5rem !important;
+        margin-bottom: -2rem !important;
     }
     /* upper carousel */
     .productCards
@@ -599,9 +633,9 @@
     .mobileCarouselHeight
     {
         height: 100%;
-        /* display: flex !important;
+        display: flex !important;
         align-items: center !important;
-        justify-content: center !important; */
+        justify-content: center !important;
     }   
     .prod-recomm-area
     {

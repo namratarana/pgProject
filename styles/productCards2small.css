@@ -104,11 +104,12 @@
     text-align: center;
 }
 
+
 .buyNowButton-small{
 
-    height: 2rem;
+    height: 2.3rem;
     color: white;
-    background-color: #003E7E;
+    background-color: #003E7E !important;
     border-radius: 25px;
     width: 30%;
     display: flex !important;
@@ -254,9 +255,9 @@
     
     .buyNowButton-small{
     
-        height: 2rem;
+        height: 2.3rem;
         color: white;
-        background-color: #003E7E;
+        background-color: #003E7E !important;
         border-radius: 25px;
         width: 30%;
         display: flex !important;
@@ -410,9 +411,9 @@
     
     .buyNowButton-small{
     
-        height: 2rem;
+        height: 2.3rem;
         color: white;
-        background-color: #003E7E;
+        background-color: #003E7E !important;
         border-radius: 25px;
         width: 30%;
         display: flex !important;
