@@ -42,7 +42,9 @@ const emailResults = ({
     // console.log({ node });
     if (node !== null) {
       // ga('send','event',{eventCategory:'event_crm_action',eventAction:'event_profile_register',eventLabel:'email-signup'})
-      node.addEventListener('submit', () => setEmailSubmitted(true));
+      node.addEventListener('submit', () => {
+        setEmailSubmitted(true);
+      });
     }
   }, []);
 
@@ -142,6 +144,10 @@ const emailResults = ({
     e.preventDefault();
 
   }
+//   let openCloseTab = () => {
+//     let win = window.open('https://aznapgpdigitaladvisor.z20.web.core.windows.net/', '_blank'); 
+//     win.close();		// Close the website.
+// }
 
   // Head tags for iframe to bring all styles from parent window
   const initialContent = _document ? parse(_document.head.innerHTML) : [];
@@ -158,6 +164,7 @@ const emailResults = ({
             method='post'
             ref={formRef}
             target = "_blank"
+            
           >
             <br />
             <div hidden>
