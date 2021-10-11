@@ -183,7 +183,7 @@ color: #003E7D;
   }
 
   .scrollContainer{
-    width: 90%;  
+    width: 90%;
   }
 
   .scrollTags{
@@ -366,6 +366,7 @@ color: #003E7D;
   display: flex;
   align-items: center ;
   justify-content: center;
+  margin-bottom: -50px
 }
 
 .buttonContainerLeft{
