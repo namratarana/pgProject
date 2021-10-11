@@ -1240,7 +1240,9 @@ export class Questions extends React.PureComponent {
                             </button>
                         </Link>
                         :
+                        
                         <button
+                        
                           disabled={q.id === 'qImportant' && this.state.answersChosen[currentQuestionIndex] != undefined ? this.state.answersChosen[currentQuestionIndex].length === 0 ? (true) : (false)
                             : q.id === 'qPrimaryAreas' ? answersChosen && answersChosen[currentQuestionIndex].length == 0 && this.state.primaryAreasList === true
                               : q.Type == "multiSelect" && q.id === 'qTensions' && this.state.answersChosen[currentQuestionIndex] != undefined ? this.state.answersChosen[currentQuestionIndex].length === 0 ? (true) : (false)
@@ -1272,8 +1274,9 @@ export class Questions extends React.PureComponent {
                                 ) : (
                                   "nextButtonDisable mt-3"
                                 )
+                                  
                           }
-                          data-action-detail={answersChosen[currentQuestionIndex]} >Next</button>
+                          data-action-detail={ currentQuestionIndex ==0 ?answersChosen[currentQuestionIndex]!= "Other"?subAnswerChosen? SubSubAnswers? SubSubAnswers: subAnswerChosen: answersChosen[currentQuestionIndex] : !subAnswerChosen?"other_1":SubSubAnswers? SubSubAnswers: subAnswerChosen==="Other"?"other_2":subAnswerChosen : answersChosen[currentQuestionIndex]} >Next</button>
                       }
 
                       <button

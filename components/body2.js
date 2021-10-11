@@ -15,17 +15,17 @@ function Body2() {
            <section className="position-relative">
                 <div className="row g-0 row-cols-lg-2 row-cols-1" style={{}}>
                     <div className="col" style={{marginBottom:""}}>
-                        <img src="https://res.cloudinary.com/mtree/image/upload/v1632318367/PGPro_US/CroppedImages/Image1%20%281%29%20%281%29.jpg" className="img-fluid" width='1280px' height='720px' />
+                        <img src="https://res.cloudinary.com/mtree/image/upload/v1633923250/PGPro_US/CroppedImages/OImg1.jpg" className="img-fluid" width='1280px' height='720px' />
                     </div>
                     <div className="col d-lg-block d-none" style={{marginBottom:""}}>
-                        <img src="https://res.cloudinary.com/mtree/image/upload/v1632318273/PGPro_US/CroppedImages/Image2%20%281%29.jpg" className="img-fluid" width='1280px' height='720px'/>
+                        <img src="https://res.cloudinary.com/mtree/image/upload/v1632318273/PGPro_US/CroppedImages/OImg2.jpg" className="img-fluid" width='1280px' height='720px'/>
                     </div>
                 
                     <div className="col  d-lg-block d-none" style={{marginBottom:""}}>
-                        <img src="https://res.cloudinary.com/mtree/image/upload/v1632318574/PGPro_US/CroppedImages/Image3%20%281%29.jpg" className="img-fluid" width='1280px' height='720px'/>
+                        <img src="https://res.cloudinary.com/mtree/image/upload/v1632318574/PGPro_US/CroppedImages/OImg3.jpg" className="img-fluid" width='1280px' height='720px'/>
                     </div>
                     <div className="col" style={{marginBottom:""}}>
-                        <img src="https://res.cloudinary.com/mtree/image/upload/v1632318517/PGPro_US/CroppedImages/Image4%20%281%29%20%281%29%20%281%29.jpg" className="img-fluid" width='1280px' height='720px'/>
+                        <img src="https://res.cloudinary.com/mtree/image/upload/v1632318517/PGPro_US/CroppedImages/OImg4.jpg" className="img-fluid" width='1280px' height='720px'/>
                     </div>
                 </div>
 

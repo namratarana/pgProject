@@ -113,8 +113,8 @@ class App extends React.Component {
                     <meta name="description" content="P&amp;G Professional meets the specific cleaning needs in a wide range of industries, such as foodservice, hospitality, homes and are effective in killing harmful germs."></meta>
                     <link rel="manifest" href="/manifest.json" />
                     <meta name="theme-color" content="#317EFB" />
-                    {/* <script type="text/javascript" charset="UTF-8" src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" data-domain-script="164a50e6-6064-45de-9920-47d4a3e24c85"></script>
-                    <script src="https://cdn.cookielaw.org/scripttemplates/6.9.0/otBannerSdk.js" async="" type="text/javascript"></script> */}
+                     {/* <script type="text/javascript" charset="UTF-8" src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" data-domain-script="164a50e6-6064-45de-9920-47d4a3e24c85"></script> */}
+                    {/* <script src="https://cdn.cookielaw.org/scripttemplates/6.9.0/otBannerSdk.js" async="" type="text/javascript"></script>  */}
 
                 </Head>
 
